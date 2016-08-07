@@ -11,12 +11,14 @@ body {font-family:$CirceRegular; background: #578daf;}
 	&.introScreen {background: #ffffff;}
 
 	.flyBall {
-		position: absolute; right: 247px; bottom: -100px; z-index: 10002;
+		position: absolute; right: 15%; bottom: -100px; z-index: 10002;
+
+		@media all and (max-height: 699px) {bottom: -181px;}
 	}
 
 	.wr-header {
-		position: relative; padding: 37px 0 40px; position: relative; z-index: 10001;
-		background: #ffffff url('../img/header-shadow.png') 113px 0 no-repeat;
+		position: fixed; left: 0; top: 0; width: 100%; padding: 19px 0 25px; z-index: 10001;
+		background: #ffffff; //url('../img/header-shadow.png') 113px 0 no-repeat;
 
 		.header-logo {
 			color: #6f8ea1; font-size: 25.3px; letter-spacing: 0.7px; text-transform: uppercase;
@@ -28,7 +30,7 @@ body {font-family:$CirceRegular; background: #578daf;}
 
 			&:before {
 				content:'';
-				display: block; width: 1px; height: 66px; position: absolute; left: 0; top: 4px;
+				display: block; width: 1px; height: 45px; position: absolute; left: 0; top: 4px;
 				background: #4181a9;
 			}
 
@@ -40,27 +42,29 @@ body {font-family:$CirceRegular; background: #578daf;}
 
 					&:after {
 						content:'';
-						display: block; width: 1px; height: 62px; position: absolute; right: -18px; top: 8px;
+						display: block; width: 1px; height: 37px; position: absolute; right: -18px; top: 8px;
 						background: #4181a9;
 					}
 
 				}
 				&:last-child {margin-left: 33px;}
 
+				img {width: 70%;}
+
 				p {
-					color: #5b7e94; font-family: $CirceLight; font-size: 18px; letter-spacing: 0.25px;
-					position: absolute; left: 0; bottom: -27px;
+					color: #5b7e94; font-family: $CirceLight; font-size: 13px; letter-spacing: 0.25px;
+					position: absolute; left: 0; bottom: -17px;
 				}
 			}
 		}
 
 		.header-flag {
-			position: absolute; left: 0; top: 0;
+			position: absolute; left: 0; top: 0; width: 350px;
 		}
 	}
 
 	.wr-suppWords {
-		height: 1270px; padding-top: 61px;
+		margin-top: 97px;
 	}
 
 	.wr-firstScreen {
@@ -126,12 +130,42 @@ body {font-family:$CirceRegular; background: #578daf;}
 
 							&:hover {text-decoration: none;}
 						}
+
+						&.license {
+							display: none;
+							& > div {
+								position: relative;
+
+								i {color: #ffffff; font-size: 15.2px;}
+
+								p {
+									color: #578daf; font-size: 8px; line-height: 9px; letter-spacing: 0.23px; text-transform: none;
+									display: none; position: absolute; top: -160px; left: -280px; z-index: 1; padding: 15px; width: 410px;
+									background: #ffffff; @include border-radius(15px);
+									opacity: 1;
+									&:after {
+										content: '';
+										display: block; position: absolute; bottom: -6px; right: 116px; width: 15px; height: 15px;
+										@include transform(rotate(45deg));
+										background: #ffffff;
+									}
+								}
+
+								&:hover {
+									p {display: block;}
+								}
+							}
+
+							@media all and (max-height: 699px) {display: inline-block;}
+						}
 					}
 				}
 				small {
 					color: #ffffff; font-size: 8px; line-height: 9px; letter-spacing: 0.23px;
-					display: block;
+					display: none;
 					opacity: 0.9;
+
+					@media all and (min-height: 700px) {display: block;}
 				}
 			}
 		}
