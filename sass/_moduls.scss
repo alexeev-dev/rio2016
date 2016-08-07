@@ -1,0 +1,376 @@
+@import 'settings';
+@import 'fonts';
+
+.overlay-bg {
+	width: 100%; height: 100%;position: absolute; left: 0; top: 0; z-index: 1;
+	background: url('../img/overlay-bg.png') center 120px no-repeat;
+	background-size: 100%, auto;
+}
+
+.button-style1 {
+
+}
+
+.wordsCounter, .intro, .main, .prizes {position: relative; z-index: 5;}
+
+.wordsCounter {
+	text-align: center;
+	width: 812px; margin: 0 auto; padding-bottom: 53px;
+
+	&:after {
+		content: '';
+		display: block; width: 100%; height: 1px; position: absolute; bottom: 0; left: 0;
+		background: #ffffff;
+	}
+
+	.counter {
+		color: #ffffff; font-size: 76.5px; line-height: 104px; text-align: center;
+		display: inline-block; height: 94px; margin: 0 auto 3px; padding: 0 89px;
+		border: 3px solid #ffffff; @include border-radius(16px);
+	}
+
+	p {
+		color: #ffffff; font-size: 22.5px; text-align: center; line-height: 27px;
+		margin-bottom: 48px;
+	}
+
+	.addWords {
+		color: #ffffff; font-size: 29.5px; line-height: 60px; letter-spacing: 0.4px; text-align: left; text-decoration: none;
+		display: block; margin: 0 auto; width: 325px; height: 58px; padding-left: 90px; position: relative;
+		background: #f94d15; @include border-radius(14px);
+		cursor: pointer;
+
+		&:before {
+			content: '';
+			display: block; position: absolute; width: 1px; height: 54px; left: 74px; top: 2px;
+			background: #ffffff;
+		}
+
+		i {
+			position: absolute; left: 18px; top: 12px;
+		}
+	}
+}
+
+.intro {
+	padding: 28px 40px;
+	background: rgba(249, 77, 21, 0.84);
+
+	h1, p {color: #ffffff;}
+
+	h1 {
+		font-family: $CirceBold; font-size: 39.48px; line-height: 47px; letter-spacing: 0.9px; text-transform: uppercase;
+		margin-bottom: 5px;
+	}
+
+	p {
+		font-family: $CirceLight; font-size: 19.3px; line-height: 23px; letter-spacing: -0.05px;
+	}
+}
+
+.main {
+
+	.participate {
+		color: #ffffff; font-size: 29.5px; line-height: 60px; letter-spacing: 0.4px; text-align: left; text-decoration: none;
+		display: block; margin: 0 auto 14px; width: 295px; height: 58px; padding-left: 90px; position: relative;
+		background: #f94d15; @include border-radius(14px);
+		cursor: pointer;
+
+		&:before {
+			content: '';
+			display: block; position: absolute; width: 1px; height: 54px; left: 74px; top: 2px;
+			background: #ffffff;
+		}
+
+		i {
+			position: absolute; left: 18px; top: 12px;
+		}
+	}
+	.showSupp {
+		color: #f94d15; font-family: $CirceLight; font-size: 17px; line-height: 20px; letter-spacing: -0.05px; text-align: center;
+		display: block; width: 200px; margin: 0 auto 36px;
+
+		&:hover {text-decoration: none;}
+	}
+
+	p {
+		color: #5b7e94; font-family: $CirceLight; font-size: 21px; line-height: 25px; letter-spacing: 0.02px; text-align: center;
+		margin-bottom: 26px;
+
+		&:last-child {margin-bottom: 0;}
+
+		span {
+			font-family: $CirceBold;
+		}
+	}
+
+}
+
+.prizes {
+	p {
+		color: #5b7e94; font-size: 18.19px; text-align: center; line-height: 22px; letter-spacing: 0.1px; text-transform: uppercase;
+		margin-bottom: 29px;
+	}
+
+	ul {
+		text-align: center;
+		li {
+			display: inline-block; vertical-align: top; margin: 0 8px;
+			figure {
+
+				& > div {
+					width: 159px; height: 159px; overflow: hidden; position: relative; margin-bottom: 21px;
+					background: #ffffff; border: solid 3px #f94d15; @include border-radius(50%);
+
+					img {
+						position: absolute; left: 50%; top: 50%; @include transform(translate(-50%, -50%));
+					}
+
+				}
+
+				figcaption {
+					color: #5b7e94; font-size: 10.91px; line-height: 13px; letter-spacing: 0.7px; text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+
+// popups
+.goBackButton {
+	color: #f94d15; font-size: 40px; text-align: center; line-height: 62px;
+	display: block; width: 83px; height: 83px; position: absolute; left: 18px; top: -118px;
+	background: #ffffff; border: solid 12px #f94d15; @include border-radius(50%);
+	cursor: pointer;
+	
+	i {
+		position: absolute; left: 50%; top: 50%; @include transform(translate(-50%, -50%));
+	}
+}
+.mainScreen-popup {
+	display: none;
+	width: 654px; position: relative; padding: 25px 0 28px; margin-top: 126px;
+	background: #5b7e94; @include border-radius(31px);
+	.upDownButtons {
+		position: absolute; left: 98px; top: 17px;
+		div {
+			color: #ffffff; font-size: 24px; line-height: 34px; text-align: center;
+			width: 40px; height: 40px;
+			border: solid 5px #ffffff; @include border-radius(3px);
+			&.upButton {margin-bottom: 5px;}
+		}
+	}
+	p {
+		color: #ffffff; font-size: 20px; line-height: 24px; letter-spacing: -0.05px;
+		margin-left: 168px;
+	}
+}
+
+.approveMessage-popup {
+	display: none;
+	width: 967px; position: relative; padding: 61px 0 44px; margin-top: 126px;
+	background: url('../img/approveMessage-bg.png') 0 129px no-repeat; border: solid 13px #ffffff; @include border-radius(28px);
+
+	h3, p {color: #ffffff;}
+
+	h3 {
+		font-family: $CirceBold; font-size: 27.8px; line-height: 33px; text-align: center; text-transform: uppercase;
+		margin-bottom: 94px;
+	}
+
+	p {
+		font-size: 22px; line-height: 26px; letter-spacing: 0.25px; text-align: center;
+		margin-bottom: 28px;
+	}
+
+	ul {
+		text-align: center;
+		padding-top: 33px; margin: 0 1px;position: relative;
+
+		&:before {
+			content: '';
+			display: block; width: 100%; height: 1px; position: absolute; left: 0; top: -9px;
+			background: #ffffff;
+		}
+
+		li { display: inline-block;
+			a {
+				color: #ffffff; font-size: 20px; line-height: 63px; letter-spacing: 0.55px; text-align: center; text-decoration: none;
+				display: block; margin: 0 2px; width: 303px; height: 59px; position: relative;
+				background: #f94d15; @include border-radius(10px);
+
+				&:hover {
+					color: #f94d15;
+					background: #ffffff;
+				}
+			}
+		}
+	}
+}
+
+.login-popup {
+	display: none;
+	width: 967px; position: relative; padding: 53px 0; margin-top: 126px;
+	border: solid 13px #ffffff; @include border-radius(28px);
+
+	h3 {
+		color: #ffffff; font-family: $CirceBold; font-size: 27.8px; line-height: 33px; text-align: center; text-transform: uppercase;
+		margin-bottom: 24px;
+	}
+
+	ul.socials {
+		text-align: center;
+		li {
+			display: inline-block; margin: 0 5px; vertical-align: top;
+			a {
+				color: #ffffff; font-size: 52px; text-decoration: none; line-height: 74px;
+				display: block; width: 80px; height: 80px;
+				border: solid 7px #ffffff; @include border-radius(50%);
+
+				&.fb {font-size: 61px; padding-top: 10px;}
+				&.tw {padding-left: 5px; padding-top: 2px;}
+				&.ok {}
+				&.vk {padding-right: 4px;}
+			}
+		}
+	}
+}
+
+.sendMessage-popup {
+	display: none;
+	width: 967px; position: relative; padding: 41px 1px 45px; margin-top: 126px;
+	background: url('../img/sendMessage-bg.png') -4px 318px no-repeat; border: solid 13px #ffffff; @include border-radius(28px);
+
+	h3 {
+		color: #ffffff; font-size: 24.8px; font-family: $CirceBold; line-height: 30px; text-transform: uppercase;
+		position: absolute; left: 99px; top: 9px;
+	}
+	input {
+		display: none;
+	}
+
+	label {
+		color: #ffffff; font-family: $CirceBold; font-size: 12px; line-height: 14px;
+		position: absolute; left: 99px; top: 85px; padding-left: 25px;
+		cursor: pointer;
+
+		&:before {
+			content: '';
+			display: block; position: absolute; left: 0; top: 0; width: 17px; height: 17px;
+			border: solid 1px #ffffff; @include border-radius(1px);
+		}
+	}
+
+	input:checked + label:before {background: url('../img/popup-check.png') center center no-repeat;}
+
+	textarea {
+		color: #8b8b8b; font-family: $CirceLight;
+		width: 100%;
+		background: #ffffff; border: solid 3px #f94d15; @include border-radius(16px);
+		resize: none;
+	}
+
+	.block1 {
+		position: relative; padding-bottom: 9px; margin-bottom: 17px; padding-left: 376px; padding-right: 88px;
+		textarea {
+			font-size: 24.8px;
+			height: 95px; padding: 21px;
+			&::-webkit-input-placeholder {text-transform: uppercase; opacity: 0.54;}
+			&::-moz-placeholder {text-transform: uppercase; opacity: 0.54;}
+			&:-moz-placeholder {text-transform: uppercase; opacity: 0.54;}
+			&:-ms-input-placeholder {text-transform: uppercase; opacity: 0.54;}
+		}
+
+		&:after {
+			content: '';
+			display: block; width: 100%; height: 1px; position: absolute; left: 0; bottom: 0;
+			background: #ffffff;
+		}
+	}
+
+	.block2 {
+		position: relative; padding-left: 376px; padding-right: 88px;
+		textarea {
+			font-size: 19.39px; letter-spacing: 0.1px;
+			height: 337px; padding: 27px 20px; margin-bottom: 23px;
+			&::-webkit-input-placeholder {opacity: 0.54;}
+			&::-moz-placeholder {opacity: 0.54;}
+			&:-moz-placeholder {opacity: 0.54;}
+			&:-ms-input-placeholder {opacity: 0.54;}
+		}
+		p {
+			color: #ffffff; font-size: 14px; line-height: 17px; letter-spacing: 0.05px; text-align: center;
+			a {
+				color: #ffffff;
+				&:hover {text-decoration: none;}
+			}
+		}
+	}
+	button {
+		color: #ffffff; font-size: 20px; line-height: 61px; letter-spacing: 0.2px; text-align: center; 
+		display: block; margin: 0 auto 29px; width: 303px; height: 59px;
+		background: #f94d15; border: none; @include border-radius(10px);
+
+		&:hover {
+			color: #f94d15;
+			background: #ffffff;
+		}
+	}
+
+}
+
+.rules-popup {
+	display: none;
+	width: 966px; max-height: 923px; position: relative; padding: 43px 15px 85px; margin-top: 126px;
+	border: solid 13px #ffffff; @include border-radius(28px);
+
+	h3 {
+		color: #ffffff; font-size: 27.8px; font-family: $CirceBold; line-height: 30px; text-align: center; text-transform: uppercase;
+		margin-bottom: 73px;
+	}
+
+	& > div {
+		height: 666px; overflow-y: auto; margin: 0 20px 0 54px; padding-right: 40px;
+
+		&::-webkit-scrollbar {
+			width: 1px;
+			background: #ffffff;
+		}
+		&::-webkit-scrollbar-thumb {
+			width: 16px; height: 16px;
+			background: #ffffff; @include border-radius(50%);
+		}
+		p {
+			color: #ffffff; font-family: $CirceLight; font-size: 18px; letter-spacing: -0.02px; line-height: 21px;
+		}
+	}
+}
+
+.message-popup {
+	text-align: center; display: none;
+	max-height: 342px; width: 529px; margin-top: 126px;
+	h3 {
+		color: #ffffff; font-size: 43.97px;
+		max-width: 406px; display: inline-block; margin: 0 auto 16px; padding: 19px 31px;
+		background: #f94d15; @include border-radius(16px);
+	}
+	& > div {
+		text-align: left;
+		position: relative; padding: 35px 59px 10px;
+		background: #f94d15; @include border-radius(16px);
+
+		p {
+			color: #ffffff; font-size: 21px; font-family: $CirceLight; letter-spacing: -0.25px; line-height: 26px;
+			margin-bottom: 22px;
+		}
+
+		a {
+			color: #ffffff; font-size: 33.06px; line-height: 21px; text-align: center; text-decoration: none;
+			position: absolute; right: 11px; top: 9px; display: block; height: 31px; width: 31px; padding-top: 4px; @include transform(rotate(45deg));
+			border: solid 3px #ffffff; @include border-radius(50%);
+		}
+	}
+
+}
+
+.b-modal {background: rgba(91,126,148,0.92) !important; opacity: 1 !important;}

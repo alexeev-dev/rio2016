@@ -1,0 +1,13 @@
+@import 'settings';
+
+// FONTS
+@include font-face('CirceExtraLight', CirceExtraLight);
+@include font-face('CirceLight', CirceLight);
+@include font-face('CirceRegular', CirceRegular);
+@include font-face('CirceBold', CirceBold);
+
+// VARIABLES
+$CirceExtraLight: 'CirceExtraLight', sans-serif;
+$CirceLight: 'CirceLight', sans-serif;
+$CirceRegular: 'CirceRegular', sans-serif;
+$CirceBold: 'CirceBold', sans-serif;

@@ -1,0 +1,139 @@
+@import 'settings';
+@import 'fonts';
+@import 'sprite';
+@import 'moduls';
+
+body {font-family:$CirceRegular; background: #578daf;}
+
+.app {
+	position: relative; overflow: hidden;
+	background: url('../img/app-background-main.png') center 0 no-repeat; background-size: cover;
+	&.introScreen {background: #ffffff;}
+
+	.flyBall {
+		position: absolute; right: 247px; bottom: -100px; z-index: 10002;
+	}
+
+	.wr-header {
+		position: relative; padding: 37px 0 40px; position: relative; z-index: 10001;
+		background: #ffffff url('../img/header-shadow.png') 113px 0 no-repeat;
+
+		.header-logo {
+			color: #6f8ea1; font-size: 25.3px; letter-spacing: 0.7px; text-transform: uppercase;
+			display: inline-block; margin-left: 170px; position: relative; top: 1px;
+		}
+
+		.header-partners {
+			display: inline-block; margin-right: 20px; position: relative; float: right;
+
+			&:before {
+				content:'';
+				display: block; width: 1px; height: 66px; position: absolute; left: 0; top: 4px;
+				background: #4181a9;
+			}
+
+			a {
+				position: relative; display: inline-block;
+
+				&:first-child {
+					margin-left: 74px; display: inline-block;
+
+					&:after {
+						content:'';
+						display: block; width: 1px; height: 62px; position: absolute; right: -18px; top: 8px;
+						background: #4181a9;
+					}
+
+				}
+				&:last-child {margin-left: 33px;}
+
+				p {
+					color: #5b7e94; font-family: $CirceLight; font-size: 18px; letter-spacing: 0.25px;
+					position: absolute; left: 0; bottom: -27px;
+				}
+			}
+		}
+
+		.header-flag {
+			position: absolute; left: 0; top: 0;
+		}
+	}
+
+	.wr-suppWords {
+		height: 1270px; padding-top: 61px;
+	}
+
+	.wr-firstScreen {
+		&-intro {
+			padding: 64px 0 111px; 
+			background: url('../img/app-background-firstScreen.png') center 0 no-repeat; background-size: cover;
+		}
+
+		&-main {
+			padding: 41px 0 58px;
+			background: #ffffff url('../img/app-background-firstScreen-main.png') center 62px no-repeat; border-bottom: solid 1px #5b7e94;
+		}
+
+		&-prizes {
+			padding: 20px 0 55px;
+			background: #f7f9fa;
+		}
+	}
+
+	.wr-footer {
+		padding-bottom: 36px; padding-top: 56px; position: relative; z-index: 10001;
+		background: #578daf;
+
+		.footer {
+
+			.footer-logo {
+				float: left; margin-left: 39px;
+				a {
+					display: inline-block; position: relative; padding-right: 17px; margin-right: 16px;
+
+					&:last-child {margin-right: 0;}
+
+					&:after {
+						content: '';
+						display: block; width: 1px; height: 31px; position: absolute; right: 0; top: 50%; @include transform(translateY(-50%));
+						background: #ffffff;
+						opacity: 0.38;
+					}
+					
+					p {
+						color: #ffffff; font-family: $CirceLight; font-size: 12px; letter-spacing: 0.1px;
+						position: absolute; left: -1px; bottom: -18px;
+					}
+				}
+			}
+			.footer-info {
+				display: inline-block; width: 50%; margin-left: 42px; margin-top: 5px;
+				p {
+					color: #ffffff; font-size: 13.8px; letter-spacing: 0.4px; line-height: 16px; text-transform: uppercase;
+					margin-bottom: 17px;
+					opacity: 0.9;
+				}
+				ul.footer-nav {
+					margin-bottom: 17px;
+					li {
+						display: inline-block; margin-right: 23px;
+						&:last-child {margin-right: 0;}
+						a {
+							color: #ffffff; font-size: 15.2px; letter-spacing: 0.4px; text-transform: uppercase;
+							position: relative;
+							opacity: 0.9;
+							cursor: pointer;
+
+							&:hover {text-decoration: none;}
+						}
+					}
+				}
+				small {
+					color: #ffffff; font-size: 8px; line-height: 9px; letter-spacing: 0.23px;
+					display: block;
+					opacity: 0.9;
+				}
+			}
+		}
+	}
+}

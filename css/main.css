@@ -1,0 +1,2307 @@
+@charset "UTF-8";
+/* Подключаем компасс */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic);
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Включаем спрайты и загружаем иконки */
+/* Импортируем гугл-шрифты */
+/* Импортируем локальные шрифты */
+@font-face {
+  font-family: DroidSerifRegular;
+  src: url("../fonts/DroidSerifRegular/DroidSerifRegular.eot");
+  src: url("../fonts/DroidSerifRegular/DroidSerifRegular.eot") format("embedded-opentype"), url("../fonts/DroidSerifRegular/DroidSerifRegular.woff2") format("woff2"), url("../fonts/DroidSerifRegular/DroidSerifRegular.woff") format("woff"), url("../fonts/DroidSerifRegular/DroidSerifRegular.ttf") format("truetype"), url("../fonts/DroidSerifRegular/DroidSerifRegular.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: DroidSerifRegular;
+    src: url("../fonts/DroidSerifRegular/DroidSerifRegular.svg#DroidSerifRegular") format("svg");
+  }
+}
+@font-face {
+  font-family: RalewayExtraBold;
+  src: url("../fonts/RalewayExtraBold/RalewayExtraBold.eot");
+  src: url("../fonts/RalewayExtraBold/RalewayExtraBold.eot") format("embedded-opentype"), url("../fonts/RalewayExtraBold/RalewayExtraBold.woff2") format("woff2"), url("../fonts/RalewayExtraBold/RalewayExtraBold.woff") format("woff"), url("../fonts/RalewayExtraBold/RalewayExtraBold.ttf") format("truetype"), url("../fonts/RalewayExtraBold/RalewayExtraBold.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: RalewayExtraBold;
+    src: url("../fonts/RalewayExtraBold/RalewayExtraBold.svg#RalewayExtraBold") format("svg");
+  }
+}
+/* line 69, ../sass/_settings.scss */
+html {
+  /* height hack */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+/* line 76, ../sass/_settings.scss */
+body {
+  /* height hack */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* устанавливаем оптимальный вертикальный ритм */
+  /* сглаживание шрифтов в вебките */
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* line 89, ../sass/_settings.scss */
+body.onload {
+  overflow: hidden;
+}
+
+/* line 90, ../sass/_settings.scss */
+button, select {
+  -webkit-appearance: none;
+}
+
+/* выделение текста */
+/* line 93, ../sass/_settings.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 98, ../sass/_settings.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 103, ../sass/_settings.scss */
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* В дополнение от Bootstrap, <p> (параграфы) получают нижний отступ в половину калькулируемой высоты строки (изначально 10px) */
+/* line 106, ../sass/_settings.scss */
+p {
+  margin-bottom: 0;
+  /* для правильного вертикального ритма */
+}
+
+/* <p> в виде заголовка */
+/* line 113, ../sass/_settings.scss */
+a {
+  text-decoration: underline;
+}
+
+/* line 120, ../sass/_settings.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/* line 127, ../sass/_settings.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 133, ../sass/_settings.scss */
+textarea {
+  resize: vertical;
+}
+
+/* System */
+/* line 138, ../sass/_settings.scss */
+.np {
+  padding: 0;
+}
+
+/* no padding */
+/* line 139, ../sass/_settings.scss */
+.np-l {
+  padding-left: 0;
+}
+
+/* no padding left */
+/* line 140, ../sass/_settings.scss */
+.np-r {
+  padding-right: 0;
+}
+
+/* no padding right */
+/* line 141, ../sass/_settings.scss */
+.dp {
+  padding: 0 30px;
+}
+
+/* double padding */
+/* line 142, ../sass/_settings.scss */
+.nm {
+  margin: 0;
+}
+
+/* no margin */
+/* line 143, ../sass/_settings.scss */
+.nm-b {
+  margin-bottom: 0;
+}
+
+/* no margin bottom */
+/* line 144, ../sass/_settings.scss */
+.p_small {
+  padding: 5px;
+}
+
+/* Общий сброс базовых настроек */
+/* line 147, ../sass/_settings.scss */
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+/* Сообщение об устаревшем броузере */
+/* line 150, ../sass/_settings.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Подключаем компасс */
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Включаем спрайты и загружаем иконки */
+/* Импортируем гугл-шрифты */
+/* Импортируем локальные шрифты */
+@font-face {
+  font-family: DroidSerifRegular;
+  src: url("../fonts/DroidSerifRegular/DroidSerifRegular.eot");
+  src: url("../fonts/DroidSerifRegular/DroidSerifRegular.eot") format("embedded-opentype"), url("../fonts/DroidSerifRegular/DroidSerifRegular.woff2") format("woff2"), url("../fonts/DroidSerifRegular/DroidSerifRegular.woff") format("woff"), url("../fonts/DroidSerifRegular/DroidSerifRegular.ttf") format("truetype"), url("../fonts/DroidSerifRegular/DroidSerifRegular.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: DroidSerifRegular;
+    src: url("../fonts/DroidSerifRegular/DroidSerifRegular.svg#DroidSerifRegular") format("svg");
+  }
+}
+@font-face {
+  font-family: RalewayExtraBold;
+  src: url("../fonts/RalewayExtraBold/RalewayExtraBold.eot");
+  src: url("../fonts/RalewayExtraBold/RalewayExtraBold.eot") format("embedded-opentype"), url("../fonts/RalewayExtraBold/RalewayExtraBold.woff2") format("woff2"), url("../fonts/RalewayExtraBold/RalewayExtraBold.woff") format("woff"), url("../fonts/RalewayExtraBold/RalewayExtraBold.ttf") format("truetype"), url("../fonts/RalewayExtraBold/RalewayExtraBold.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: RalewayExtraBold;
+    src: url("../fonts/RalewayExtraBold/RalewayExtraBold.svg#RalewayExtraBold") format("svg");
+  }
+}
+/* line 69, ../sass/_settings.scss */
+html {
+  /* height hack */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+/* line 76, ../sass/_settings.scss */
+body {
+  /* height hack */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* устанавливаем оптимальный вертикальный ритм */
+  /* сглаживание шрифтов в вебките */
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* line 89, ../sass/_settings.scss */
+body.onload {
+  overflow: hidden;
+}
+
+/* line 90, ../sass/_settings.scss */
+button, select {
+  -webkit-appearance: none;
+}
+
+/* выделение текста */
+/* line 93, ../sass/_settings.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 98, ../sass/_settings.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 103, ../sass/_settings.scss */
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* В дополнение от Bootstrap, <p> (параграфы) получают нижний отступ в половину калькулируемой высоты строки (изначально 10px) */
+/* line 106, ../sass/_settings.scss */
+p {
+  margin-bottom: 0;
+  /* для правильного вертикального ритма */
+}
+
+/* <p> в виде заголовка */
+/* line 113, ../sass/_settings.scss */
+a {
+  text-decoration: underline;
+}
+
+/* line 120, ../sass/_settings.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/* line 127, ../sass/_settings.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 133, ../sass/_settings.scss */
+textarea {
+  resize: vertical;
+}
+
+/* System */
+/* line 138, ../sass/_settings.scss */
+.np {
+  padding: 0;
+}
+
+/* no padding */
+/* line 139, ../sass/_settings.scss */
+.np-l {
+  padding-left: 0;
+}
+
+/* no padding left */
+/* line 140, ../sass/_settings.scss */
+.np-r {
+  padding-right: 0;
+}
+
+/* no padding right */
+/* line 141, ../sass/_settings.scss */
+.dp {
+  padding: 0 30px;
+}
+
+/* double padding */
+/* line 142, ../sass/_settings.scss */
+.nm {
+  margin: 0;
+}
+
+/* no margin */
+/* line 143, ../sass/_settings.scss */
+.nm-b {
+  margin-bottom: 0;
+}
+
+/* no margin bottom */
+/* line 144, ../sass/_settings.scss */
+.p_small {
+  padding: 5px;
+}
+
+/* Общий сброс базовых настроек */
+/* line 147, ../sass/_settings.scss */
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+/* Сообщение об устаревшем броузере */
+/* line 150, ../sass/_settings.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+@font-face {
+  font-family: "CirceExtraLight";
+  src: url("../fonts/CirceExtraLight/CirceExtraLight.eot");
+  src: url("../fonts/CirceExtraLight/CirceExtraLight.eot") format("embedded-opentype"), url("../fonts/CirceExtraLight/CirceExtraLight.woff2") format("woff2"), url("../fonts/CirceExtraLight/CirceExtraLight.woff") format("woff"), url("../fonts/CirceExtraLight/CirceExtraLight.ttf") format("truetype"), url("../fonts/CirceExtraLight/CirceExtraLight.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "CirceExtraLight";
+    src: url("../fonts/CirceExtraLight/CirceExtraLight.svg#CirceExtraLight") format("svg");
+  }
+}
+@font-face {
+  font-family: "CirceLight";
+  src: url("../fonts/CirceLight/CirceLight.eot");
+  src: url("../fonts/CirceLight/CirceLight.eot") format("embedded-opentype"), url("../fonts/CirceLight/CirceLight.woff2") format("woff2"), url("../fonts/CirceLight/CirceLight.woff") format("woff"), url("../fonts/CirceLight/CirceLight.ttf") format("truetype"), url("../fonts/CirceLight/CirceLight.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "CirceLight";
+    src: url("../fonts/CirceLight/CirceLight.svg#CirceLight") format("svg");
+  }
+}
+@font-face {
+  font-family: "CirceRegular";
+  src: url("../fonts/CirceRegular/CirceRegular.eot");
+  src: url("../fonts/CirceRegular/CirceRegular.eot") format("embedded-opentype"), url("../fonts/CirceRegular/CirceRegular.woff2") format("woff2"), url("../fonts/CirceRegular/CirceRegular.woff") format("woff"), url("../fonts/CirceRegular/CirceRegular.ttf") format("truetype"), url("../fonts/CirceRegular/CirceRegular.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "CirceRegular";
+    src: url("../fonts/CirceRegular/CirceRegular.svg#CirceRegular") format("svg");
+  }
+}
+@font-face {
+  font-family: "CirceBold";
+  src: url("../fonts/CirceBold/CirceBold.eot");
+  src: url("../fonts/CirceBold/CirceBold.eot") format("embedded-opentype"), url("../fonts/CirceBold/CirceBold.woff2") format("woff2"), url("../fonts/CirceBold/CirceBold.woff") format("woff"), url("../fonts/CirceBold/CirceBold.ttf") format("truetype"), url("../fonts/CirceBold/CirceBold.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "CirceBold";
+    src: url("../fonts/CirceBold/CirceBold.svg#CirceBold") format("svg");
+  }
+}
+/* Подключаем компасс */
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Включаем спрайты и загружаем иконки */
+/* Импортируем гугл-шрифты */
+/* Импортируем локальные шрифты */
+@font-face {
+  font-family: DroidSerifRegular;
+  src: url("../fonts/DroidSerifRegular/DroidSerifRegular.eot");
+  src: url("../fonts/DroidSerifRegular/DroidSerifRegular.eot") format("embedded-opentype"), url("../fonts/DroidSerifRegular/DroidSerifRegular.woff2") format("woff2"), url("../fonts/DroidSerifRegular/DroidSerifRegular.woff") format("woff"), url("../fonts/DroidSerifRegular/DroidSerifRegular.ttf") format("truetype"), url("../fonts/DroidSerifRegular/DroidSerifRegular.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: DroidSerifRegular;
+    src: url("../fonts/DroidSerifRegular/DroidSerifRegular.svg#DroidSerifRegular") format("svg");
+  }
+}
+@font-face {
+  font-family: RalewayExtraBold;
+  src: url("../fonts/RalewayExtraBold/RalewayExtraBold.eot");
+  src: url("../fonts/RalewayExtraBold/RalewayExtraBold.eot") format("embedded-opentype"), url("../fonts/RalewayExtraBold/RalewayExtraBold.woff2") format("woff2"), url("../fonts/RalewayExtraBold/RalewayExtraBold.woff") format("woff"), url("../fonts/RalewayExtraBold/RalewayExtraBold.ttf") format("truetype"), url("../fonts/RalewayExtraBold/RalewayExtraBold.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: RalewayExtraBold;
+    src: url("../fonts/RalewayExtraBold/RalewayExtraBold.svg#RalewayExtraBold") format("svg");
+  }
+}
+/* line 69, ../sass/_settings.scss */
+html {
+  /* height hack */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+/* line 76, ../sass/_settings.scss */
+body {
+  /* height hack */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* устанавливаем оптимальный вертикальный ритм */
+  /* сглаживание шрифтов в вебките */
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* line 89, ../sass/_settings.scss */
+body.onload {
+  overflow: hidden;
+}
+
+/* line 90, ../sass/_settings.scss */
+button, select {
+  -webkit-appearance: none;
+}
+
+/* выделение текста */
+/* line 93, ../sass/_settings.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 98, ../sass/_settings.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 103, ../sass/_settings.scss */
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* В дополнение от Bootstrap, <p> (параграфы) получают нижний отступ в половину калькулируемой высоты строки (изначально 10px) */
+/* line 106, ../sass/_settings.scss */
+p {
+  margin-bottom: 0;
+  /* для правильного вертикального ритма */
+}
+
+/* <p> в виде заголовка */
+/* line 113, ../sass/_settings.scss */
+a {
+  text-decoration: underline;
+}
+
+/* line 120, ../sass/_settings.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/* line 127, ../sass/_settings.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 133, ../sass/_settings.scss */
+textarea {
+  resize: vertical;
+}
+
+/* System */
+/* line 138, ../sass/_settings.scss */
+.np {
+  padding: 0;
+}
+
+/* no padding */
+/* line 139, ../sass/_settings.scss */
+.np-l {
+  padding-left: 0;
+}
+
+/* no padding left */
+/* line 140, ../sass/_settings.scss */
+.np-r {
+  padding-right: 0;
+}
+
+/* no padding right */
+/* line 141, ../sass/_settings.scss */
+.dp {
+  padding: 0 30px;
+}
+
+/* double padding */
+/* line 142, ../sass/_settings.scss */
+.nm {
+  margin: 0;
+}
+
+/* no margin */
+/* line 143, ../sass/_settings.scss */
+.nm-b {
+  margin-bottom: 0;
+}
+
+/* no margin bottom */
+/* line 144, ../sass/_settings.scss */
+.p_small {
+  padding: 5px;
+}
+
+/* Общий сброс базовых настроек */
+/* line 147, ../sass/_settings.scss */
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+/* Сообщение об устаревшем броузере */
+/* line 150, ../sass/_settings.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Включаем спрайты и загружаем иконки */
+/* line 56, icons/*.png */
+.icons-sprite, .icons-addWords, .icons-goBack-arrow {
+  background-image: url('../img/icons-sf53b8e5728.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-addWords {
+  background-position: 0 0;
+}
+
+/* line 84, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-goBack-arrow {
+  background-position: 0 -37px;
+}
+
+/* line 11, ../sass/_sprite.scss */
+.icons-addWords {
+  display: inline-block;
+  position: relative;
+  width: 44px;
+  height: 37px;
+  vertical-align: top;
+  display: -moz-inline-stack;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 11, ../sass/_sprite.scss */
+.icons-goBack-arrow {
+  display: inline-block;
+  position: relative;
+  width: 36px;
+  height: 40px;
+  vertical-align: top;
+  display: -moz-inline-stack;
+  zoom: 1;
+  *display: inline;
+}
+
+/* Подключаем компасс */
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Включаем спрайты и загружаем иконки */
+/* Импортируем гугл-шрифты */
+/* Импортируем локальные шрифты */
+@font-face {
+  font-family: DroidSerifRegular;
+  src: url("../fonts/DroidSerifRegular/DroidSerifRegular.eot");
+  src: url("../fonts/DroidSerifRegular/DroidSerifRegular.eot") format("embedded-opentype"), url("../fonts/DroidSerifRegular/DroidSerifRegular.woff2") format("woff2"), url("../fonts/DroidSerifRegular/DroidSerifRegular.woff") format("woff"), url("../fonts/DroidSerifRegular/DroidSerifRegular.ttf") format("truetype"), url("../fonts/DroidSerifRegular/DroidSerifRegular.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: DroidSerifRegular;
+    src: url("../fonts/DroidSerifRegular/DroidSerifRegular.svg#DroidSerifRegular") format("svg");
+  }
+}
+@font-face {
+  font-family: RalewayExtraBold;
+  src: url("../fonts/RalewayExtraBold/RalewayExtraBold.eot");
+  src: url("../fonts/RalewayExtraBold/RalewayExtraBold.eot") format("embedded-opentype"), url("../fonts/RalewayExtraBold/RalewayExtraBold.woff2") format("woff2"), url("../fonts/RalewayExtraBold/RalewayExtraBold.woff") format("woff"), url("../fonts/RalewayExtraBold/RalewayExtraBold.ttf") format("truetype"), url("../fonts/RalewayExtraBold/RalewayExtraBold.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: RalewayExtraBold;
+    src: url("../fonts/RalewayExtraBold/RalewayExtraBold.svg#RalewayExtraBold") format("svg");
+  }
+}
+/* line 69, ../sass/_settings.scss */
+html {
+  /* height hack */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+/* line 76, ../sass/_settings.scss */
+body {
+  /* height hack */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* устанавливаем оптимальный вертикальный ритм */
+  /* сглаживание шрифтов в вебките */
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* line 89, ../sass/_settings.scss */
+body.onload {
+  overflow: hidden;
+}
+
+/* line 90, ../sass/_settings.scss */
+button, select {
+  -webkit-appearance: none;
+}
+
+/* выделение текста */
+/* line 93, ../sass/_settings.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 98, ../sass/_settings.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 103, ../sass/_settings.scss */
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* В дополнение от Bootstrap, <p> (параграфы) получают нижний отступ в половину калькулируемой высоты строки (изначально 10px) */
+/* line 106, ../sass/_settings.scss */
+p {
+  margin-bottom: 0;
+  /* для правильного вертикального ритма */
+}
+
+/* <p> в виде заголовка */
+/* line 113, ../sass/_settings.scss */
+a {
+  text-decoration: underline;
+}
+
+/* line 120, ../sass/_settings.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/* line 127, ../sass/_settings.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 133, ../sass/_settings.scss */
+textarea {
+  resize: vertical;
+}
+
+/* System */
+/* line 138, ../sass/_settings.scss */
+.np {
+  padding: 0;
+}
+
+/* no padding */
+/* line 139, ../sass/_settings.scss */
+.np-l {
+  padding-left: 0;
+}
+
+/* no padding left */
+/* line 140, ../sass/_settings.scss */
+.np-r {
+  padding-right: 0;
+}
+
+/* no padding right */
+/* line 141, ../sass/_settings.scss */
+.dp {
+  padding: 0 30px;
+}
+
+/* double padding */
+/* line 142, ../sass/_settings.scss */
+.nm {
+  margin: 0;
+}
+
+/* no margin */
+/* line 143, ../sass/_settings.scss */
+.nm-b {
+  margin-bottom: 0;
+}
+
+/* no margin bottom */
+/* line 144, ../sass/_settings.scss */
+.p_small {
+  padding: 5px;
+}
+
+/* Общий сброс базовых настроек */
+/* line 147, ../sass/_settings.scss */
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+/* Сообщение об устаревшем броузере */
+/* line 150, ../sass/_settings.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Подключаем компасс */
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Включаем спрайты и загружаем иконки */
+/* Импортируем гугл-шрифты */
+/* Импортируем локальные шрифты */
+@font-face {
+  font-family: DroidSerifRegular;
+  src: url("../fonts/DroidSerifRegular/DroidSerifRegular.eot");
+  src: url("../fonts/DroidSerifRegular/DroidSerifRegular.eot") format("embedded-opentype"), url("../fonts/DroidSerifRegular/DroidSerifRegular.woff2") format("woff2"), url("../fonts/DroidSerifRegular/DroidSerifRegular.woff") format("woff"), url("../fonts/DroidSerifRegular/DroidSerifRegular.ttf") format("truetype"), url("../fonts/DroidSerifRegular/DroidSerifRegular.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: DroidSerifRegular;
+    src: url("../fonts/DroidSerifRegular/DroidSerifRegular.svg#DroidSerifRegular") format("svg");
+  }
+}
+@font-face {
+  font-family: RalewayExtraBold;
+  src: url("../fonts/RalewayExtraBold/RalewayExtraBold.eot");
+  src: url("../fonts/RalewayExtraBold/RalewayExtraBold.eot") format("embedded-opentype"), url("../fonts/RalewayExtraBold/RalewayExtraBold.woff2") format("woff2"), url("../fonts/RalewayExtraBold/RalewayExtraBold.woff") format("woff"), url("../fonts/RalewayExtraBold/RalewayExtraBold.ttf") format("truetype"), url("../fonts/RalewayExtraBold/RalewayExtraBold.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: RalewayExtraBold;
+    src: url("../fonts/RalewayExtraBold/RalewayExtraBold.svg#RalewayExtraBold") format("svg");
+  }
+}
+/* line 69, ../sass/_settings.scss */
+html {
+  /* height hack */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+/* line 76, ../sass/_settings.scss */
+body {
+  /* height hack */
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* устанавливаем оптимальный вертикальный ритм */
+  /* сглаживание шрифтов в вебките */
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* line 89, ../sass/_settings.scss */
+body.onload {
+  overflow: hidden;
+}
+
+/* line 90, ../sass/_settings.scss */
+button, select {
+  -webkit-appearance: none;
+}
+
+/* выделение текста */
+/* line 93, ../sass/_settings.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 98, ../sass/_settings.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 103, ../sass/_settings.scss */
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* В дополнение от Bootstrap, <p> (параграфы) получают нижний отступ в половину калькулируемой высоты строки (изначально 10px) */
+/* line 106, ../sass/_settings.scss */
+p {
+  margin-bottom: 0;
+  /* для правильного вертикального ритма */
+}
+
+/* <p> в виде заголовка */
+/* line 113, ../sass/_settings.scss */
+a {
+  text-decoration: underline;
+}
+
+/* line 120, ../sass/_settings.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/* line 127, ../sass/_settings.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 133, ../sass/_settings.scss */
+textarea {
+  resize: vertical;
+}
+
+/* System */
+/* line 138, ../sass/_settings.scss */
+.np {
+  padding: 0;
+}
+
+/* no padding */
+/* line 139, ../sass/_settings.scss */
+.np-l {
+  padding-left: 0;
+}
+
+/* no padding left */
+/* line 140, ../sass/_settings.scss */
+.np-r {
+  padding-right: 0;
+}
+
+/* no padding right */
+/* line 141, ../sass/_settings.scss */
+.dp {
+  padding: 0 30px;
+}
+
+/* double padding */
+/* line 142, ../sass/_settings.scss */
+.nm {
+  margin: 0;
+}
+
+/* no margin */
+/* line 143, ../sass/_settings.scss */
+.nm-b {
+  margin-bottom: 0;
+}
+
+/* no margin bottom */
+/* line 144, ../sass/_settings.scss */
+.p_small {
+  padding: 5px;
+}
+
+/* Общий сброс базовых настроек */
+/* line 147, ../sass/_settings.scss */
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+/* Сообщение об устаревшем броузере */
+/* line 150, ../sass/_settings.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+@font-face {
+  font-family: "CirceExtraLight";
+  src: url("../fonts/CirceExtraLight/CirceExtraLight.eot");
+  src: url("../fonts/CirceExtraLight/CirceExtraLight.eot") format("embedded-opentype"), url("../fonts/CirceExtraLight/CirceExtraLight.woff2") format("woff2"), url("../fonts/CirceExtraLight/CirceExtraLight.woff") format("woff"), url("../fonts/CirceExtraLight/CirceExtraLight.ttf") format("truetype"), url("../fonts/CirceExtraLight/CirceExtraLight.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "CirceExtraLight";
+    src: url("../fonts/CirceExtraLight/CirceExtraLight.svg#CirceExtraLight") format("svg");
+  }
+}
+@font-face {
+  font-family: "CirceLight";
+  src: url("../fonts/CirceLight/CirceLight.eot");
+  src: url("../fonts/CirceLight/CirceLight.eot") format("embedded-opentype"), url("../fonts/CirceLight/CirceLight.woff2") format("woff2"), url("../fonts/CirceLight/CirceLight.woff") format("woff"), url("../fonts/CirceLight/CirceLight.ttf") format("truetype"), url("../fonts/CirceLight/CirceLight.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "CirceLight";
+    src: url("../fonts/CirceLight/CirceLight.svg#CirceLight") format("svg");
+  }
+}
+@font-face {
+  font-family: "CirceRegular";
+  src: url("../fonts/CirceRegular/CirceRegular.eot");
+  src: url("../fonts/CirceRegular/CirceRegular.eot") format("embedded-opentype"), url("../fonts/CirceRegular/CirceRegular.woff2") format("woff2"), url("../fonts/CirceRegular/CirceRegular.woff") format("woff"), url("../fonts/CirceRegular/CirceRegular.ttf") format("truetype"), url("../fonts/CirceRegular/CirceRegular.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "CirceRegular";
+    src: url("../fonts/CirceRegular/CirceRegular.svg#CirceRegular") format("svg");
+  }
+}
+@font-face {
+  font-family: "CirceBold";
+  src: url("../fonts/CirceBold/CirceBold.eot");
+  src: url("../fonts/CirceBold/CirceBold.eot") format("embedded-opentype"), url("../fonts/CirceBold/CirceBold.woff2") format("woff2"), url("../fonts/CirceBold/CirceBold.woff") format("woff"), url("../fonts/CirceBold/CirceBold.ttf") format("truetype"), url("../fonts/CirceBold/CirceBold.svg#TTDrugsThin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "CirceBold";
+    src: url("../fonts/CirceBold/CirceBold.svg#CirceBold") format("svg");
+  }
+}
+/* line 4, ../sass/_moduls.scss */
+.overlay-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: url("../img/overlay-bg.png") center 120px no-repeat;
+  background-size: 100%, auto;
+}
+
+/* line 14, ../sass/_moduls.scss */
+.wordsCounter, .intro, .main, .prizes {
+  position: relative;
+  z-index: 5;
+}
+
+/* line 16, ../sass/_moduls.scss */
+.wordsCounter {
+  text-align: center;
+  width: 812px;
+  margin: 0 auto;
+  padding-bottom: 53px;
+}
+/* line 20, ../sass/_moduls.scss */
+.wordsCounter:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #ffffff;
+}
+/* line 26, ../sass/_moduls.scss */
+.wordsCounter .counter {
+  color: #ffffff;
+  font-size: 76.5px;
+  line-height: 104px;
+  text-align: center;
+  display: inline-block;
+  height: 94px;
+  margin: 0 auto 3px;
+  padding: 0 89px;
+  border: 3px solid #ffffff;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+}
+/* line 32, ../sass/_moduls.scss */
+.wordsCounter p {
+  color: #ffffff;
+  font-size: 22.5px;
+  text-align: center;
+  line-height: 27px;
+  margin-bottom: 48px;
+}
+/* line 37, ../sass/_moduls.scss */
+.wordsCounter .addWords {
+  color: #ffffff;
+  font-size: 29.5px;
+  line-height: 60px;
+  letter-spacing: 0.4px;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  width: 325px;
+  height: 58px;
+  padding-left: 90px;
+  position: relative;
+  background: #f94d15;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+/* line 43, ../sass/_moduls.scss */
+.wordsCounter .addWords:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 54px;
+  left: 74px;
+  top: 2px;
+  background: #ffffff;
+}
+/* line 49, ../sass/_moduls.scss */
+.wordsCounter .addWords i {
+  position: absolute;
+  left: 18px;
+  top: 12px;
+}
+
+/* line 55, ../sass/_moduls.scss */
+.intro {
+  padding: 28px 40px;
+  background: rgba(249, 77, 21, 0.84);
+}
+/* line 59, ../sass/_moduls.scss */
+.intro h1, .intro p {
+  color: #ffffff;
+}
+/* line 61, ../sass/_moduls.scss */
+.intro h1 {
+  font-family: "CirceBold", sans-serif;
+  font-size: 39.48px;
+  line-height: 47px;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+/* line 66, ../sass/_moduls.scss */
+.intro p {
+  font-family: "CirceLight", sans-serif;
+  font-size: 19.3px;
+  line-height: 23px;
+  letter-spacing: -0.05px;
+}
+
+/* line 73, ../sass/_moduls.scss */
+.main .participate {
+  color: #ffffff;
+  font-size: 29.5px;
+  line-height: 60px;
+  letter-spacing: 0.4px;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto 14px;
+  width: 295px;
+  height: 58px;
+  padding-left: 90px;
+  position: relative;
+  background: #f94d15;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+/* line 79, ../sass/_moduls.scss */
+.main .participate:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 54px;
+  left: 74px;
+  top: 2px;
+  background: #ffffff;
+}
+/* line 85, ../sass/_moduls.scss */
+.main .participate i {
+  position: absolute;
+  left: 18px;
+  top: 12px;
+}
+/* line 89, ../sass/_moduls.scss */
+.main .showSupp {
+  color: #f94d15;
+  font-family: "CirceLight", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: -0.05px;
+  text-align: center;
+  display: block;
+  width: 200px;
+  margin: 0 auto 36px;
+}
+/* line 93, ../sass/_moduls.scss */
+.main .showSupp:hover {
+  text-decoration: none;
+}
+/* line 96, ../sass/_moduls.scss */
+.main p {
+  color: #5b7e94;
+  font-family: "CirceLight", sans-serif;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0.02px;
+  text-align: center;
+  margin-bottom: 26px;
+}
+/* line 100, ../sass/_moduls.scss */
+.main p:last-child {
+  margin-bottom: 0;
+}
+/* line 102, ../sass/_moduls.scss */
+.main p span {
+  font-family: "CirceBold", sans-serif;
+}
+
+/* line 110, ../sass/_moduls.scss */
+.prizes p {
+  color: #5b7e94;
+  font-size: 18.19px;
+  text-align: center;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+/* line 115, ../sass/_moduls.scss */
+.prizes ul {
+  text-align: center;
+}
+/* line 117, ../sass/_moduls.scss */
+.prizes ul li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 8px;
+}
+/* line 121, ../sass/_moduls.scss */
+.prizes ul li figure > div {
+  width: 159px;
+  height: 159px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 21px;
+  background: #ffffff;
+  border: solid 3px #f94d15;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 125, ../sass/_moduls.scss */
+.prizes ul li figure > div img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 131, ../sass/_moduls.scss */
+.prizes ul li figure figcaption {
+  color: #5b7e94;
+  font-size: 10.91px;
+  line-height: 13px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+/* line 140, ../sass/_moduls.scss */
+.goBackButton {
+  color: #f94d15;
+  font-size: 40px;
+  text-align: center;
+  line-height: 62px;
+  display: block;
+  width: 83px;
+  height: 83px;
+  position: absolute;
+  left: 18px;
+  top: -118px;
+  background: #ffffff;
+  border: solid 12px #f94d15;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* line 146, ../sass/_moduls.scss */
+.goBackButton i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 150, ../sass/_moduls.scss */
+.mainScreen-popup {
+  display: none;
+  width: 654px;
+  position: relative;
+  padding: 25px 0 28px;
+  margin-top: 126px;
+  background: #5b7e94;
+  -moz-border-radius: 31px;
+  -webkit-border-radius: 31px;
+  border-radius: 31px;
+}
+/* line 154, ../sass/_moduls.scss */
+.mainScreen-popup .upDownButtons {
+  position: absolute;
+  left: 98px;
+  top: 17px;
+}
+/* line 156, ../sass/_moduls.scss */
+.mainScreen-popup .upDownButtons div {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border: solid 5px #ffffff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 160, ../sass/_moduls.scss */
+.mainScreen-popup .upDownButtons div.upButton {
+  margin-bottom: 5px;
+}
+/* line 163, ../sass/_moduls.scss */
+.mainScreen-popup p {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.05px;
+  margin-left: 168px;
+}
+
+/* line 169, ../sass/_moduls.scss */
+.approveMessage-popup {
+  display: none;
+  width: 967px;
+  position: relative;
+  padding: 61px 0 44px;
+  margin-top: 126px;
+  background: url("../img/approveMessage-bg.png") 0 129px no-repeat;
+  border: solid 13px #ffffff;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+}
+/* line 174, ../sass/_moduls.scss */
+.approveMessage-popup h3, .approveMessage-popup p {
+  color: #ffffff;
+}
+/* line 176, ../sass/_moduls.scss */
+.approveMessage-popup h3 {
+  font-family: "CirceBold", sans-serif;
+  font-size: 27.8px;
+  line-height: 33px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 94px;
+}
+/* line 181, ../sass/_moduls.scss */
+.approveMessage-popup p {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+/* line 186, ../sass/_moduls.scss */
+.approveMessage-popup ul {
+  text-align: center;
+  padding-top: 33px;
+  margin: 0 1px;
+  position: relative;
+}
+/* line 190, ../sass/_moduls.scss */
+.approveMessage-popup ul:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: -9px;
+  background: #ffffff;
+}
+/* line 196, ../sass/_moduls.scss */
+.approveMessage-popup ul li {
+  display: inline-block;
+}
+/* line 197, ../sass/_moduls.scss */
+.approveMessage-popup ul li a {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 63px;
+  letter-spacing: 0.55px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 0 2px;
+  width: 303px;
+  height: 59px;
+  position: relative;
+  background: #f94d15;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 202, ../sass/_moduls.scss */
+.approveMessage-popup ul li a:hover {
+  color: #f94d15;
+  background: #ffffff;
+}
+
+/* line 211, ../sass/_moduls.scss */
+.login-popup {
+  display: none;
+  width: 967px;
+  position: relative;
+  padding: 53px 0;
+  margin-top: 126px;
+  border: solid 13px #ffffff;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+}
+/* line 216, ../sass/_moduls.scss */
+.login-popup h3 {
+  color: #ffffff;
+  font-family: "CirceBold", sans-serif;
+  font-size: 27.8px;
+  line-height: 33px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+/* line 221, ../sass/_moduls.scss */
+.login-popup ul.socials {
+  text-align: center;
+}
+/* line 223, ../sass/_moduls.scss */
+.login-popup ul.socials li {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: top;
+}
+/* line 225, ../sass/_moduls.scss */
+.login-popup ul.socials li a {
+  color: #ffffff;
+  font-size: 52px;
+  text-decoration: none;
+  line-height: 74px;
+  display: block;
+  width: 80px;
+  height: 80px;
+  border: solid 7px #ffffff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 230, ../sass/_moduls.scss */
+.login-popup ul.socials li a.fb {
+  font-size: 61px;
+  padding-top: 10px;
+}
+/* line 231, ../sass/_moduls.scss */
+.login-popup ul.socials li a.tw {
+  padding-left: 5px;
+  padding-top: 2px;
+}
+/* line 233, ../sass/_moduls.scss */
+.login-popup ul.socials li a.vk {
+  padding-right: 4px;
+}
+
+/* line 239, ../sass/_moduls.scss */
+.sendMessage-popup {
+  display: none;
+  width: 967px;
+  position: relative;
+  padding: 41px 1px 45px;
+  margin-top: 126px;
+  background: url("../img/sendMessage-bg.png") -4px 318px no-repeat;
+  border: solid 13px #ffffff;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+}
+/* line 244, ../sass/_moduls.scss */
+.sendMessage-popup h3 {
+  color: #ffffff;
+  font-size: 24.8px;
+  font-family: "CirceBold", sans-serif;
+  line-height: 30px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 99px;
+  top: 9px;
+}
+/* line 248, ../sass/_moduls.scss */
+.sendMessage-popup input {
+  display: none;
+}
+/* line 252, ../sass/_moduls.scss */
+.sendMessage-popup label {
+  color: #ffffff;
+  font-family: "CirceBold", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  position: absolute;
+  left: 99px;
+  top: 85px;
+  padding-left: 25px;
+  cursor: pointer;
+}
+/* line 257, ../sass/_moduls.scss */
+.sendMessage-popup label:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 17px;
+  height: 17px;
+  border: solid 1px #ffffff;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+}
+/* line 264, ../sass/_moduls.scss */
+.sendMessage-popup input:checked + label:before {
+  background: url("../img/popup-check.png") center center no-repeat;
+}
+/* line 266, ../sass/_moduls.scss */
+.sendMessage-popup textarea {
+  color: #8b8b8b;
+  font-family: "CirceLight", sans-serif;
+  width: 100%;
+  background: #ffffff;
+  border: solid 3px #f94d15;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  resize: none;
+}
+/* line 273, ../sass/_moduls.scss */
+.sendMessage-popup .block1 {
+  position: relative;
+  padding-bottom: 9px;
+  margin-bottom: 17px;
+  padding-left: 376px;
+  padding-right: 88px;
+}
+/* line 275, ../sass/_moduls.scss */
+.sendMessage-popup .block1 textarea {
+  font-size: 24.8px;
+  height: 95px;
+  padding: 21px;
+}
+/* line 278, ../sass/_moduls.scss */
+.sendMessage-popup .block1 textarea::-webkit-input-placeholder {
+  text-transform: uppercase;
+  opacity: 0.54;
+}
+/* line 279, ../sass/_moduls.scss */
+.sendMessage-popup .block1 textarea::-moz-placeholder {
+  text-transform: uppercase;
+  opacity: 0.54;
+}
+/* line 280, ../sass/_moduls.scss */
+.sendMessage-popup .block1 textarea:-moz-placeholder {
+  text-transform: uppercase;
+  opacity: 0.54;
+}
+/* line 281, ../sass/_moduls.scss */
+.sendMessage-popup .block1 textarea:-ms-input-placeholder {
+  text-transform: uppercase;
+  opacity: 0.54;
+}
+/* line 284, ../sass/_moduls.scss */
+.sendMessage-popup .block1:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #ffffff;
+}
+/* line 291, ../sass/_moduls.scss */
+.sendMessage-popup .block2 {
+  position: relative;
+  padding-left: 376px;
+  padding-right: 88px;
+}
+/* line 293, ../sass/_moduls.scss */
+.sendMessage-popup .block2 textarea {
+  font-size: 19.39px;
+  letter-spacing: 0.1px;
+  height: 337px;
+  padding: 27px 20px;
+  margin-bottom: 23px;
+}
+/* line 296, ../sass/_moduls.scss */
+.sendMessage-popup .block2 textarea::-webkit-input-placeholder {
+  opacity: 0.54;
+}
+/* line 297, ../sass/_moduls.scss */
+.sendMessage-popup .block2 textarea::-moz-placeholder {
+  opacity: 0.54;
+}
+/* line 298, ../sass/_moduls.scss */
+.sendMessage-popup .block2 textarea:-moz-placeholder {
+  opacity: 0.54;
+}
+/* line 299, ../sass/_moduls.scss */
+.sendMessage-popup .block2 textarea:-ms-input-placeholder {
+  opacity: 0.54;
+}
+/* line 301, ../sass/_moduls.scss */
+.sendMessage-popup .block2 p {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05px;
+  text-align: center;
+}
+/* line 303, ../sass/_moduls.scss */
+.sendMessage-popup .block2 p a {
+  color: #ffffff;
+}
+/* line 305, ../sass/_moduls.scss */
+.sendMessage-popup .block2 p a:hover {
+  text-decoration: none;
+}
+/* line 309, ../sass/_moduls.scss */
+.sendMessage-popup button {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 61px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  display: block;
+  margin: 0 auto 29px;
+  width: 303px;
+  height: 59px;
+  background: #f94d15;
+  border: none;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 314, ../sass/_moduls.scss */
+.sendMessage-popup button:hover {
+  color: #f94d15;
+  background: #ffffff;
+}
+
+/* line 322, ../sass/_moduls.scss */
+.rules-popup {
+  display: none;
+  width: 966px;
+  max-height: 923px;
+  position: relative;
+  padding: 43px 15px 85px;
+  margin-top: 126px;
+  border: solid 13px #ffffff;
+  -moz-border-radius: 28px;
+  -webkit-border-radius: 28px;
+  border-radius: 28px;
+}
+/* line 327, ../sass/_moduls.scss */
+.rules-popup h3 {
+  color: #ffffff;
+  font-size: 27.8px;
+  font-family: "CirceBold", sans-serif;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 73px;
+}
+/* line 332, ../sass/_moduls.scss */
+.rules-popup > div {
+  height: 666px;
+  overflow-y: auto;
+  margin: 0 20px 0 54px;
+  padding-right: 40px;
+}
+/* line 335, ../sass/_moduls.scss */
+.rules-popup > div::-webkit-scrollbar {
+  width: 1px;
+  background: #ffffff;
+}
+/* line 339, ../sass/_moduls.scss */
+.rules-popup > div::-webkit-scrollbar-thumb {
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 343, ../sass/_moduls.scss */
+.rules-popup > div p {
+  color: #ffffff;
+  font-family: "CirceLight", sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.02px;
+  line-height: 21px;
+}
+
+/* line 349, ../sass/_moduls.scss */
+.message-popup {
+  text-align: center;
+  display: none;
+  max-height: 342px;
+  width: 529px;
+  margin-top: 126px;
+}
+/* line 352, ../sass/_moduls.scss */
+.message-popup h3 {
+  color: #ffffff;
+  font-size: 43.97px;
+  max-width: 406px;
+  display: inline-block;
+  margin: 0 auto 16px;
+  padding: 19px 31px;
+  background: #f94d15;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+}
+/* line 357, ../sass/_moduls.scss */
+.message-popup > div {
+  text-align: left;
+  position: relative;
+  padding: 35px 59px 10px;
+  background: #f94d15;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+}
+/* line 362, ../sass/_moduls.scss */
+.message-popup > div p {
+  color: #ffffff;
+  font-size: 21px;
+  font-family: "CirceLight", sans-serif;
+  letter-spacing: -0.25px;
+  line-height: 26px;
+  margin-bottom: 22px;
+}
+/* line 367, ../sass/_moduls.scss */
+.message-popup > div a {
+  color: #ffffff;
+  font-size: 33.06px;
+  line-height: 21px;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  right: 11px;
+  top: 9px;
+  display: block;
+  height: 31px;
+  width: 31px;
+  padding-top: 4px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border: solid 3px #ffffff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 376, ../sass/_moduls.scss */
+.b-modal {
+  background: rgba(91, 126, 148, 0.92) !important;
+  opacity: 1 !important;
+}
+
+/* line 6, ../sass/_style.scss */
+body {
+  font-family: "CirceRegular", sans-serif;
+  background: #578daf;
+}
+
+/* line 8, ../sass/_style.scss */
+.app {
+  position: relative;
+  overflow: hidden;
+  background: url("../img/app-background-main.png") center 0 no-repeat;
+  background-size: cover;
+}
+/* line 11, ../sass/_style.scss */
+.app.introScreen {
+  background: #ffffff;
+}
+/* line 13, ../sass/_style.scss */
+.app .flyBall {
+  position: absolute;
+  right: 247px;
+  bottom: -100px;
+  z-index: 10002;
+}
+/* line 17, ../sass/_style.scss */
+.app .wr-header {
+  position: relative;
+  padding: 37px 0 40px;
+  position: relative;
+  z-index: 10001;
+  background: #ffffff url("../img/header-shadow.png") 113px 0 no-repeat;
+}
+/* line 21, ../sass/_style.scss */
+.app .wr-header .header-logo {
+  color: #6f8ea1;
+  font-size: 25.3px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 170px;
+  position: relative;
+  top: 1px;
+}
+/* line 26, ../sass/_style.scss */
+.app .wr-header .header-partners {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  float: right;
+}
+/* line 29, ../sass/_style.scss */
+.app .wr-header .header-partners:before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 66px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  background: #4181a9;
+}
+/* line 35, ../sass/_style.scss */
+.app .wr-header .header-partners a {
+  position: relative;
+  display: inline-block;
+}
+/* line 38, ../sass/_style.scss */
+.app .wr-header .header-partners a:first-child {
+  margin-left: 74px;
+  display: inline-block;
+}
+/* line 41, ../sass/_style.scss */
+.app .wr-header .header-partners a:first-child:after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 62px;
+  position: absolute;
+  right: -18px;
+  top: 8px;
+  background: #4181a9;
+}
+/* line 48, ../sass/_style.scss */
+.app .wr-header .header-partners a:last-child {
+  margin-left: 33px;
+}
+/* line 50, ../sass/_style.scss */
+.app .wr-header .header-partners a p {
+  color: #5b7e94;
+  font-family: "CirceLight", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.25px;
+  position: absolute;
+  left: 0;
+  bottom: -27px;
+}
+/* line 57, ../sass/_style.scss */
+.app .wr-header .header-flag {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 62, ../sass/_style.scss */
+.app .wr-suppWords {
+  height: 1270px;
+  padding-top: 61px;
+}
+/* line 67, ../sass/_style.scss */
+.app .wr-firstScreen-intro {
+  padding: 64px 0 111px;
+  background: url("../img/app-background-firstScreen.png") center 0 no-repeat;
+  background-size: cover;
+}
+/* line 72, ../sass/_style.scss */
+.app .wr-firstScreen-main {
+  padding: 41px 0 58px;
+  background: #ffffff url("../img/app-background-firstScreen-main.png") center 62px no-repeat;
+  border-bottom: solid 1px #5b7e94;
+}
+/* line 77, ../sass/_style.scss */
+.app .wr-firstScreen-prizes {
+  padding: 20px 0 55px;
+  background: #f7f9fa;
+}
+/* line 83, ../sass/_style.scss */
+.app .wr-footer {
+  padding-bottom: 36px;
+  padding-top: 56px;
+  position: relative;
+  z-index: 10001;
+  background: #578daf;
+}
+/* line 89, ../sass/_style.scss */
+.app .wr-footer .footer .footer-logo {
+  float: left;
+  margin-left: 39px;
+}
+/* line 91, ../sass/_style.scss */
+.app .wr-footer .footer .footer-logo a {
+  display: inline-block;
+  position: relative;
+  padding-right: 17px;
+  margin-right: 16px;
+}
+/* line 94, ../sass/_style.scss */
+.app .wr-footer .footer .footer-logo a:last-child {
+  margin-right: 0;
+}
+/* line 96, ../sass/_style.scss */
+.app .wr-footer .footer .footer-logo a:after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 31px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #ffffff;
+  opacity: 0.38;
+}
+/* line 103, ../sass/_style.scss */
+.app .wr-footer .footer .footer-logo a p {
+  color: #ffffff;
+  font-family: "CirceLight", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.1px;
+  position: absolute;
+  left: -1px;
+  bottom: -18px;
+}
+/* line 109, ../sass/_style.scss */
+.app .wr-footer .footer .footer-info {
+  display: inline-block;
+  width: 50%;
+  margin-left: 42px;
+  margin-top: 5px;
+}
+/* line 111, ../sass/_style.scss */
+.app .wr-footer .footer .footer-info p {
+  color: #ffffff;
+  font-size: 13.8px;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+  opacity: 0.9;
+}
+/* line 116, ../sass/_style.scss */
+.app .wr-footer .footer .footer-info ul.footer-nav {
+  margin-bottom: 17px;
+}
+/* line 118, ../sass/_style.scss */
+.app .wr-footer .footer .footer-info ul.footer-nav li {
+  display: inline-block;
+  margin-right: 23px;
+}
+/* line 120, ../sass/_style.scss */
+.app .wr-footer .footer .footer-info ul.footer-nav li:last-child {
+  margin-right: 0;
+}
+/* line 121, ../sass/_style.scss */
+.app .wr-footer .footer .footer-info ul.footer-nav li a {
+  color: #ffffff;
+  font-size: 15.2px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  position: relative;
+  opacity: 0.9;
+  cursor: pointer;
+}
+/* line 127, ../sass/_style.scss */
+.app .wr-footer .footer .footer-info ul.footer-nav li a:hover {
+  text-decoration: none;
+}
+/* line 131, ../sass/_style.scss */
+.app .wr-footer .footer .footer-info small {
+  color: #ffffff;
+  font-size: 8px;
+  line-height: 9px;
+  letter-spacing: 0.23px;
+  display: block;
+  opacity: 0.9;
+}
