@@ -1,18 +1,5 @@
 $(document).ready(function() {
-	$('.js-sendMessage-popup').click(function() {
-		$('.sendMessage-popup').bPopup();
-	});
-	$('.js-mainScreen-popup').bPopup({
-		modal: false,
-		autoClose: 5000
-	});
-	$('.js-participate').click(function() {
-		$('.js-login-popup').bPopup();
-	});
-	$('.js-rules-popup').click(function() {
-		$('.rules-popup').bPopup();
-	});
-
+	
 	// Get info from jSon
 	// $.getJSON( "titles.json", function(data) {
 
