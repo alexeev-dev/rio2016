@@ -82,9 +82,9 @@
             _this.state = 1;
           }
           if (_this.state === 2) {
-            opacity = 1.0 - (offset - _this.story_length) / 800;
-            if (opacity < 0.5) {
-              opacity = 0.5;
+            opacity = 1.0 - (offset - _this.story_length) / 1200;
+            if (opacity < 0.1) {
+              opacity = 0.1;
             }
             $(".phrases-window").css("top", _this.story_length + 100 - offset + "px");
             $(".phrases-window").css("opacity", opacity);
