@@ -3,21 +3,35 @@
 @import 'sprite';
 @import 'moduls';
 
-body {font-family:$CirceRegular; background: #578daf;}
+body {
+	font-family:$CirceRegular;
+	min-width: 1000px;
+	background: #578daf url('../img/app-background-main.jpg') center center no-repeat;	background-size: 100%;	background-attachment: fixed;
+}
+
+.preloader {background: #f94d15 url('../img/preloader.gif') center center no-repeat; position: fixed; width: 100%; height: 100%; z-index: 999999;}
 
 .app {
 	position: relative; overflow: hidden;
-	background: url('../img/app-background-main.png') center 0 no-repeat; background-size: cover;
 	&.introScreen {background: #ffffff;}
 
+	.header-flag {
+		position: fixed; left: 0; top: 0; width: 350px; z-index: 10;
+	}
+
 	.flyBall {
-		position: absolute; right: 15%; bottom: -100px; z-index: 10002;
+		position: absolute; right: 15%; bottom: -100px;
 
 		@media all and (max-height: 699px) {bottom: -181px;}
+		@media all and (max-width: 1199px) {display: none;}
+	}
+
+	.wr-header, .wr-suppWords, .wr-firstScreen, .wr-footer {
+		.container {min-width: 1000px;}
 	}
 
 	.wr-header {
-		position: fixed; left: 0; top: 0; width: 100%; padding: 19px 0 25px; z-index: 10001;
+		width: 100%; padding: 19px 0 25px; z-index: 2; position: relative; height: 97px;
 		background: #ffffff; //url('../img/header-shadow.png') 113px 0 no-repeat;
 
 		.header-logo {
@@ -57,15 +71,12 @@ body {font-family:$CirceRegular; background: #578daf;}
 				}
 			}
 		}
-
 		.header-flag {
-			position: absolute; left: 0; top: 0; width: 350px;
+			position: absolute;
 		}
 	}
 
-	.wr-suppWords {
-		margin-top: 97px;
-	}
+	.wr-suppWords {}
 
 	.wr-firstScreen {
 		&-intro {
@@ -85,7 +96,7 @@ body {font-family:$CirceRegular; background: #578daf;}
 	}
 
 	.wr-footer {
-		padding-bottom: 36px; padding-top: 56px; position: relative; z-index: 10001;
+		padding-bottom: 36px; padding-top: 56px; position: relative; z-index: 2;
 		background: #578daf;
 
 		.footer {

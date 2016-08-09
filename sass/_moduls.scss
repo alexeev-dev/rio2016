@@ -24,8 +24,8 @@
 		&.ball-1 {left: 50px; top: 400px;}
 		&.ball-2 {right: 0; top: 600px;}
 		&.ball-3 {right: 200px; top: 300px;}
-		&.ball-4 {left: 400px; top: 1200px;}
-		&.ball-5 {right: 150px; top: 2000px;}
+		&.ball-4 {left: 100px; top: 1200px;}
+		&.ball-5 {right: 75px; top: 2000px;}
 		&.ball-6 {left: 0; top: 2300px;}
 		&.ball-7 {left: -25px; top: 3500px;}
 		&.ball-8 {right: 150px; top: 3000px;}
@@ -62,7 +62,7 @@
 
 	.addWords {
 		color: #ffffff; font-size: 29.5px; line-height: 60px; letter-spacing: 0.4px; text-align: left; text-decoration: none;
-		display: block; margin: 0 auto; width: 325px; height: 58px; padding-left: 90px; position: relative;
+		display: block; margin: 0 auto; width: 325px; height: 58px; padding-left: 74px; position: relative;
 		background: #f94d15; @include border-radius(14px);
 		cursor: pointer;
 
@@ -74,6 +74,18 @@
 
 		i {
 			position: absolute; left: 18px; top: 12px;
+		}
+
+		span {
+			width: 100%; display: inline-block; padding-left: 26px; height: 58px;
+			@include border-radius(0 12px 12px 0);
+		}
+
+		&:hover {
+			span {
+				color: #f94d15;
+				background: #fff;
+			}
 		}
 	}
 }
@@ -98,7 +110,7 @@
 
 	.participate {
 		color: #ffffff; font-size: 29.5px; line-height: 60px; letter-spacing: 0.4px; text-align: left; text-decoration: none;
-		display: block; margin: 0 auto 14px; width: 295px; height: 58px; padding-left: 90px; position: relative;
+		display: block; margin: 0 auto 14px; width: 295px; height: 58px; padding-left: 72px; position: relative;
 		background: #f94d15; @include border-radius(14px);
 		cursor: pointer;
 
@@ -110,6 +122,19 @@
 
 		i {
 			position: absolute; left: 18px; top: 12px;
+		}
+
+		span {
+			line-height: 56px;
+			width: 100%; display: inline-block; padding-left: 24px; height: 58px;
+			border: solid 2px #f94d15; @include border-radius(0 12px 12px 0);
+		}
+
+		&:hover {
+			span {
+				color: #f94d15;
+				background: #fff;
+			}
 		}
 	}
 	.showSupp {
@@ -181,17 +206,22 @@
 // popups
 .goBackButton {
 	color: #f94d15; font-size: 40px; text-align: center; line-height: 62px;
-	display: block; width: 83px; height: 83px; position: absolute; left: 18px; top: -118px;
+	display: block; width: 83px; height: 83px; position: absolute; left: 18px; top: -118px; padding: 0; margin: 0;
 	background: #ffffff; border: solid 12px #f94d15; @include border-radius(50%);
 	cursor: pointer;
 	
 	i {
 		position: absolute; left: 50%; top: 50%; @include transform(translate(-50%, -50%));
 	}
+
+	&:hover {
+		background: #ffffff;
+		@include animation(movingGoBackButton 0.75s linear infinite);
+	}
 }
 .mainScreen-popup {
 	display: none;
-	width: 654px; position: relative; padding: 25px 0 28px; margin-top: 126px;
+	width: 654px; position: relative; padding: 25px 0 28px; margin-top: 110px;
 	background: #5b7e94; @include border-radius(31px);
 	.upDownButtons {
 		position: absolute; left: 98px; top: 17px;
@@ -209,8 +239,7 @@
 }
 
 .approveMessage-popup {
-	display: none;
-	width: 967px; position: relative; padding: 61px 0 44px; margin-top: 126px;
+	width: 967px; position: relative; padding: 61px 0 44px; margin-top: 110px;
 	background: url('../img/approveMessage-bg.png') 0 129px no-repeat; border: solid 13px #ffffff; @include border-radius(28px);
 
 	h3, p {color: #ffffff;}
@@ -251,7 +280,7 @@
 }
 
 .login-popup {
-	width: 967px; position: relative; padding: 53px 0; margin-top: 126px;
+	width: 967px; position: relative; padding: 53px 0; margin-top: 110px;
 	border: solid 13px #ffffff; @include border-radius(28px);
 
 	h3 {
@@ -261,8 +290,20 @@
 
 	ul.socials {
 		text-align: center;
+		width: 371px; margin: 0 auto;
+
+		&:hover {
+			li {
+				opacity: 0.7; @include transform(scale(0.9));
+			}
+		}
+
 		li {
 			display: inline-block; margin: 0 5px; vertical-align: top;
+			@include transition(all 0.25s ease-out);
+
+			&:hover {opacity: 1; @include transform(scale(1));}
+
 			a {
 				color: #ffffff; font-size: 52px; text-decoration: none; line-height: 74px;
 				display: block; width: 80px; height: 80px;
@@ -278,12 +319,11 @@
 }
 
 .sendMessage-popup {
-	display: none;
-	width: 967px; position: relative; padding: 41px 1px 45px; margin-top: 126px;
+	width: 967px; position: relative; padding: 41px 1px 45px; margin-top: 110px;
 	background: url('../img/sendMessage-bg.png') -4px 318px no-repeat; border: solid 13px #ffffff; @include border-radius(28px);
 
 	h3 {
-		color: #ffffff; font-size: 24.8px; font-family: $CirceBold; line-height: 30px; text-transform: uppercase;
+		color: #ffffff; font-size: 24.8px; font-family: $CirceBold; line-height: 30px; text-transform: uppercase; text-align: left;
 		position: absolute; left: 99px; top: 9px;
 	}
 	input {
@@ -309,6 +349,11 @@
 		width: 100%;
 		background: #ffffff; border: solid 3px #f94d15; @include border-radius(16px);
 		resize: none;
+
+		&.error {
+			border-color: red;
+			@include animation(errorValidate 2s linear 1);
+		}
 	}
 
 	.block1 {
@@ -320,6 +365,9 @@
 			&::-moz-placeholder {text-transform: uppercase; opacity: 0.54;}
 			&:-moz-placeholder {text-transform: uppercase; opacity: 0.54;}
 			&:-ms-input-placeholder {text-transform: uppercase; opacity: 0.54;}
+
+			@media all and (max-height: 699px) {height: 80px;}
+			@media all and (min-height: 700px) {height: 95px;}
 		}
 
 		&:after {
@@ -338,6 +386,9 @@
 			&::-moz-placeholder {opacity: 0.54;}
 			&:-moz-placeholder {opacity: 0.54;}
 			&:-ms-input-placeholder {opacity: 0.54;}
+
+			@media all and (max-height: 699px) {height: 150px;}
+			@media all and (min-height: 700px) {height: 376px;}
 		}
 		p {
 			color: #ffffff; font-size: 14px; line-height: 17px; letter-spacing: 0.05px; text-align: center;
@@ -349,7 +400,7 @@
 	}
 	button {
 		color: #ffffff; font-size: 20px; line-height: 61px; letter-spacing: 0.2px; text-align: center; 
-		display: block; margin: 0 auto 29px; width: 303px; height: 59px;
+		display: block; margin: 0 auto 29px; width: 303px; height: 59px; padding: 0;
 		background: #f94d15; border: none; @include border-radius(10px);
 
 		&:hover {
@@ -361,8 +412,11 @@
 }
 
 .rules-popup {
-	min-width: 800px; max-height: 600px; position: relative; padding: 43px 15px 85px; margin-top: 126px;
+	min-width: 800px; position: relative; padding: 43px 15px 85px; margin-top: 110px;
 	border: solid 13px #ffffff; @include border-radius(28px);
+
+	@media all and (max-height: 699px) {height: 500px;}
+	@media all and (min-height: 700px) {height: 700px;}
 
 	h3 {
 		color: #ffffff; font-size: 27.8px; font-family: $CirceBold; line-height: 30px; text-align: center; text-transform: uppercase;
@@ -370,15 +424,17 @@
 	}
 
 	& > div {
-		max-height: 321px; overflow-y: auto; margin: 0 20px 0 54px; padding-right: 40px;
+		height: 321px; overflow-y: auto; margin: 0 20px 0 54px; padding: 0 40px 0 0;
+
+		@media all and (max-height: 699px) {height: 272px;}
+		@media all and (min-height: 700px) {height: 440px;}
 
 		&::-webkit-scrollbar {
-			width: 1px;
+			width: 4px;
 			background: #ffffff;
 		}
 		&::-webkit-scrollbar-thumb {
-			width: 16px; height: 16px;
-			background: #ffffff; @include border-radius(50%);
+			background: #f94d15;
 		}
 		p {
 			color: #ffffff; font-family: $CirceLight; font-size: 18px; letter-spacing: -0.02px; line-height: 21px;
@@ -386,29 +442,91 @@
 	}
 }
 
-.message-popup {
-	text-align: center;
-	max-height: 342px; width: 529px;
-	h3 {
-		color: #ffffff; font-size: 43.97px;
-		max-width: 406px; display: inline-block; margin: 0 auto 16px; padding: 19px 31px;
-		background: #f94d15; @include border-radius(16px);
-	}
-	& > div {
-		text-align: left;
-		position: relative; padding: 35px 59px 10px;
-		background: #f94d15; @include border-radius(16px);
-
-		p {
-			color: #ffffff; font-size: 21px; font-family: $CirceLight; letter-spacing: -0.25px; line-height: 26px;
-			margin-bottom: 22px;
+#phrase-modal {
+	.md-content {
+		max-height: 342px; width: 529px;
+		h3 {
+			color: #ffffff; font-size: 43.97px;
+			display: inline-block; margin: 0 0 16px; padding: 19px 31px; position: relative; left: 50%; @include transform(translateX(-50%));
+			background: #f94d15; @include border-radius(16px);
 		}
+		& > div {
+			text-align: left;
+			position: relative; padding: 35px 59px 10px;
+			background: #f94d15; @include border-radius(16px);
 
-		a {
-			color: #ffffff; font-size: 33.06px; line-height: 21px; text-align: center; text-decoration: none;
-			position: absolute; right: 11px; top: 9px; display: block; height: 31px; width: 31px; padding-top: 4px; @include transform(rotate(45deg));
-			border: solid 3px #ffffff; @include border-radius(50%);
+			p {
+				color: #ffffff; font-size: 21px; font-family: $CirceLight; letter-spacing: -0.25px; line-height: 26px;
+				margin-bottom: 22px;
+			}
+
+			.md-close {
+				color: #ffffff; font-size: 33.06px; line-height: 24px; text-align: center; text-decoration: none;
+				position: absolute; right: 11px; top: 9px; display: block; height: 31px; width: 31px; padding: 0 0 1px 2px; @include transform(rotate(45deg));
+				background: transparent; border: solid 3px #ffffff; @include border-radius(50%);
+				&:hover {
+					color: #f94d15;
+					background: #ffffff;
+				}
+			}
 		}
 	}
+}
 
+
+.finished {
+	-webkit-filter: blur(5px);
+	filter: blur(5px);
+	opacity: 0;
+}
+
+.slide {
+	position: fixed; width: 100%;
+	left: 50%; top: 50%;
+	z-index: 1;
+}
+.slide ul li {/*transition: filter 1s;*/}
+
+.slide:first-child,
+.slide.skrollable-after {
+	z-index: 2;
+}
+.slide.skrollable-between {
+	z-index: 3;
+}
+
+.slide.skrollable-after,
+.slide.skrollable-before,
+.slide.skrollable-between {
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	filter: blur(3px);
+}
+
+.slide.skrollable-after {
+	display: none;
+}
+
+.slide.skrollable-before:first-child,
+.slide.skrollable-between.active {
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px);
+	filter: blur(0px);
+}
+
+
+
+// ANIMATION
+@include keyframes(movingGoBackButton) {
+	0% {@include transform(translateX(0%));}
+	50% {@include transform(translateX(-15%));}
+	100% {@include transform(translateX(0%));}
+}
+@include keyframes(errorValidate) {
+	0% {border-color: #f94d15;}
+	20% {border-color: red;}
+	40% {border-color: #ff9978;}
+	60% {border-color: red;}
+	80% {border-color: #ff9978;}
+	100% {border-color: red;}
 }

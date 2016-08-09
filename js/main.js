@@ -156,7 +156,9 @@ $(document).ready(function() {
 	// console.log(worldS);
 
 	
-
+	$('#js-validate-1').feelform({
+		notificationType: 'class'
+	});
 
 	
 });

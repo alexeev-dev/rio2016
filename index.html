@@ -3,7 +3,7 @@
 <head>
 	<!-- META -->
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=1000">
 
 	<!-- FAVICON -->
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -24,75 +24,18 @@
 	<link rel="stylesheet" type="text/css" href="css/component.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/phrases.css">
+
+	<!-- JS -->
+	<script src="https://code.jquery.com/jquery.js"></script>
 
 	<!-- FONTS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 
-	<style>
-		.finished {
-			-webkit-filter: blur(5px);
-			filter: blur(5px);
-			opacity: 0;
-		}
-
-		.app {
-			background: none;
-
-		}
-
-		body {
-			background: url('img/background-main.jpg') center center no-repeat;
-			background-size: 100%;
-			background-attachment: fixed;
-		}
-
-		.slide {
-			position: fixed; width: 100%;
-			left: 50%; top: 50%;
-			z-index: 1;
-		}
-	.slide ul li {/*transition: filter 1s;*/}
-
-	.slide:first-child,
-	.slide.skrollable-after {
-		z-index: 2;
-	}
-	.slide.skrollable-between {
-		z-index: 3;
-	}
-
-	.slide.skrollable-after,
-	.slide.skrollable-before,
-	.slide.skrollable-between {
-		-webkit-filter: blur(3px);
-		-moz-filter: blur(3px);
-		filter: blur(3px);
-	}
-
-	.slide.skrollable-after {
-		display: none;
-	}
-
-	.slide.skrollable-before:first-child,
-	.slide.skrollable-between.active {
-		-webkit-filter: blur(0px);
-		-moz-filter: blur(0px);
-		filter: blur(0px);
-	}
-
-	.preloader {background: red; position: fixed; width: 100%; height: 100%; z-index: 999999;}
-</style>
-
-<title>RIO 2016</title>
+	<title>RIO 2016</title>
 </head>
 <body>
+	<div class="app introScreen">
 
-	<div class="preloader"></div>
-
-	<div class="app scrollme">
-
-		<!-- header -->
 		<header class="wr-header">
 			<div class="container">
 				<div class="row">
@@ -105,7 +48,6 @@
 								<p>Генеральный партнер</p>
 							</a>
 						</div>
-
 					</div>
 				</div>
 			</div>
@@ -114,106 +56,107 @@
 
 		</header>
 
-		<section class="wr-suppWords">
+		<section class="wr-firstScreen-intro">
 			<div class="container">
-				<div class="scrollme">
-					<div class="wordsCounter bottomBorder animateme"
-							data-when="view"
-							data-from="0"
-							data-to="0.7"
-							data-easing="easeinout"
-							data-opacity="0"
-							data-scale="0"
-							>
-						<span class="counter">42 745</span>
-						<p>слов поддержки<br>нашим спортсменам в Рио</p>
-						<a class="addWords js-sendMessage-popup"><i class="icons-addWords"></i>Добавить свои!</a>
-					</div>
-				</div>
-			</div>
+				<div class="row">
+					<div class="col-md-6 col-md-offset-6">
+						
+						<div class="intro">
+							<h1>Тысячи слов<br>поддержки</h1>
+							<p>Пенсионный фонд «БУДУЩЕЕ» и 3 500 000<br>его клиентов поддерживают российских<br>спортсменов на Олимпийских играх в Рио<br>и предлагают тебе присоединиться<br>к уникальной акции!</p>
+						</div>
 
-			<!-- Start: Летающие фразы -->
-	    <div class="phrases-window"></div>
-	    <div class="scroll-block"></div>
-	    <!-- End: Летающие фразы -->
-
-      <div class="container">
-				<div class="scrollme">
-					<div class="wordsCounter topBorder animateme"
-						data-when="view"
-						data-from="1"
-						data-to="0.3"
-						data-easing="easeinout"
-						data-opacity="0"
-						data-scale="0"
-						>
-						<span class="counter">42 745</span>
-						<p>слов поддержки<br>нашим спортсменам в Рио</p>
-						<a class="addWords js-sendMessage-popup"><i class="icons-addWords"></i>Добавить свои!</a>
 					</div>
 				</div>
 			</div>
 		</section>
 
-<!-- footer -->
-<footer class="wr-footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
+		<section class="wr-firstScreen-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
 
-				<div class="footer">
-					<div class="footer-logo">
-						<a href="#"><img src="img/footer-img1.png" alt=""></a>
-						<a href="#">
-							<img src="img/footer-img2.png" alt="">
-							<p>Генеральный партнер</p>
-						</a>
-					</div>
-					<div class="footer-info">
-						<p>Проект &laquo;тысячи слов поддержки&raquo;<br>генерального партнёра олимпиского комитета россии</p>
-						<ul class="footer-nav">
-							<li><a href="#">Сайт фонда</a></li>
-							<li><a class="md-trigger" data-modal="competitionRules">Полные правила конкурса</a></li>
-							<li class="license"><div>
-								<i class="fa fa-file-text-o"></i>
-								<p>Акционерное общество &laquo;Негосударственный пенсионный фонд &laquo;БУДУЩЕЕ&raquo;.<br>Лицензия №431 от 30.04.2014.выдана Центральным банком Российской Федерации. Получить подробную информацию о фонде и ознакомиться с уставом, пенсионными и страховыми правилами фонда, а также с иными документами, предусмотренными ФЗ № 75 &laquo;О негосударственных пенсионных фондах&raquo; и нормативными правовыми актами уполномоченного федерального органа, можно по адресу: 127051, Россия, г. Москва, Цветной бульвар, д. 2. по телефону 8 (800) 707-15-20 и на сайтах www.futurenpf.ru. и www.нпфбудущее.рф Возможно увеличение или уменьшение дохода от размещения пенсионных резервов и инвестирования пенсионных накоплений. Результаты инвестирования в прошлом не определяют доходов в будущем. Государство не гарантирует доходности размещения пенсионных резервов и инвестирования пенсионных накоплений. Необходимо внимательно ознакомиться с уставом фонда, его пенсионными и страховыми правилами перед заключением пенсионного договора или переводом пенсионных накоплений в фонд. Свидетельство о регистрации СМИ Эл № ФС77-62988</p>
-							</div></li>
-						</ul>
-						<small>Акционерное общество &laquo;Негосударственный пенсионный фонд &laquo;БУДУЩЕЕ&raquo;.<br>Лицензия №431 от 30.04.2014.выдана Центральным банком Российской Федерации. Получить подробную информацию о фонде и ознакомиться с уставом, пенсионными и страховыми правилами фонда, а также с иными документами, предусмотренными ФЗ № 75 &laquo;О негосударственных пенсионных фондах&raquo; и нормативными правовыми актами уполномоченного федерального органа, можно по адресу: 127051, Россия, г. Москва, Цветной бульвар, д. 2. по телефону 8 (800) 707-15-20 и на сайтах www.futurenpf.ru. и www.нпфбудущее.рф Возможно увеличение или уменьшение дохода от размещения пенсионных резервов и инвестирования пенсионных накоплений. Результаты инвестирования в прошлом не определяют доходов в будущем. Государство не гарантирует доходности размещения пенсионных резервов и инвестирования пенсионных накоплений. Необходимо внимательно ознакомиться с уставом фонда, его пенсионными и страховыми правилами перед заключением пенсионного договора или переводом пенсионных накоплений в фонд. Свидетельство о регистрации СМИ Эл № ФС77-62988</small>
+						<div class="main">
+							<a class="participate md-trigger" data-modal="loginPopup"><i class="icons-addWords"></i><span>Участвовать!</span></a>
+							<a href="words-page.html" class="showSupp">Или посмотреть<br>как поддерживают другие</a>
+							<p><span>Где бы ты ни находился, из любого уголка России</span><br>мы довезем твои слова до наших спортсменов<br>в Бразилии.</p>
+							<p>Сочини крутое напутствие нашей команде, размести<br>его здесь и следи за его дорогой в Дом болельщиков Олимпийской Команды России.<br><span>Наши спортсмены как никогда нуждаются<br>в поддержке!</span></p>
+						</div>
+
 					</div>
 				</div>
-
 			</div>
-		</div>
+		</section>
+
+		<section class="wr-firstScreen-prizes">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+
+						<div class="prizes">
+							<p>Авторы 45 самых креативных или трогательных<br>пожеланий получат один из 3 призов<br>с автографами наших Олимпийцев!</p>
+							<ul>
+								<li>
+									<figure>
+										<div><img src="img/prizes-1.png" alt=""></div>
+										<figcaption>Набор тенисных<br>мячей</figcaption>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div><img src="img/prizes-2.png" alt=""></div>
+										<figcaption>Дартс</figcaption>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div><img src="img/prizes-3.png" alt=""></div>
+										<figcaption>Очки для плавания</figcaption>
+									</figure>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="wr-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+
+						<div class="footer">
+							<div class="footer-logo">
+								<a href="#"><img src="img/footer-img1.png" alt=""></a>
+								<a href="#">
+									<img src="img/footer-img2.png" alt="">
+									<p>Генеральный партнер</p>
+								</a>
+							</div>
+							<div class="footer-info">
+								<p>Проект «тысячи слов поддержки»<br>генерального партнёра олимпиского комитета россии</p>
+								<ul class="footer-nav">
+									<li><a href="#">Сайт фонда</a></li>
+									<li><a class="md-trigger" data-modal="competitionRules">Полные правила конкурса</a></li>
+								</ul>
+								<small>Акционерное общество «Негосударственный пенсионный фонд «БУДУЩЕЕ».<br>Лицензия №431 от 30.04.2014.выдана Центральным банком Российской Федерации. Получить подробную информацию о фонде и ознакомиться с уставом, пенсионными и страховыми правилами фонда, а также с иными документами, предусмотренными ФЗ № 75 «О негосударственных пенсионных фондах» и нормативными правовыми актами уполномоченного федерального органа, можно по адресу: 127051, Россия, г. Москва, Цветной бульвар, д. 2. по телефону 8 (800) 707-15-20 и на сайтах www.futurenpf.ru. и www.нпфбудущее.рф Возможно увеличение или уменьшение дохода от размещения пенсионных резервов и инвестирования пенсионных накоплений. Результаты инвестирования в прошлом не определяют доходов в будущем. Государство не гарантирует доходности размещения пенсионных резервов и инвестирования пенсионных накоплений. Необходимо внимательно ознакомиться с уставом фонда, его пенсионными и страховыми правилами перед заключением пенсионного договора или переводом пенсионных накоплений в фонд. Свидетельство о регистрации СМИ Эл № ФС77-62988</small>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<img class="flyBall" src="img/footer-flyBall.png" alt="">
+
+		<div class="overlay-bg"></div>
+		
 	</div>
-</footer>
 
-<!-- footer fly ball -->
-<img class="flyBall" src="img/footer-flyBall.png" alt="">
-
-<!-- fliyng balls -->
-<div class="flying-balls">
-	<img class="ball-1" src="img/flyingBall-1.png" alt="">
-	<img class="ball-2" src="img/flyingBall-2.png" alt="">
-	<img class="ball-3" src="img/flyingBall-3.png" alt="">
-	<img class="ball-4" src="img/flyingBall-4.png" alt="">
-	<img class="ball-5" src="img/flyingBall-5.png" alt="">
-	<img class="ball-6" src="img/flyingBall-6.png" alt="">
-	<img class="ball-7" src="img/flyingBall-7.png" alt="">
-	<img class="ball-8" src="img/flyingBall-8.png" alt="">
-</div>
-
-</div>
-
-<!-- popups -->
-<!-- main screen -->
-	<!-- <div class="mainScreen-popup js-mainScreen-popup">
-		<div class="upDownButtons">
-			<div class="upButton"><i class="fa fa-caret-up" aria-hidden="true"></i></div>
-			<div class="downButton"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
-		</div>
-		<p>Используйте клавиши &laquo;вверх&raquo;<br>и &laquo;вниз&raquo; на клавиатуре, чтобы ускорить<br>или замедлить перемещение</p>
-	</div> -->
+	<!-- popups -->
 	<!-- approve -->
 	<div class="md-modal md-effect-1" id="approveMessage">
 		<div class="approveMessage-popup md-content">
@@ -282,64 +225,28 @@
 			<a class="goBackButton md-close"><i class="icons-goBack-arrow"></i></a>
 		</div>
 	</div>
-	<!-- words message -->
-	<div class="md-modal md-effect-1" id="message-1">
-		<div class="message-popup md-content">
-			<h3>Все медали ваши!</h3>
-			<div>
-				<p>
-					Ребята! Какие бы места вы не заняли!
-					Вы &mdash; лучшие! Все медали ваши
-					заранее! Самое главное &mdash; вы лучшие из нас,
-					вы самы сильные и быстрые.
-				</p>
-
-				<p>
-					Вы &mdash; наша гордость! ВПЕРЕД, РОССИЯ!<br>
-					&mdash; Александра С.
-				</p>
-				<a href="#" class="closeButton md-close">+</a>
-			</div>
-		</div>
-	</div>
-
-	<!-- Start: Всплывающее окно с полным текстом -->
-	<div class="md-modal md-effect-1" id="phrase-modal">
-		<div class="md-content">
-			<h3 id="modal-title"></h3>
-			<div>
-				<p id="modal-text"></p>
-				<button class="md-close">Закрыть</button>
-			</div>
-		</div>
-	</div>
-	<div id="modal-trigger" class="md-trigger" data-modal="phrase-modal"></div>
-	<!-- End: Всплывающее окно с полным текстом -->
-
+	
+	<!-- ModalWindowEffects overlay -->
 	<div class="md-overlay"></div>
 
 	<!-- JS -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
 	<script src="js/jquery.bpopup.min.js" type="text/javascript"></script>
 	<script src="js/jquery.easing.1.3.min.js" type="text/javascript"></script>
-	<script src="js/skrollr.min.js" type="text/javascript"></script>
-	<script src="js/jquery.scrollme.min.js" type="text/javascript"></script>
 	<!-- ModalWindowEffects -->
 	<!-- classie.js by @desandro: https://github.com/desandro/classie -->
 	<script src="js/classie.js"></script>
 	<script src="js/modalEffects.js"></script>
 	<!-- for the blur effect -->
 	<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
-<!-- 	<script>
+	<script>
 		// this is important for IEs
 		var polyfilter_scriptpath = 'js/';
 	</script>
 	<script src="js/cssParser.js"></script>
-	<script src="js/css-filters-polyfill.js"></script> -->
+	<script src="js/css-filters-polyfill.js"></script>
 	<!--/ ModalWindowEffects -->
+	<script src="js/feelform.min.js" type="text/javascript"></script>
 	<script src="js/main.js" type="text/javascript"></script>
-	<script src="js/phrases-grid.js"></script>
-	<script src="js/phrases.js"></script>
 
 </body>
 </html>
