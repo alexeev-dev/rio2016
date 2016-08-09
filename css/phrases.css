@@ -51,19 +51,22 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  color: #fff;
+  color: #a9dcf6;
   cursor: pointer;
   font-size: 30px;
   font-weight: 400;
   text-transform: capitalize;
   font-family: 'Open Sans', sans-serif;
-  transition: color ease-out 0.3s;
+  transition: color ease-out 0.3s, transform ease-out 0.25s;
 }
 .phrase:hover {
-  text-decoration: underline;
+  -o-transform: scale(1.125);
+  -webkit-transform: scale(1.125);
+  -moz-transform: scale(1.125);
+  transform: scale(1.125);
 }
 .underlined .phrase {
-  color: #ffa;
+  color: #fff;
 }
 .scroll-block {
   height: 0;

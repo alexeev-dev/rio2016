@@ -76,7 +76,7 @@
             _this.state = 2;
           }
           if (offset < _this.story_length && _this.state === 2) {
-            $(".phrases-window").css("top", "100px");
+            $(".phrases-window").css("top", "50px");
             $(".phrases-window").css("bottom", "50px");
             $(".phrases-window").css("height", "auto");
             _this.state = 1;
@@ -94,7 +94,7 @@
           }
           if (_this.state === 0) {
             $(".phrases-window").css("position", "fixed");
-            $(".phrases-window").css("top", "100px");
+            $(".phrases-window").css("top", "50px");
             $(".phrases-window").css("bottom", "50px");
             $(".phrases-window").css("height", "auto");
             _this.state = 1;
