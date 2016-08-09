@@ -165,8 +165,9 @@ $(document).ready(function() {
 
 $(window).load(function() {
 	$('html, body').animate({'scrollTop': 0}, 1);
-
 	$('.preloader').delay(800).fadeOut(300);
+
+
 });
 
 $(window).resize(function() {
