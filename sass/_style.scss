@@ -7,8 +7,8 @@ body {
 	font-family:$CirceRegular;
 	background: #578daf url('../img/app-background-main.jpg') center center no-repeat;	background-size: 100%;	background-attachment: fixed;
 
-	@include respond-to(sm) {
-		background-position: center top;
+	@media all and (max-height: 667px) {
+		background-size: auto, 667px;
 	}
 }
 
