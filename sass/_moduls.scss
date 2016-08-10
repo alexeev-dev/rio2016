@@ -8,7 +8,12 @@
 }
 
 .container {min-height: auto; background: none;}
-.md-modal {min-width: auto; max-width: none; width: auto;}
+.md-modal {
+	min-width: auto; max-width: none; width: auto;
+
+	@include respond-to(md) {width: 100%;}
+	@include respond-to(sm) {overflow: auto;}
+}
 .md-content {color: inherit; background: none; @include border-radius(0px);}
 .md-overlay {background: rgba(91,126,148,0.92);}
 .md-content h3 {font-weight: inherit; opacity: 1; background: none; padding: 0; @include border-radius(0px);}
@@ -17,24 +22,26 @@
 .wordsCounter, .intro, .main, .prizes {position: relative; z-index: 5;}
 
 .flying-balls {
-	position: absolute; left: 0; top: 0; width: 100%;
+	position: absolute; left: 0; top: 0; width: 100%; height: 100%;
 	img {
-		position: absolute;
+		position: absolute; width: 10%;
 
-		&.ball-1 {left: 50px; top: 400px;}
-		&.ball-2 {right: 0; top: 600px;}
-		&.ball-3 {right: 200px; top: 300px;}
-		&.ball-4 {left: 100px; top: 1200px;}
-		&.ball-5 {right: 75px; top: 2000px;}
-		&.ball-6 {left: 0; top: 2300px;}
-		&.ball-7 {left: -25px; top: 3500px;}
-		&.ball-8 {right: 150px; top: 3000px;}
+		&.ball-1 {left: 5%; top: 10%;}
+		&.ball-2 {right: 0; top: 15%;}
+		&.ball-3 {right: 12%; top: 7.5%;}
+		&.ball-4 {left: 8%; top: 30%;}
+		&.ball-5 {right: 6%; top: 50%;}
+		&.ball-6 {left: 0; top: 57.5%;}
+		&.ball-7 {left: -45px; top: 87.5%;}
+		&.ball-8 {right: 10%; top: 75%;}
 	}
 }
 
 .wordsCounter {
 	text-align: center;
 	width: 812px; margin: 0 auto; padding-top: 61px; padding-bottom: 53px;
+
+	@include respond-to(md) {width: auto;}
 
 	&:after {
 		content: '';
@@ -53,11 +60,28 @@
 		color: #ffffff; font-size: 76.5px; line-height: 104px; text-align: center;
 		display: inline-block; height: 94px; margin: 0 auto 3px; padding: 0 89px;
 		border: 3px solid #ffffff; @include border-radius(16px);
+
+		@include respond-to(sm) {
+			font-size: 50px; line-height: 78px;
+			height: 74px; padding: 0 46px;
+		}
+		@include respond-to(xs) {
+			font-size: 30px; line-height: 42px;
+			padding: 0 26px; height: 44px;
+		}
 	}
 
 	p {
 		color: #ffffff; font-size: 22.5px; text-align: center; line-height: 27px;
 		margin-bottom: 48px;
+
+		@include respond-to(sm) {
+			font-size: 19px; line-height: 24px;
+			margin-bottom: 36px;
+		}
+		@include respond-to(xs) {
+			font-size: 14px; line-height: 18px;
+		}
 	}
 
 	.addWords {
@@ -66,19 +90,35 @@
 		background: #f94d15; @include border-radius(14px);
 		cursor: pointer;
 
+		@include respond-to(xs) {
+			font-size: 22px; line-height: 44px;
+			width: 100%; height: 42px;
+		}
+
 		&:before {
 			content: '';
 			display: block; position: absolute; width: 1px; height: 54px; left: 74px; top: 2px;
 			background: #ffffff;
+
+			@include respond-to(xs) {height: 38px;}
 		}
 
 		i {
 			position: absolute; left: 18px; top: 12px;
+
+			@include respond-to(xs) {
+				@include transform(scale(0.7)); top: 2px;
+			}
 		}
 
 		span {
 			width: 100%; display: inline-block; padding-left: 26px; height: 58px;
 			@include border-radius(0 12px 12px 0);
+
+			@include respond-to(xs) {
+				text-align: center;
+				padding-left: 0; height: 42px;
+			}
 		}
 
 		&:hover {
@@ -94,22 +134,31 @@
 	padding: 28px 40px;
 	background: rgba(249, 77, 21, 0.84);
 
-	h1, p {color: #ffffff;}
+	h1, p {
+		color: #ffffff;
+
+		@include respond-to(sm) {text-align: center;}
+	}
 
 	h1 {
 		font-family: $CirceBold; font-size: 39.48px; line-height: 47px; letter-spacing: 0.9px; text-transform: uppercase;
 		margin-bottom: 5px;
+
+		@include respond-to(sm) {font-size: 30px; line-height: 36px;}
+		@include respond-to(xs) {font-size: 24px; line-height: 30px;}
 	}
 
 	p {
 		font-family: $CirceLight; font-size: 19.3px; line-height: 23px; letter-spacing: -0.05px;
+		
+		@include respond-to(sm) {font-size: 16px; line-height: 20px;}
 	}
 }
 
 .main {
 
 	.participate {
-		color: #ffffff; font-size: 29.5px; line-height: 60px; letter-spacing: 0.4px; text-align: left; text-decoration: none;
+		color: #ffffff; font-size: 29.5px; letter-spacing: 0.4px; text-align: left; text-decoration: none;
 		display: block; margin: 0 auto 14px; width: 295px; height: 58px; padding-left: 72px; position: relative;
 		background: #f94d15; @include border-radius(14px);
 		cursor: pointer;
@@ -120,14 +169,28 @@
 			background: #ffffff;
 		}
 
+		@include respond-to(xs) {
+			font-size: 20px; text-align: center;
+			width: 100%; height: 42px;
+		}
+
 		i {
-			position: absolute; left: 18px; top: 12px;
+			position: absolute; left: 18px; top: 50%; @include transform(translateY(-50%));
+
+			@include respond-to(xs) {
+				@include transform(translateY(-50%) scale(0.7));
+			}
 		}
 
 		span {
 			line-height: 56px;
 			width: 100%; display: inline-block; padding-left: 24px; height: 58px;
 			border: solid 2px #f94d15; @include border-radius(0 12px 12px 0);
+
+			@include respond-to(xs) {
+				line-height: 40px;
+				height: 42px; padding-left: 0;
+			}
 		}
 
 		&:hover {
@@ -150,6 +213,8 @@
 
 		&:last-child {margin-bottom: 0;}
 
+		@include respond-to(xs) {font-size: 15px;}
+
 		span {
 			font-family: $CirceBold;
 		}
@@ -161,18 +226,23 @@
 	p {
 		color: #5b7e94; font-size: 18.19px; text-align: center; line-height: 22px; letter-spacing: 0.1px; text-transform: uppercase;
 		margin-bottom: 29px;
+
+		@include respond-to(xs) {font-size: 13px;}
 	}
 
 	ul {
 		text-align: center;
 		li {
 			display: inline-block; vertical-align: top; margin: 0 8px;
+
+			@include respond-to(sm) {text-align: center; display: block; margin: 0 0 15px;}
 			figure {
 
 				& > div {
 					width: 159px; height: 159px; overflow: hidden; position: relative; margin-bottom: 21px;
 					background: #ffffff; border: solid 3px #f94d15; @include border-radius(50%);
 
+					@include respond-to(sm) {display: inline-block;}
 					img {
 						position: absolute; left: 50%; top: 50%; @include transform(translate(-50%, -50%));
 					}
@@ -322,6 +392,8 @@
 	width: 967px; position: relative; padding: 41px 1px 45px; margin-top: 110px;
 	background: url('../img/sendMessage-bg.png') -4px 318px no-repeat; border: solid 13px #ffffff; @include border-radius(28px);
 
+	@include respond-to(sm) {height: 480px;}
+
 	h3 {
 		color: #ffffff; font-size: 24.8px; font-family: $CirceBold; line-height: 30px; text-transform: uppercase; text-align: left;
 		position: absolute; left: 99px; top: 9px;
@@ -381,7 +453,7 @@
 		position: relative; padding-left: 376px; padding-right: 88px;
 		textarea {
 			font-size: 19.39px; letter-spacing: 0.1px;
-			height: 337px; padding: 27px 20px; margin-bottom: 23px;
+			padding: 27px 20px; margin-bottom: 23px;
 			&::-webkit-input-placeholder {opacity: 0.54;}
 			&::-moz-placeholder {opacity: 0.54;}
 			&:-moz-placeholder {opacity: 0.54;}
