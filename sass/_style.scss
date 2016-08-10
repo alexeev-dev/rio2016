@@ -21,10 +21,24 @@ body {
 	.header-flag {
 		position: fixed; left: 0; top: 0; width: 350px; z-index: 10;
 
+		a {
+			color: #ffffff;
+			position: absolute; top: 15px; right: -160px;
+			font-weight: normal;
+
+			@include respond-to(lg) {right: -130px;}
+			@include respond-to(md) {right: -110px;}
+			@include respond-to(sm) {right: -90px;}
+			@include respond-to(xs) {right: -80px;}
+		}
+		a:hover {text-decoration: none;}
+
+		img {width: 100%;}
+
 		@include respond-to(lg) {width: 275px;}
 		@include respond-to(md) {width: 240px;}
 		@include respond-to(sm) {width: 150px;}
-		@include respond-to(xs) {display: none;}
+		@include respond-to(xs) {width: 125px;}
 	}
 
 	.flyBall {
