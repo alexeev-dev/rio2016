@@ -5,18 +5,40 @@
 
 body {
 	font-family:$CirceRegular;
-	min-width: 1000px;
 	background: #578daf url('../img/app-background-main.jpg') center center no-repeat;	background-size: 100%;	background-attachment: fixed;
+
+	@media all and (max-height: 667px) {
+		background-size: auto, 667px;
+	}
 }
 
 .preloader {background: #f94d15 url('../img/preloader.gif') center center no-repeat; position: fixed; width: 100%; height: 100%; z-index: 999999;}
 
 .app {
-	position: relative; overflow: hidden;
+	position: relative; overflow: hidden; min-width: 320px;
 	&.introScreen {background: #ffffff;}
 
 	.header-flag {
 		position: fixed; left: 0; top: 0; width: 350px; z-index: 10;
+
+		a {
+			color: #ffffff;
+			position: absolute; top: 15px; right: -160px;
+			font-weight: normal;
+
+			@include respond-to(lg) {right: -130px;}
+			@include respond-to(md) {right: -110px;}
+			@include respond-to(sm) {right: -90px;}
+			@include respond-to(xs) {right: -80px;}
+		}
+		a:hover {text-decoration: none;}
+
+		img {width: 100%;}
+
+		@include respond-to(lg) {width: 275px;}
+		@include respond-to(md) {width: 240px;}
+		@include respond-to(sm) {width: 150px;}
+		@include respond-to(xs) {width: 125px;}
 	}
 
 	.flyBall {
@@ -24,10 +46,6 @@ body {
 
 		@media all and (max-height: 699px) {bottom: -181px;}
 		@media all and (max-width: 1199px) {display: none;}
-	}
-
-	.wr-header, .wr-suppWords, .wr-firstScreen, .wr-footer {
-		.container {min-width: 1000px;}
 	}
 
 	.wr-header {
@@ -40,34 +58,44 @@ body {
 		}
 
 		.header-partners {
-			display: inline-block; margin-right: 20px; position: relative; float: right;
+			display: inline-block; margin-right: 20px; padding-left: 74px; position: relative; float: right;
+
+			@include respond-to(sm) {padding-left: 30px;}
+			@include respond-to(xs) {width: 100%; margin-right: 0;padding-left: 0; text-align: center; float: none;}
 
 			&:before {
 				content:'';
-				display: block; width: 1px; height: 45px; position: absolute; left: 0; top: 4px;
+				display: block; width: 1px; height: 45px; position: absolute; left: 0; top: 50%; @include transform(translateY(-50%));
 				background: #4181a9;
+
+				@include respond-to(xs) {display: none;}
 			}
 
 			a {
-				position: relative; display: inline-block;
+				position: relative; display: inline-block; width: 130px;
 
+				@include respond-to(xs) {width: 115px;}
 				&:first-child {
-					margin-left: 74px; display: inline-block;
+					display: inline-block;
 
 					&:after {
 						content:'';
-						display: block; width: 1px; height: 37px; position: absolute; right: -18px; top: 8px;
+						display: block; width: 1px; height: 37px; position: absolute; right: -18px; top: 50%; @include transform(translateY(-50%));
 						background: #4181a9;
 					}
 
 				}
 				&:last-child {margin-left: 33px;}
 
-				img {width: 70%;}
+				img {
+					width: 100%;
+				}
 
 				p {
 					color: #5b7e94; font-family: $CirceLight; font-size: 13px; letter-spacing: 0.25px;
 					position: absolute; left: 0; bottom: -17px;
+
+					@include respond-to(xs) {font-size: 11px;}
 				}
 			}
 		}
@@ -103,10 +131,19 @@ body {
 
 			.footer-logo {
 				float: left; margin-left: 39px;
+
+				@include respond-to(sm) {float: none;margin-left: 0; width: 100%; text-align: center; margin-bottom: 15px;}
 				a {
 					display: inline-block; position: relative; padding-right: 17px; margin-right: 16px;
 
-					&:last-child {margin-right: 0;}
+					&:last-child {
+						margin-right: 0;
+
+						@include respond-to(sm) {
+							padding-right: 0;
+							&:after {display: none;}
+						}
+					}
 
 					&:after {
 						content: '';
@@ -123,16 +160,24 @@ body {
 			}
 			.footer-info {
 				display: inline-block; width: 50%; margin-left: 42px; margin-top: 5px;
+
+				@include respond-to(md) {width: 45%;}
+				@include respond-to(sm) {text-align: center; width: 100%; margin: 0;}
+
 				p {
 					color: #ffffff; font-size: 13.8px; letter-spacing: 0.4px; line-height: 16px; text-transform: uppercase;
 					margin-bottom: 17px;
 					opacity: 0.9;
+
+					@include respond-to(sm) {font-size: 12px;}
 				}
 				ul.footer-nav {
 					margin-bottom: 17px;
 					li {
 						display: inline-block; margin-right: 23px;
 						&:last-child {margin-right: 0;}
+
+						@include respond-to(sm) {display: block; margin-right: 0; margin-bottom: 10px;}
 						a {
 							color: #ffffff; font-size: 15.2px; letter-spacing: 0.4px; text-transform: uppercase;
 							position: relative;
@@ -140,6 +185,8 @@ body {
 							cursor: pointer;
 
 							&:hover {text-decoration: none;}
+
+							@include respond-to(md) {font-size: 11px;}
 						}
 
 						&.license {
@@ -151,7 +198,7 @@ body {
 
 								p {
 									color: #578daf; font-size: 8px; line-height: 9px; letter-spacing: 0.23px; text-transform: none;
-									display: none; position: absolute; top: -160px; left: -280px; z-index: 1; padding: 15px; width: 410px;
+									display: none; position: absolute; bottom: 11px; left: -280px; z-index: 1; padding: 15px; width: 410px;
 									background: #ffffff; @include border-radius(15px);
 									opacity: 1;
 									&:after {
@@ -159,6 +206,14 @@ body {
 										display: block; position: absolute; bottom: -6px; right: 116px; width: 15px; height: 15px;
 										@include transform(rotate(45deg));
 										background: #ffffff;
+
+										@include respond-to(sm) {
+											bottom: 0; right: 50%; @include transform(rotate(45deg) translateX(50%));
+										}
+									}
+
+									@include respond-to(sm) {
+										left: 50%; @include transform(translateX(-50%)); width: 100%;
 									}
 								}
 
@@ -168,6 +223,7 @@ body {
 							}
 
 							@media all and (max-height: 699px) {display: inline-block;}
+							@include respond-to(sm) {display: block;}
 						}
 					}
 				}
@@ -177,6 +233,7 @@ body {
 					opacity: 0.9;
 
 					@media all and (min-height: 700px) {display: block;}
+					@include respond-to(sm) {display: none;}
 				}
 			}
 		}
