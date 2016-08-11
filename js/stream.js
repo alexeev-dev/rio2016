@@ -126,6 +126,7 @@
   });
 
   $(window).keydown(function(event) {
+    event.preventDefault();
     if (event.which === 38) {
       Stream.increase_speed();
     }
