@@ -683,6 +683,8 @@
 			position: relative; padding: 35px 59px 10px;
 			background: #f94d15; @include border-radius(16px);
 
+			@include respond-to(xs) {padding: 25px 40px 10px;}
+
 			p {
 				color: #ffffff; font-size: 21px; font-family: $CirceLight; letter-spacing: -0.25px; line-height: 26px;
 				margin-bottom: 22px;
@@ -698,6 +700,8 @@
 				}
 			}
 		}
+
+		@include respond-to(sm) {width: 90%;}
 	}
 }
 

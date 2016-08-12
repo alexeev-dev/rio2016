@@ -2861,7 +2861,13 @@ textarea {
   -webkit-border-radius: 16px;
   border-radius: 16px;
 }
-/* line 686, ../sass/_moduls.scss */
+@media only screen and (max-width: 481px) {
+  /* line 681, ../sass/_moduls.scss */
+  #phrase-modal .md-content > div {
+    padding: 25px 40px 10px;
+  }
+}
+/* line 688, ../sass/_moduls.scss */
 #phrase-modal .md-content > div p {
   color: #ffffff;
   font-size: 21px;
@@ -2870,7 +2876,7 @@ textarea {
   line-height: 26px;
   margin-bottom: 22px;
 }
-/* line 691, ../sass/_moduls.scss */
+/* line 693, ../sass/_moduls.scss */
 #phrase-modal .md-content > div .md-close {
   color: #ffffff;
   font-size: 33.06px;
@@ -2894,10 +2900,16 @@ textarea {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 695, ../sass/_moduls.scss */
+/* line 697, ../sass/_moduls.scss */
 #phrase-modal .md-content > div .md-close:hover {
   color: #f94d15;
   background: #ffffff;
+}
+@media only screen and (max-width: 767px) {
+  /* line 673, ../sass/_moduls.scss */
+  #phrase-modal .md-content {
+    width: 90%;
+  }
 }
 
 @-moz-keyframes movingGoBackButton {
