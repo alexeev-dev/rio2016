@@ -7,7 +7,7 @@ $(document).ready(function() {
 		notificationType: 'class'
 	});
 
-	$('.js-mainScreen-popup').delay(5000).fadeOut(500);
+	$('.js-wordsScreen-popup').delay(5000).fadeOut(500);
 
 	
 });

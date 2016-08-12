@@ -1956,7 +1956,7 @@ textarea {
 }
 
 /* line 307, ../sass/_moduls.scss */
-.mainScreen-popup {
+.wordsScreen-popup {
   width: 654px;
   position: fixed;
   left: 50%;
@@ -1972,14 +1972,31 @@ textarea {
   -webkit-border-radius: 31px;
   border-radius: 31px;
 }
-/* line 310, ../sass/_moduls.scss */
-.mainScreen-popup .upDownButtons {
+@media only screen and (max-width: 767px) {
+  /* line 307, ../sass/_moduls.scss */
+  .wordsScreen-popup {
+    width: 90%;
+    padding-right: 15px;
+  }
+}
+/* line 313, ../sass/_moduls.scss */
+.wordsScreen-popup .upDownButtons {
   position: absolute;
   left: 98px;
-  top: 17px;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-/* line 312, ../sass/_moduls.scss */
-.mainScreen-popup .upDownButtons div {
+@media only screen and (max-width: 767px) {
+  /* line 313, ../sass/_moduls.scss */
+  .wordsScreen-popup .upDownButtons {
+    left: 50px;
+  }
+}
+/* line 317, ../sass/_moduls.scss */
+.wordsScreen-popup .upDownButtons div {
   color: #ffffff;
   font-size: 24px;
   line-height: 34px;
@@ -1991,20 +2008,33 @@ textarea {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 316, ../sass/_moduls.scss */
-.mainScreen-popup .upDownButtons div.upButton {
+/* line 321, ../sass/_moduls.scss */
+.wordsScreen-popup .upDownButtons div.upButton {
   margin-bottom: 5px;
 }
-/* line 319, ../sass/_moduls.scss */
-.mainScreen-popup p {
+/* line 324, ../sass/_moduls.scss */
+.wordsScreen-popup p {
   color: #ffffff;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: -0.05px;
   margin-left: 168px;
 }
+@media only screen and (max-width: 767px) {
+  /* line 324, ../sass/_moduls.scss */
+  .wordsScreen-popup p {
+    margin-left: 120px;
+  }
+}
+@media only screen and (max-width: 481px) {
+  /* line 324, ../sass/_moduls.scss */
+  .wordsScreen-popup p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
 
-/* line 325, ../sass/_moduls.scss */
+/* line 333, ../sass/_moduls.scss */
 .approveMessage-popup {
   width: 967px;
   position: relative;
@@ -2017,7 +2047,7 @@ textarea {
   border-radius: 28px;
 }
 @media all and (max-height: 768px) {
-  /* line 325, ../sass/_moduls.scss */
+  /* line 333, ../sass/_moduls.scss */
   .approveMessage-popup {
     height: auto;
     margin-top: 0;
@@ -2025,7 +2055,7 @@ textarea {
   }
 }
 @media only screen and (max-width: 991px) {
-  /* line 325, ../sass/_moduls.scss */
+  /* line 333, ../sass/_moduls.scss */
   .approveMessage-popup {
     width: auto;
     margin-right: 15px;
@@ -2033,7 +2063,7 @@ textarea {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 325, ../sass/_moduls.scss */
+  /* line 333, ../sass/_moduls.scss */
   .approveMessage-popup {
     height: auto;
     margin-top: 0;
@@ -2042,11 +2072,11 @@ textarea {
     background: transparent;
   }
 }
-/* line 334, ../sass/_moduls.scss */
+/* line 342, ../sass/_moduls.scss */
 .approveMessage-popup h3, .approveMessage-popup p {
   color: #ffffff;
 }
-/* line 336, ../sass/_moduls.scss */
+/* line 344, ../sass/_moduls.scss */
 .approveMessage-popup h3 {
   font-family: "CirceBold", sans-serif;
   font-size: 27.8px;
@@ -2056,7 +2086,7 @@ textarea {
   margin-bottom: 94px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 336, ../sass/_moduls.scss */
+  /* line 344, ../sass/_moduls.scss */
   .approveMessage-popup h3 {
     font-size: 24px;
     line-height: 30px;
@@ -2064,13 +2094,13 @@ textarea {
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 336, ../sass/_moduls.scss */
+  /* line 344, ../sass/_moduls.scss */
   .approveMessage-popup h3 {
     font-size: 20px;
     line-height: 24px;
   }
 }
-/* line 344, ../sass/_moduls.scss */
+/* line 352, ../sass/_moduls.scss */
 .approveMessage-popup p {
   font-size: 22px;
   line-height: 26px;
@@ -2079,7 +2109,7 @@ textarea {
   margin-bottom: 28px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 344, ../sass/_moduls.scss */
+  /* line 352, ../sass/_moduls.scss */
   .approveMessage-popup p {
     font-size: 18px;
     line-height: 22px;
@@ -2088,26 +2118,26 @@ textarea {
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 344, ../sass/_moduls.scss */
+  /* line 352, ../sass/_moduls.scss */
   .approveMessage-popup p {
     font-size: 16px;
     line-height: 20px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 351, ../sass/_moduls.scss */
+  /* line 359, ../sass/_moduls.scss */
   .approveMessage-popup p br {
     display: none;
   }
 }
-/* line 356, ../sass/_moduls.scss */
+/* line 364, ../sass/_moduls.scss */
 .approveMessage-popup ul {
   text-align: center;
   padding-top: 33px;
   margin: 0 1px;
   position: relative;
 }
-/* line 360, ../sass/_moduls.scss */
+/* line 368, ../sass/_moduls.scss */
 .approveMessage-popup ul:before {
   content: '';
   display: block;
@@ -2119,17 +2149,17 @@ textarea {
   background: #ffffff;
 }
 @media only screen and (max-width: 767px) {
-  /* line 360, ../sass/_moduls.scss */
+  /* line 368, ../sass/_moduls.scss */
   .approveMessage-popup ul:before {
     top: 0;
   }
 }
-/* line 368, ../sass/_moduls.scss */
+/* line 376, ../sass/_moduls.scss */
 .approveMessage-popup ul li {
   display: inline-block;
 }
 @media only screen and (max-width: 767px) {
-  /* line 368, ../sass/_moduls.scss */
+  /* line 376, ../sass/_moduls.scss */
   .approveMessage-popup ul li {
     text-align: center;
     display: block;
@@ -2137,7 +2167,7 @@ textarea {
     padding: 0 15px;
   }
 }
-/* line 375, ../sass/_moduls.scss */
+/* line 383, ../sass/_moduls.scss */
 .approveMessage-popup ul li a {
   color: #ffffff;
   font-size: 20px;
@@ -2156,13 +2186,13 @@ textarea {
   border-radius: 10px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 375, ../sass/_moduls.scss */
+  /* line 383, ../sass/_moduls.scss */
   .approveMessage-popup ul li a {
     margin: 0;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 375, ../sass/_moduls.scss */
+  /* line 383, ../sass/_moduls.scss */
   .approveMessage-popup ul li a {
     font-size: 16px;
     line-height: 52px;
@@ -2170,13 +2200,13 @@ textarea {
     height: 50px;
   }
 }
-/* line 388, ../sass/_moduls.scss */
+/* line 396, ../sass/_moduls.scss */
 .approveMessage-popup ul li a:hover {
   color: #f94d15;
   background: #ffffff;
 }
 
-/* line 397, ../sass/_moduls.scss */
+/* line 405, ../sass/_moduls.scss */
 .login-popup {
   width: 967px;
   position: relative;
@@ -2188,7 +2218,7 @@ textarea {
   border-radius: 28px;
 }
 @media all and (max-height: 768px) {
-  /* line 397, ../sass/_moduls.scss */
+  /* line 405, ../sass/_moduls.scss */
   .login-popup {
     height: auto;
     margin-top: 0;
@@ -2196,7 +2226,7 @@ textarea {
   }
 }
 @media only screen and (max-width: 991px) {
-  /* line 397, ../sass/_moduls.scss */
+  /* line 405, ../sass/_moduls.scss */
   .login-popup {
     width: auto;
     margin-right: 15px;
@@ -2204,14 +2234,14 @@ textarea {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 397, ../sass/_moduls.scss */
+  /* line 405, ../sass/_moduls.scss */
   .login-popup {
     height: auto;
     margin-top: 0;
     border-width: 5px;
   }
 }
-/* line 406, ../sass/_moduls.scss */
+/* line 414, ../sass/_moduls.scss */
 .login-popup h3 {
   color: #ffffff;
   font-family: "CirceBold", sans-serif;
@@ -2222,38 +2252,38 @@ textarea {
   margin-bottom: 24px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 406, ../sass/_moduls.scss */
+  /* line 414, ../sass/_moduls.scss */
   .login-popup h3 {
     font-size: 22px;
     line-height: 26px;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 406, ../sass/_moduls.scss */
+  /* line 414, ../sass/_moduls.scss */
   .login-popup h3 {
     font-size: 18px;
     line-height: 22px;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 413, ../sass/_moduls.scss */
+  /* line 421, ../sass/_moduls.scss */
   .login-popup h3 br {
     display: none;
   }
 }
-/* line 418, ../sass/_moduls.scss */
+/* line 426, ../sass/_moduls.scss */
 .login-popup ul.socials {
   text-align: center;
   width: 371px;
   margin: 0 auto;
 }
 @media only screen and (max-width: 481px) {
-  /* line 418, ../sass/_moduls.scss */
+  /* line 426, ../sass/_moduls.scss */
   .login-popup ul.socials {
     width: auto;
   }
 }
-/* line 427, ../sass/_moduls.scss */
+/* line 435, ../sass/_moduls.scss */
 .login-popup ul.socials:hover li {
   opacity: 0.7;
   -moz-transform: scale(0.9);
@@ -2261,7 +2291,7 @@ textarea {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
 }
-/* line 432, ../sass/_moduls.scss */
+/* line 440, ../sass/_moduls.scss */
 .login-popup ul.socials li {
   display: inline-block;
   margin: 0 5px;
@@ -2271,7 +2301,7 @@ textarea {
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-/* line 436, ../sass/_moduls.scss */
+/* line 444, ../sass/_moduls.scss */
 .login-popup ul.socials li:hover {
   opacity: 1;
   -moz-transform: scale(1);
@@ -2279,7 +2309,7 @@ textarea {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-/* line 438, ../sass/_moduls.scss */
+/* line 446, ../sass/_moduls.scss */
 .login-popup ul.socials li a {
   color: #ffffff;
   font-size: 52px;
@@ -2294,7 +2324,7 @@ textarea {
   border-radius: 50%;
 }
 @media only screen and (max-width: 481px) {
-  /* line 438, ../sass/_moduls.scss */
+  /* line 446, ../sass/_moduls.scss */
   .login-popup ul.socials li a {
     font-size: 32px;
     line-height: 50px;
@@ -2303,42 +2333,42 @@ textarea {
     border-width: 3px;
   }
 }
-/* line 449, ../sass/_moduls.scss */
+/* line 457, ../sass/_moduls.scss */
 .login-popup ul.socials li a.fb {
   font-size: 61px;
   padding-top: 10px;
 }
 @media only screen and (max-width: 481px) {
-  /* line 449, ../sass/_moduls.scss */
+  /* line 457, ../sass/_moduls.scss */
   .login-popup ul.socials li a.fb {
     font-size: 32px;
     padding-top: 0;
   }
 }
-/* line 457, ../sass/_moduls.scss */
+/* line 465, ../sass/_moduls.scss */
 .login-popup ul.socials li a.tw {
   padding-left: 5px;
   padding-top: 2px;
 }
 @media only screen and (max-width: 481px) {
-  /* line 457, ../sass/_moduls.scss */
+  /* line 465, ../sass/_moduls.scss */
   .login-popup ul.socials li a.tw {
     padding-left: 0;
     padding-top: 0;
   }
 }
-/* line 463, ../sass/_moduls.scss */
+/* line 471, ../sass/_moduls.scss */
 .login-popup ul.socials li a.vk {
   padding-right: 4px;
 }
 @media only screen and (max-width: 481px) {
-  /* line 463, ../sass/_moduls.scss */
+  /* line 471, ../sass/_moduls.scss */
   .login-popup ul.socials li a.vk {
     padding-right: 2px;
   }
 }
 
-/* line 473, ../sass/_moduls.scss */
+/* line 481, ../sass/_moduls.scss */
 .sendMessage-popup {
   width: 967px;
   position: relative;
@@ -2351,7 +2381,7 @@ textarea {
   border-radius: 28px;
 }
 @media only screen and (max-width: 991px) {
-  /* line 473, ../sass/_moduls.scss */
+  /* line 481, ../sass/_moduls.scss */
   .sendMessage-popup {
     margin-right: 15px;
     margin-left: 15px;
@@ -2359,7 +2389,7 @@ textarea {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 473, ../sass/_moduls.scss */
+  /* line 481, ../sass/_moduls.scss */
   .sendMessage-popup {
     height: 480px;
     border-width: 5px;
@@ -2367,14 +2397,14 @@ textarea {
   }
 }
 @media all and (max-height: 768px) {
-  /* line 473, ../sass/_moduls.scss */
+  /* line 481, ../sass/_moduls.scss */
   .sendMessage-popup {
     height: auto;
     margin-top: 0;
     border-width: 5px;
   }
 }
-/* line 482, ../sass/_moduls.scss */
+/* line 490, ../sass/_moduls.scss */
 .sendMessage-popup h3 {
   color: #ffffff;
   font-size: 24.8px;
@@ -2387,7 +2417,7 @@ textarea {
   top: 9px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 482, ../sass/_moduls.scss */
+  /* line 490, ../sass/_moduls.scss */
   .sendMessage-popup h3 {
     text-align: center;
     font-size: 20px;
@@ -2397,22 +2427,22 @@ textarea {
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 482, ../sass/_moduls.scss */
+  /* line 490, ../sass/_moduls.scss */
   .sendMessage-popup h3 {
     font-size: 14px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 492, ../sass/_moduls.scss */
+  /* line 500, ../sass/_moduls.scss */
   .sendMessage-popup h3 br {
     display: none;
   }
 }
-/* line 496, ../sass/_moduls.scss */
+/* line 504, ../sass/_moduls.scss */
 .sendMessage-popup input {
   display: none;
 }
-/* line 500, ../sass/_moduls.scss */
+/* line 508, ../sass/_moduls.scss */
 .sendMessage-popup label {
   color: #ffffff;
   font-family: "CirceBold", sans-serif;
@@ -2425,7 +2455,7 @@ textarea {
   cursor: pointer;
 }
 @media only screen and (max-width: 767px) {
-  /* line 500, ../sass/_moduls.scss */
+  /* line 508, ../sass/_moduls.scss */
   .sendMessage-popup label {
     text-align: left;
     display: inline-block;
@@ -2437,7 +2467,7 @@ textarea {
     padding-right: 14px;
   }
 }
-/* line 510, ../sass/_moduls.scss */
+/* line 518, ../sass/_moduls.scss */
 .sendMessage-popup label:before {
   content: '';
   display: block;
@@ -2451,7 +2481,7 @@ textarea {
   -webkit-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 515, ../sass/_moduls.scss */
+/* line 523, ../sass/_moduls.scss */
 .sendMessage-popup label:after {
   content: '';
   display: none;
@@ -2467,16 +2497,16 @@ textarea {
   background: #ffffff;
 }
 @media only screen and (max-width: 767px) {
-  /* line 515, ../sass/_moduls.scss */
+  /* line 523, ../sass/_moduls.scss */
   .sendMessage-popup label:after {
     display: block;
   }
 }
-/* line 524, ../sass/_moduls.scss */
+/* line 532, ../sass/_moduls.scss */
 .sendMessage-popup input:checked + label:before {
   background: url("../img/popup-check.png") center center no-repeat;
 }
-/* line 526, ../sass/_moduls.scss */
+/* line 534, ../sass/_moduls.scss */
 .sendMessage-popup textarea {
   color: #8b8b8b;
   font-family: "CirceLight", sans-serif;
@@ -2488,77 +2518,77 @@ textarea {
   border-radius: 16px;
   resize: none;
 }
-/* line 532, ../sass/_moduls.scss */
+/* line 540, ../sass/_moduls.scss */
 .sendMessage-popup textarea.error {
   border-color: red;
   -moz-animation: errorValidate 2s linear 1;
   -webkit-animation: errorValidate 2s linear 1;
   animation: errorValidate 2s linear 1;
 }
-/* line 538, ../sass/_moduls.scss */
+/* line 546, ../sass/_moduls.scss */
 .sendMessage-popup .block1, .sendMessage-popup .block2 {
   padding-left: 376px;
   padding-right: 88px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 538, ../sass/_moduls.scss */
+  /* line 546, ../sass/_moduls.scss */
   .sendMessage-popup .block1, .sendMessage-popup .block2 {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
-/* line 544, ../sass/_moduls.scss */
+/* line 552, ../sass/_moduls.scss */
 .sendMessage-popup .block1 {
   position: relative;
   padding-bottom: 9px;
   margin-bottom: 17px;
 }
-/* line 546, ../sass/_moduls.scss */
+/* line 554, ../sass/_moduls.scss */
 .sendMessage-popup .block1 textarea {
   font-size: 24.8px;
   height: auto;
   padding: 21px;
 }
-/* line 549, ../sass/_moduls.scss */
+/* line 557, ../sass/_moduls.scss */
 .sendMessage-popup .block1 textarea::-webkit-input-placeholder {
   text-transform: uppercase;
   opacity: 0.54;
 }
-/* line 550, ../sass/_moduls.scss */
+/* line 558, ../sass/_moduls.scss */
 .sendMessage-popup .block1 textarea::-moz-placeholder {
   text-transform: uppercase;
   opacity: 0.54;
 }
-/* line 551, ../sass/_moduls.scss */
+/* line 559, ../sass/_moduls.scss */
 .sendMessage-popup .block1 textarea:-moz-placeholder {
   text-transform: uppercase;
   opacity: 0.54;
 }
-/* line 552, ../sass/_moduls.scss */
+/* line 560, ../sass/_moduls.scss */
 .sendMessage-popup .block1 textarea:-ms-input-placeholder {
   text-transform: uppercase;
   opacity: 0.54;
 }
 @media only screen and (max-width: 991px) {
-  /* line 546, ../sass/_moduls.scss */
+  /* line 554, ../sass/_moduls.scss */
   .sendMessage-popup .block1 textarea {
     font-size: 20px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 546, ../sass/_moduls.scss */
+  /* line 554, ../sass/_moduls.scss */
   .sendMessage-popup .block1 textarea {
     font-size: 16px;
     padding: 15px 21px 0;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 546, ../sass/_moduls.scss */
+  /* line 554, ../sass/_moduls.scss */
   .sendMessage-popup .block1 textarea {
     font-size: 13px;
   }
 }
-/* line 563, ../sass/_moduls.scss */
+/* line 571, ../sass/_moduls.scss */
 .sendMessage-popup .block1:after {
   content: '';
   display: block;
@@ -2569,60 +2599,60 @@ textarea {
   bottom: 0;
   background: #ffffff;
 }
-/* line 570, ../sass/_moduls.scss */
+/* line 578, ../sass/_moduls.scss */
 .sendMessage-popup .block2 {
   position: relative;
 }
 @media only screen and (max-width: 767px) {
-  /* line 570, ../sass/_moduls.scss */
+  /* line 578, ../sass/_moduls.scss */
   .sendMessage-popup .block2 {
     text-align: center;
   }
 }
-/* line 575, ../sass/_moduls.scss */
+/* line 583, ../sass/_moduls.scss */
 .sendMessage-popup .block2 textarea {
   font-size: 19.39px;
   letter-spacing: 0.1px;
   padding: 27px 20px;
   margin-bottom: 23px;
 }
-/* line 578, ../sass/_moduls.scss */
+/* line 586, ../sass/_moduls.scss */
 .sendMessage-popup .block2 textarea::-webkit-input-placeholder {
   opacity: 0.54;
 }
-/* line 579, ../sass/_moduls.scss */
+/* line 587, ../sass/_moduls.scss */
 .sendMessage-popup .block2 textarea::-moz-placeholder {
   opacity: 0.54;
 }
-/* line 580, ../sass/_moduls.scss */
+/* line 588, ../sass/_moduls.scss */
 .sendMessage-popup .block2 textarea:-moz-placeholder {
   opacity: 0.54;
 }
-/* line 581, ../sass/_moduls.scss */
+/* line 589, ../sass/_moduls.scss */
 .sendMessage-popup .block2 textarea:-ms-input-placeholder {
   opacity: 0.54;
 }
 @media all and (max-height: 699px) {
-  /* line 575, ../sass/_moduls.scss */
+  /* line 583, ../sass/_moduls.scss */
   .sendMessage-popup .block2 textarea {
     height: 150px;
   }
 }
 @media all and (min-height: 700px) {
-  /* line 575, ../sass/_moduls.scss */
+  /* line 583, ../sass/_moduls.scss */
   .sendMessage-popup .block2 textarea {
     height: 376px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 575, ../sass/_moduls.scss */
+  /* line 583, ../sass/_moduls.scss */
   .sendMessage-popup .block2 textarea {
     font-size: 16px;
     height: 100px;
     padding: 10px 15px;
   }
 }
-/* line 591, ../sass/_moduls.scss */
+/* line 599, ../sass/_moduls.scss */
 .sendMessage-popup .block2 p {
   color: #ffffff;
   font-size: 14px;
@@ -2630,16 +2660,16 @@ textarea {
   letter-spacing: 0.05px;
   text-align: center;
 }
-/* line 593, ../sass/_moduls.scss */
+/* line 601, ../sass/_moduls.scss */
 .sendMessage-popup .block2 p a {
   color: #ffffff;
 }
-/* line 595, ../sass/_moduls.scss */
+/* line 603, ../sass/_moduls.scss */
 .sendMessage-popup .block2 p a:hover {
   text-decoration: none;
 }
 @media only screen and (max-width: 767px) {
-  /* line 591, ../sass/_moduls.scss */
+  /* line 599, ../sass/_moduls.scss */
   .sendMessage-popup .block2 p {
     text-align: left;
     font-size: 12px;
@@ -2647,7 +2677,7 @@ textarea {
     vertical-align: top;
   }
 }
-/* line 604, ../sass/_moduls.scss */
+/* line 612, ../sass/_moduls.scss */
 .sendMessage-popup button {
   color: #ffffff;
   font-size: 20px;
@@ -2666,26 +2696,26 @@ textarea {
   border-radius: 10px;
 }
 @media only screen and (max-width: 991px) {
-  /* line 604, ../sass/_moduls.scss */
+  /* line 612, ../sass/_moduls.scss */
   .sendMessage-popup button {
     width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 604, ../sass/_moduls.scss */
+  /* line 612, ../sass/_moduls.scss */
   .sendMessage-popup button {
     font-size: 16px;
     line-height: 52px;
     height: 50px;
   }
 }
-/* line 615, ../sass/_moduls.scss */
+/* line 623, ../sass/_moduls.scss */
 .sendMessage-popup button:hover {
   color: #f94d15;
   background: #ffffff;
 }
 
-/* line 623, ../sass/_moduls.scss */
+/* line 631, ../sass/_moduls.scss */
 .rules-popup {
   min-width: 800px;
   position: relative;
@@ -2697,7 +2727,7 @@ textarea {
   border-radius: 28px;
 }
 @media only screen and (max-width: 991px) {
-  /* line 623, ../sass/_moduls.scss */
+  /* line 631, ../sass/_moduls.scss */
   .rules-popup {
     min-width: auto;
     margin-left: 15px;
@@ -2705,14 +2735,14 @@ textarea {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 623, ../sass/_moduls.scss */
+  /* line 631, ../sass/_moduls.scss */
   .rules-popup {
     border-width: 5px;
     padding-bottom: 30px;
   }
 }
 @media all and (max-height: 768px) {
-  /* line 623, ../sass/_moduls.scss */
+  /* line 631, ../sass/_moduls.scss */
   .rules-popup {
     height: auto;
     margin-top: 0;
@@ -2720,12 +2750,12 @@ textarea {
   }
 }
 @media all and (min-height: 769px) {
-  /* line 623, ../sass/_moduls.scss */
+  /* line 631, ../sass/_moduls.scss */
   .rules-popup {
     height: 700px;
   }
 }
-/* line 633, ../sass/_moduls.scss */
+/* line 641, ../sass/_moduls.scss */
 .rules-popup h3 {
   color: #ffffff;
   font-size: 27.8px;
@@ -2736,19 +2766,19 @@ textarea {
   margin-bottom: 73px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 633, ../sass/_moduls.scss */
+  /* line 641, ../sass/_moduls.scss */
   .rules-popup h3 {
     font-size: 24px;
     margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 633, ../sass/_moduls.scss */
+  /* line 641, ../sass/_moduls.scss */
   .rules-popup h3 {
     font-size: 20px;
   }
 }
-/* line 641, ../sass/_moduls.scss */
+/* line 649, ../sass/_moduls.scss */
 .rules-popup > div {
   height: 321px;
   overflow-y: auto;
@@ -2756,33 +2786,33 @@ textarea {
   padding: 0 40px 0 0;
 }
 @media only screen and (max-width: 481px) {
-  /* line 641, ../sass/_moduls.scss */
+  /* line 649, ../sass/_moduls.scss */
   .rules-popup > div {
     margin: 0 5px 0 20px;
   }
 }
 @media all and (max-height: 768px) {
-  /* line 641, ../sass/_moduls.scss */
+  /* line 649, ../sass/_moduls.scss */
   .rules-popup > div {
     height: 272px;
   }
 }
 @media all and (min-height: 769px) {
-  /* line 641, ../sass/_moduls.scss */
+  /* line 649, ../sass/_moduls.scss */
   .rules-popup > div {
     height: 440px;
   }
 }
-/* line 649, ../sass/_moduls.scss */
+/* line 657, ../sass/_moduls.scss */
 .rules-popup > div::-webkit-scrollbar {
   width: 4px;
   background: #ffffff;
 }
-/* line 653, ../sass/_moduls.scss */
+/* line 661, ../sass/_moduls.scss */
 .rules-popup > div::-webkit-scrollbar-thumb {
   background: #f94d15;
 }
-/* line 656, ../sass/_moduls.scss */
+/* line 664, ../sass/_moduls.scss */
 .rules-popup > div p {
   color: #ffffff;
   font-family: "CirceLight", sans-serif;
@@ -2791,19 +2821,20 @@ textarea {
   line-height: 21px;
 }
 @media only screen and (max-width: 481px) {
-  /* line 656, ../sass/_moduls.scss */
+  /* line 664, ../sass/_moduls.scss */
   .rules-popup > div p {
     font-size: 14px;
   }
 }
 
-/* line 665, ../sass/_moduls.scss */
+/* line 673, ../sass/_moduls.scss */
 #phrase-modal .md-content {
   max-height: 342px;
   width: 529px;
 }
-/* line 667, ../sass/_moduls.scss */
+/* line 675, ../sass/_moduls.scss */
 #phrase-modal .md-content h3 {
+  display: none !important;
   color: #ffffff;
   font-size: 43.97px;
   display: inline-block;
@@ -2820,7 +2851,7 @@ textarea {
   -webkit-border-radius: 16px;
   border-radius: 16px;
 }
-/* line 672, ../sass/_moduls.scss */
+/* line 681, ../sass/_moduls.scss */
 #phrase-modal .md-content > div {
   text-align: left;
   position: relative;
@@ -2830,7 +2861,7 @@ textarea {
   -webkit-border-radius: 16px;
   border-radius: 16px;
 }
-/* line 677, ../sass/_moduls.scss */
+/* line 686, ../sass/_moduls.scss */
 #phrase-modal .md-content > div p {
   color: #ffffff;
   font-size: 21px;
@@ -2839,7 +2870,7 @@ textarea {
   line-height: 26px;
   margin-bottom: 22px;
 }
-/* line 682, ../sass/_moduls.scss */
+/* line 691, ../sass/_moduls.scss */
 #phrase-modal .md-content > div .md-close {
   color: #ffffff;
   font-size: 33.06px;
@@ -2863,7 +2894,7 @@ textarea {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 686, ../sass/_moduls.scss */
+/* line 695, ../sass/_moduls.scss */
 #phrase-modal .md-content > div .md-close:hover {
   color: #f94d15;
   background: #ffffff;
