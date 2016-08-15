@@ -56,6 +56,22 @@ $(document).ready(function() {
 	$('.md-overlay, .md-close').click(function() {
 		$(window).trigger('popup-closed');
 	});
+
+	$('.js-rules').on('click', function() {
+		$('.js-rules-popup').bPopup();
+	});
+	
+	$('.js-login').on('click', function() {
+		$('.js-login-popup').bPopup();
+	});
+
+	$('.js-sendMessage').on('click', function() {
+		$('.js-sendMessage-popup').bPopup();
+	});
+
+	$('.js-approveMessage').on('click', function() {
+		$('.js-approveMessage-popup').bPopup();
+	});
 });
 
 $(window).load(function() {
