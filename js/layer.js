@@ -155,9 +155,19 @@
   })();
 
   Layer = (function() {
-    var calc_opacity_level, make_container, stream;
+    var calc_opacity_level, make_container, mobile, stream;
 
     stream = $(".phrases");
+
+    mobile = false;
+
+    Layer.init = function() {
+      var windowWidth;
+      windowWidth = $(window).width();
+      if (windowWidth < 768) {
+        return mobile = true;
+      }
+    };
 
     function Layer() {
       this.container = make_container();
@@ -165,9 +175,20 @@
       this.phrases = [];
       this.grid = new PhrasesGrid();
       this.grid.init_points_iterator();
+      if (mobile === true) {
+        this.skip_next = false;
+      }
     }
 
     Layer.prototype.append_phrase = function(phrase) {
+      if (mobile === true) {
+        if (this.skip_next === true) {
+          this.grid.get_next_position();
+          return this.skip_next = false;
+        } else {
+          this.skip_next = true;
+        }
+      }
       this.container.prepend(phrase.get_container());
       phrase.set_position(this.grid.get_next_position());
       return this.phrases.push(phrase);
@@ -249,5 +270,7 @@
   this.PhrasesLayer = Layer;
 
   this.Phrase = Phrase;
+
+  Layer.init();
 
 }).call(this);

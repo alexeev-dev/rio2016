@@ -3,7 +3,7 @@
   var Stream, animation_is_running;
 
   Stream = (function() {
-    var animation, animation_step, append_layer, calc_base, current_base, layers, load_layer, load_next_layer, move_layers, next_layer, offset;
+    var animation, animation_step, append_layer, calc_base, current_base, layers, load_layer, load_next_layer, move_layers, next_layer, offset, saved_speed;
 
     function Stream() {}
 
@@ -18,6 +18,8 @@
     current_base = 100.0;
 
     animation_step = -0.5;
+
+    saved_speed = 0;
 
     Stream.init = function() {
       var i, j, results;
@@ -34,21 +36,30 @@
       }, 10);
     };
 
+    Stream.pause_animation = function() {
+      saved_speed = animation_step;
+      return animation_step = 0;
+    };
+
+    Stream.play_animation = function() {
+      return animation_step = saved_speed;
+    };
+
     Stream.stop_animation = function() {
       return clearInterval(animation);
     };
 
     Stream.increase_speed = function() {
       animation_step -= 0.1;
-      if (animation_step < -1.0) {
-        return animation_step = -1.0;
+      if (animation_step < -1.2) {
+        return animation_step = -1.2;
       }
     };
 
     Stream.decrease_speed = function() {
       animation_step += 0.1;
-      if (animation_step > -0.1) {
-        return animation_step = -0.1;
+      if (animation_step > 0.0) {
+        return animation_step = 0;
       }
     };
 
@@ -126,11 +137,12 @@
   });
 
   $(window).keydown(function(event) {
-    event.preventDefault();
     if (event.which === 38) {
+      event.preventDefault();
       Stream.increase_speed();
     }
     if (event.which === 40) {
+      event.preventDefault();
       return Stream.decrease_speed();
     }
   });
@@ -138,7 +150,16 @@
   $(window).on("phrase-clicked", function(event, phrase) {
     $("#modal-title").html(phrase.title);
     $("#modal-text").html(phrase.text);
-    return $("#modal-trigger").click();
+    $("body").data("popup", "phrase");
+    $("#modal-trigger").click();
+    return Stream.pause_animation();
+  });
+
+  $(window).on("popup-closed", function(event) {
+    if ($("body").data("popup") === "phrase") {
+      $("body").data("popup", "");
+      return Stream.play_animation();
+    }
   });
 
 }).call(this);
