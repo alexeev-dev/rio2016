@@ -13,6 +13,9 @@
 
 	@include respond-to(md) {width: 100%;}
 }
+
+.b-modal {opacity: 1 !important; background: rgba(91, 126, 148, 0.92) !important;}
+
 .md-content {color: inherit; background: none; @include border-radius(0px);}
 .md-overlay {background: rgba(91,126,148,0.92);}
 .md-content h3 {font-weight: inherit; opacity: 1; background: none; padding: 0; @include border-radius(0px);}
@@ -331,13 +334,14 @@
 }
 
 .approveMessage-popup {
+	display: none;
 	width: 967px; position: relative; padding: 61px 0 44px; margin-top: 110px;
 	background: url('../img/approveMessage-bg.png') 0 129px no-repeat; border: solid 13px #ffffff; @include border-radius(28px);
 
-	@media all and (max-height: 768px) {height: auto; margin-top: 0; border-width: 5px;}
+	@media all and (max-height: 768px) {height: auto; margin-top: 11px; border-width: 5px;}
 
 	@include respond-to(md) {width: auto; margin-right: 15px; margin-left: 15px;}
-	@include respond-to(sm) {height: auto; margin-top: 0; border-width: 5px; padding: 30px 0 20px; background: transparent;}
+	@include respond-to(sm) {height: auto; margin-top: 11px; border-width: 5px; padding: 30px 0 20px; background: transparent;}
 
 	h3, p {color: #ffffff;}
 
@@ -403,13 +407,14 @@
 }
 
 .login-popup {
+	display: none;
 	width: 967px; position: relative; padding: 53px 0; margin-top: 110px;
 	border: solid 13px #ffffff; @include border-radius(28px);
 
-	@media all and (max-height: 768px) {height: auto; margin-top: 0; border-width: 5px;}
+	@media all and (max-height: 768px) {height: auto; margin-top: 11px; border-width: 5px;}
 
 	@include respond-to(md) {width: auto; margin-right: 15px; margin-left: 15px;}
-	@include respond-to(sm) {height: auto; margin-top: 0; border-width: 5px;}
+	@include respond-to(sm) {height: auto; margin-top: 11px; border-width: 5px;}
 
 	h3 {
 		color: #ffffff; font-family: $CirceBold; font-size: 27.8px; line-height: 33px; text-align: center; text-transform: uppercase;
@@ -479,13 +484,14 @@
 }
 
 .sendMessage-popup {
+	display: none;
 	width: 967px; position: relative; padding: 41px 1px 45px; margin-top: 110px;
 	background: url('../img/sendMessage-bg.png') -4px 318px no-repeat; border: solid 13px #ffffff; @include border-radius(28px);
 
 	@include respond-to(md) {margin-right: 15px; margin-left: 15px; width: auto;}
-	@include respond-to(sm) {height: 480px; border-width: 5px; padding: 25px 1px 25px;}
+	@include respond-to(sm) {height: 480px; border-width: 5px; padding: 25px 1px 25px; margin-top: 11px;}
 
-	@media all and (max-height: 768px) {height: auto; margin-top: 0; border-width: 5px;}
+	@media all and (max-height: 768px) {height: auto; margin-top: 11px; border-width: 5px;}
 
 	h3 {
 		color: #ffffff; font-size: 24.8px; font-family: $CirceBold; line-height: 30px; text-transform: uppercase; text-align: left;
@@ -629,13 +635,14 @@
 }
 
 .rules-popup {
-	min-width: 800px; position: relative; padding: 43px 15px 85px; margin-top: 110px;
+	display: none;
+	min-width: 800px; width: 967px; position: relative; padding: 43px 15px 85px; margin-top: 110px;
 	border: solid 13px #ffffff; @include border-radius(28px);
 
-	@include respond-to(md) {min-width: auto; margin-left: 15px; margin-right: 15px;}
-	@include respond-to(sm) {border-width: 5px; padding-bottom: 30px;}
+	@include respond-to(md) {min-width: auto; width: 90%; margin-left: 15px; margin-right: 15px;}
+	@include respond-to(sm) {border-width: 5px; padding-bottom: 30px; margin-top: 11px;}
 
-	@media all and (max-height: 768px) {height: auto; margin-top: 0; border-width: 5px;}
+	@media all and (max-height: 768px) {height: auto; margin-top: 11px; border-width: 5px;}
 	@media all and (min-height: 769px) {height: 700px;}
 
 	h3 {
@@ -649,7 +656,7 @@
 	& > div {
 		height: 321px; overflow-y: auto; margin: 0 20px 0 54px; padding: 0 40px 0 0;
 
-		@include respond-to(xs) {margin: 0 5px 0 20px;}
+		@include respond-to(xs) {margin: 0 5px 0 20px; padding-right: 20px;}
 
 		@media all and (max-height: 768px) {height: 272px;}
 		@media all and (min-height: 769px) {height: 440px;}
@@ -686,7 +693,7 @@
 			@include respond-to(xs) {padding: 25px 40px 10px;}
 
 			p {
-				color: #ffffff; font-size: 21px; font-family: $CirceLight; letter-spacing: -0.25px; line-height: 26px;
+				color: #ffffff; font-size: 21px; font-family: $CirceLight; letter-spacing: -0.25px; line-height: 26px; text-align: center;
 				margin-bottom: 22px;
 			}
 

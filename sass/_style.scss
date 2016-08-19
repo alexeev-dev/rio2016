@@ -5,11 +5,11 @@
 
 body {
 	font-family:$CirceRegular;
-	background: #578daf url('../img/app-background-main.jpg') center center no-repeat;	background-size: 100%;	background-attachment: fixed;
+	background: #578daf url('../img/app-background-main.jpg') center top no-repeat;	background-size: 100%;	background-attachment: fixed;
 
-	@media all and (max-height: 667px) {
-		background-size: auto, 667px;
-	}
+	@media all and (max-height: 768px) {background-size: auto, 100%;}
+
+	@include respond-to(sm) {background-size: auto, 100%;}
 }
 
 .preloader {background: #f94d15 url('../img/preloader.gif') center center no-repeat; position: fixed; width: 100%; height: 100%; z-index: 999999;}

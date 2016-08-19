@@ -1340,7 +1340,13 @@ textarea {
   }
 }
 
-/* line 16, ../sass/_moduls.scss */
+/* line 17, ../sass/_moduls.scss */
+.b-modal {
+  opacity: 1 !important;
+  background: rgba(91, 126, 148, 0.92) !important;
+}
+
+/* line 19, ../sass/_moduls.scss */
 .md-content {
   color: inherit;
   background: none;
@@ -1349,12 +1355,12 @@ textarea {
   border-radius: 0px;
 }
 
-/* line 17, ../sass/_moduls.scss */
+/* line 20, ../sass/_moduls.scss */
 .md-overlay {
   background: rgba(91, 126, 148, 0.92);
 }
 
-/* line 18, ../sass/_moduls.scss */
+/* line 21, ../sass/_moduls.scss */
 .md-content h3 {
   font-weight: inherit;
   opacity: 1;
@@ -1365,18 +1371,18 @@ textarea {
   border-radius: 0px;
 }
 
-/* line 19, ../sass/_moduls.scss */
+/* line 22, ../sass/_moduls.scss */
 .md-content > div p {
   padding: 0;
 }
 
-/* line 21, ../sass/_moduls.scss */
+/* line 24, ../sass/_moduls.scss */
 .wordsCounter, .intro, .main, .prizes {
   position: relative;
   z-index: 5;
 }
 
-/* line 23, ../sass/_moduls.scss */
+/* line 26, ../sass/_moduls.scss */
 .flying-balls {
   position: absolute;
   left: 0;
@@ -1384,53 +1390,53 @@ textarea {
   width: 100%;
   height: 100%;
 }
-/* line 25, ../sass/_moduls.scss */
+/* line 28, ../sass/_moduls.scss */
 .flying-balls img {
   position: absolute;
   width: 10%;
 }
-/* line 28, ../sass/_moduls.scss */
+/* line 31, ../sass/_moduls.scss */
 .flying-balls img.ball-1 {
   left: 5%;
   top: 10%;
 }
-/* line 29, ../sass/_moduls.scss */
+/* line 32, ../sass/_moduls.scss */
 .flying-balls img.ball-2 {
   right: 0;
   top: 15%;
 }
-/* line 30, ../sass/_moduls.scss */
+/* line 33, ../sass/_moduls.scss */
 .flying-balls img.ball-3 {
   right: 12%;
   top: 7.5%;
 }
-/* line 31, ../sass/_moduls.scss */
+/* line 34, ../sass/_moduls.scss */
 .flying-balls img.ball-4 {
   left: 8%;
   top: 30%;
 }
-/* line 32, ../sass/_moduls.scss */
+/* line 35, ../sass/_moduls.scss */
 .flying-balls img.ball-5 {
   right: 6%;
   top: 50%;
 }
-/* line 33, ../sass/_moduls.scss */
+/* line 36, ../sass/_moduls.scss */
 .flying-balls img.ball-6 {
   left: 0;
   top: 57.5%;
 }
-/* line 34, ../sass/_moduls.scss */
+/* line 37, ../sass/_moduls.scss */
 .flying-balls img.ball-7 {
   left: -45px;
   top: 87.5%;
 }
-/* line 35, ../sass/_moduls.scss */
+/* line 38, ../sass/_moduls.scss */
 .flying-balls img.ball-8 {
   right: 10%;
   top: 75%;
 }
 
-/* line 39, ../sass/_moduls.scss */
+/* line 42, ../sass/_moduls.scss */
 .wordsCounter {
   text-align: center;
   width: 812px;
@@ -1439,12 +1445,12 @@ textarea {
   padding-bottom: 53px;
 }
 @media only screen and (max-width: 991px) {
-  /* line 39, ../sass/_moduls.scss */
+  /* line 42, ../sass/_moduls.scss */
   .wordsCounter {
     width: auto;
   }
 }
-/* line 45, ../sass/_moduls.scss */
+/* line 48, ../sass/_moduls.scss */
 .wordsCounter:after {
   content: '';
   display: block;
@@ -1454,15 +1460,15 @@ textarea {
   left: 0;
   background: #ffffff;
 }
-/* line 52, ../sass/_moduls.scss */
+/* line 55, ../sass/_moduls.scss */
 .wordsCounter.topBorder:after {
   top: 0;
 }
-/* line 55, ../sass/_moduls.scss */
+/* line 58, ../sass/_moduls.scss */
 .wordsCounter.bottomBorder:after {
   bottom: 0;
 }
-/* line 58, ../sass/_moduls.scss */
+/* line 61, ../sass/_moduls.scss */
 .wordsCounter .counter {
   color: #ffffff;
   font-size: 76.5px;
@@ -1478,7 +1484,7 @@ textarea {
   border-radius: 16px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 58, ../sass/_moduls.scss */
+  /* line 61, ../sass/_moduls.scss */
   .wordsCounter .counter {
     font-size: 50px;
     line-height: 78px;
@@ -1487,7 +1493,7 @@ textarea {
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 58, ../sass/_moduls.scss */
+  /* line 61, ../sass/_moduls.scss */
   .wordsCounter .counter {
     font-size: 30px;
     line-height: 42px;
@@ -1495,7 +1501,7 @@ textarea {
     height: 44px;
   }
 }
-/* line 73, ../sass/_moduls.scss */
+/* line 76, ../sass/_moduls.scss */
 .wordsCounter p {
   color: #ffffff;
   font-size: 22.5px;
@@ -1504,7 +1510,7 @@ textarea {
   margin-bottom: 48px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 73, ../sass/_moduls.scss */
+  /* line 76, ../sass/_moduls.scss */
   .wordsCounter p {
     font-size: 19px;
     line-height: 24px;
@@ -1512,13 +1518,13 @@ textarea {
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 73, ../sass/_moduls.scss */
+  /* line 76, ../sass/_moduls.scss */
   .wordsCounter p {
     font-size: 14px;
     line-height: 18px;
   }
 }
-/* line 86, ../sass/_moduls.scss */
+/* line 89, ../sass/_moduls.scss */
 .wordsCounter .addWords {
   color: #ffffff;
   font-size: 29.5px;
@@ -1539,7 +1545,7 @@ textarea {
   cursor: pointer;
 }
 @media only screen and (max-width: 481px) {
-  /* line 86, ../sass/_moduls.scss */
+  /* line 89, ../sass/_moduls.scss */
   .wordsCounter .addWords {
     font-size: 22px;
     line-height: 44px;
@@ -1547,7 +1553,7 @@ textarea {
     height: 42px;
   }
 }
-/* line 97, ../sass/_moduls.scss */
+/* line 100, ../sass/_moduls.scss */
 .wordsCounter .addWords:before {
   content: '';
   display: block;
@@ -1559,19 +1565,19 @@ textarea {
   background: #ffffff;
 }
 @media only screen and (max-width: 481px) {
-  /* line 97, ../sass/_moduls.scss */
+  /* line 100, ../sass/_moduls.scss */
   .wordsCounter .addWords:before {
     height: 38px;
   }
 }
-/* line 105, ../sass/_moduls.scss */
+/* line 108, ../sass/_moduls.scss */
 .wordsCounter .addWords i {
   position: absolute;
   left: 18px;
   top: 12px;
 }
 @media only screen and (max-width: 481px) {
-  /* line 105, ../sass/_moduls.scss */
+  /* line 108, ../sass/_moduls.scss */
   .wordsCounter .addWords i {
     -moz-transform: scale(0.7);
     -ms-transform: scale(0.7);
@@ -1580,7 +1586,7 @@ textarea {
     top: 2px;
   }
 }
-/* line 113, ../sass/_moduls.scss */
+/* line 116, ../sass/_moduls.scss */
 .wordsCounter .addWords span {
   width: 100%;
   display: inline-block;
@@ -1591,35 +1597,35 @@ textarea {
   border-radius: 0 12px 12px 0;
 }
 @media only screen and (max-width: 481px) {
-  /* line 113, ../sass/_moduls.scss */
+  /* line 116, ../sass/_moduls.scss */
   .wordsCounter .addWords span {
     text-align: center;
     padding-left: 0;
     height: 42px;
   }
 }
-/* line 124, ../sass/_moduls.scss */
+/* line 127, ../sass/_moduls.scss */
 .wordsCounter .addWords:hover span {
   color: #f94d15;
   background: #fff;
 }
 
-/* line 132, ../sass/_moduls.scss */
+/* line 135, ../sass/_moduls.scss */
 .intro {
   padding: 28px 40px;
   background: rgba(249, 77, 21, 0.84);
 }
-/* line 136, ../sass/_moduls.scss */
+/* line 139, ../sass/_moduls.scss */
 .intro h1, .intro p {
   color: #ffffff;
 }
 @media only screen and (max-width: 767px) {
-  /* line 136, ../sass/_moduls.scss */
+  /* line 139, ../sass/_moduls.scss */
   .intro h1, .intro p {
     text-align: center;
   }
 }
-/* line 142, ../sass/_moduls.scss */
+/* line 145, ../sass/_moduls.scss */
 .intro h1 {
   font-family: "CirceBold", sans-serif;
   font-size: 39.48px;
@@ -1629,20 +1635,20 @@ textarea {
   margin-bottom: 5px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 142, ../sass/_moduls.scss */
+  /* line 145, ../sass/_moduls.scss */
   .intro h1 {
     font-size: 30px;
     line-height: 36px;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 142, ../sass/_moduls.scss */
+  /* line 145, ../sass/_moduls.scss */
   .intro h1 {
     font-size: 24px;
     line-height: 30px;
   }
 }
-/* line 150, ../sass/_moduls.scss */
+/* line 153, ../sass/_moduls.scss */
 .intro p {
   font-family: "CirceLight", sans-serif;
   font-size: 19.3px;
@@ -1650,20 +1656,20 @@ textarea {
   letter-spacing: -0.05px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 150, ../sass/_moduls.scss */
+  /* line 153, ../sass/_moduls.scss */
   .intro p {
     font-size: 16px;
     line-height: 20px;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 155, ../sass/_moduls.scss */
+  /* line 158, ../sass/_moduls.scss */
   .intro p br {
     display: none;
   }
 }
 
-/* line 163, ../sass/_moduls.scss */
+/* line 166, ../sass/_moduls.scss */
 .main .participate {
   color: #ffffff;
   font-size: 29.5px;
@@ -1682,7 +1688,7 @@ textarea {
   border-radius: 14px;
   cursor: pointer;
 }
-/* line 169, ../sass/_moduls.scss */
+/* line 172, ../sass/_moduls.scss */
 .main .participate:before {
   content: '';
   display: block;
@@ -1694,7 +1700,7 @@ textarea {
   background: #ffffff;
 }
 @media only screen and (max-width: 481px) {
-  /* line 163, ../sass/_moduls.scss */
+  /* line 166, ../sass/_moduls.scss */
   .main .participate {
     font-size: 20px;
     text-align: center;
@@ -1702,7 +1708,7 @@ textarea {
     height: 42px;
   }
 }
-/* line 180, ../sass/_moduls.scss */
+/* line 183, ../sass/_moduls.scss */
 .main .participate i {
   position: absolute;
   left: 18px;
@@ -1713,7 +1719,7 @@ textarea {
   transform: translateY(-50%);
 }
 @media only screen and (max-width: 481px) {
-  /* line 180, ../sass/_moduls.scss */
+  /* line 183, ../sass/_moduls.scss */
   .main .participate i {
     -moz-transform: translateY(-50%) scale(0.7);
     -ms-transform: translateY(-50%) scale(0.7);
@@ -1721,7 +1727,7 @@ textarea {
     transform: translateY(-50%) scale(0.7);
   }
 }
-/* line 188, ../sass/_moduls.scss */
+/* line 191, ../sass/_moduls.scss */
 .main .participate span {
   line-height: 56px;
   width: 100%;
@@ -1734,19 +1740,19 @@ textarea {
   border-radius: 0 12px 12px 0;
 }
 @media only screen and (max-width: 481px) {
-  /* line 188, ../sass/_moduls.scss */
+  /* line 191, ../sass/_moduls.scss */
   .main .participate span {
     line-height: 40px;
     height: 42px;
     padding-left: 0;
   }
 }
-/* line 200, ../sass/_moduls.scss */
+/* line 203, ../sass/_moduls.scss */
 .main .participate:hover span {
   color: #f94d15;
   background: #fff;
 }
-/* line 206, ../sass/_moduls.scss */
+/* line 209, ../sass/_moduls.scss */
 .main .showSupp {
   color: #f94d15;
   font-family: "CirceLight", sans-serif;
@@ -1758,11 +1764,11 @@ textarea {
   width: 200px;
   margin: 0 auto 36px;
 }
-/* line 210, ../sass/_moduls.scss */
+/* line 213, ../sass/_moduls.scss */
 .main .showSupp:hover {
   text-decoration: none;
 }
-/* line 213, ../sass/_moduls.scss */
+/* line 216, ../sass/_moduls.scss */
 .main p {
   color: #5b7e94;
   font-family: "CirceLight", sans-serif;
@@ -1772,28 +1778,28 @@ textarea {
   text-align: center;
   margin-bottom: 26px;
 }
-/* line 217, ../sass/_moduls.scss */
+/* line 220, ../sass/_moduls.scss */
 .main p:last-child {
   margin-bottom: 0;
 }
 @media only screen and (max-width: 481px) {
-  /* line 213, ../sass/_moduls.scss */
+  /* line 216, ../sass/_moduls.scss */
   .main p {
     font-size: 15px;
   }
 }
-/* line 221, ../sass/_moduls.scss */
+/* line 224, ../sass/_moduls.scss */
 .main p span {
   font-family: "CirceBold", sans-serif;
 }
 @media only screen and (max-width: 481px) {
-  /* line 225, ../sass/_moduls.scss */
+  /* line 228, ../sass/_moduls.scss */
   .main p br {
     display: none;
   }
 }
 
-/* line 233, ../sass/_moduls.scss */
+/* line 236, ../sass/_moduls.scss */
 .prizes p {
   color: #5b7e94;
   font-size: 18.19px;
@@ -1804,36 +1810,36 @@ textarea {
   margin-bottom: 29px;
 }
 @media only screen and (max-width: 481px) {
-  /* line 233, ../sass/_moduls.scss */
+  /* line 236, ../sass/_moduls.scss */
   .prizes p {
     font-size: 13px;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 239, ../sass/_moduls.scss */
+  /* line 242, ../sass/_moduls.scss */
   .prizes p br {
     display: none;
   }
 }
-/* line 244, ../sass/_moduls.scss */
+/* line 247, ../sass/_moduls.scss */
 .prizes ul {
   text-align: center;
 }
-/* line 246, ../sass/_moduls.scss */
+/* line 249, ../sass/_moduls.scss */
 .prizes ul li {
   display: inline-block;
   vertical-align: top;
   margin: 0 8px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 246, ../sass/_moduls.scss */
+  /* line 249, ../sass/_moduls.scss */
   .prizes ul li {
     text-align: center;
     display: block;
     margin: 0 0 15px;
   }
 }
-/* line 252, ../sass/_moduls.scss */
+/* line 255, ../sass/_moduls.scss */
 .prizes ul li figure > div {
   width: 159px;
   height: 159px;
@@ -1847,12 +1853,12 @@ textarea {
   border-radius: 50%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 252, ../sass/_moduls.scss */
+  /* line 255, ../sass/_moduls.scss */
   .prizes ul li figure > div {
     display: inline-block;
   }
 }
-/* line 257, ../sass/_moduls.scss */
+/* line 260, ../sass/_moduls.scss */
 .prizes ul li figure > div img {
   position: absolute;
   left: 50%;
@@ -1862,7 +1868,7 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 263, ../sass/_moduls.scss */
+/* line 266, ../sass/_moduls.scss */
 .prizes ul li figure figcaption {
   color: #5b7e94;
   font-size: 10.91px;
@@ -1871,12 +1877,12 @@ textarea {
   text-transform: uppercase;
 }
 
-/* line 271, ../sass/_moduls.scss */
+/* line 274, ../sass/_moduls.scss */
 .wordsContainer {
   height: 5000px;
   position: relative;
 }
-/* line 274, ../sass/_moduls.scss */
+/* line 277, ../sass/_moduls.scss */
 .wordsContainer ul li {
   position: absolute;
   -moz-transition: all 0.25s ease-out;
@@ -1885,20 +1891,20 @@ textarea {
   transition: all 0.25s ease-out;
   cursor: pointer;
 }
-/* line 279, ../sass/_moduls.scss */
+/* line 282, ../sass/_moduls.scss */
 .wordsContainer ul li:hover {
   -moz-transform: scale(1.125);
   -ms-transform: scale(1.125);
   -webkit-transform: scale(1.125);
   transform: scale(1.125);
 }
-/* line 280, ../sass/_moduls.scss */
+/* line 283, ../sass/_moduls.scss */
 .wordsContainer ul li a {
   color: #ffffff;
   text-decoration: none;
 }
 
-/* line 288, ../sass/_moduls.scss */
+/* line 291, ../sass/_moduls.scss */
 .goBackButton {
   color: #f94d15;
   display: block;
@@ -1917,7 +1923,7 @@ textarea {
   cursor: pointer;
 }
 @media only screen and (max-width: 767px) {
-  /* line 288, ../sass/_moduls.scss */
+  /* line 291, ../sass/_moduls.scss */
   .goBackButton {
     top: -15px;
     left: -15px;
@@ -1927,7 +1933,7 @@ textarea {
   }
 }
 @media all and (max-height: 768px) {
-  /* line 288, ../sass/_moduls.scss */
+  /* line 291, ../sass/_moduls.scss */
   .goBackButton {
     top: -15px;
     left: -15px;
@@ -1936,7 +1942,7 @@ textarea {
     border-width: 6px;
   }
 }
-/* line 298, ../sass/_moduls.scss */
+/* line 301, ../sass/_moduls.scss */
 .goBackButton img {
   width: 70%;
   position: absolute;
@@ -1947,7 +1953,7 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 302, ../sass/_moduls.scss */
+/* line 305, ../sass/_moduls.scss */
 .goBackButton:hover {
   background: #ffffff;
   -moz-animation: movingGoBackButton 0.75s linear infinite;
@@ -1955,7 +1961,7 @@ textarea {
   animation: movingGoBackButton 0.75s linear infinite;
 }
 
-/* line 307, ../sass/_moduls.scss */
+/* line 310, ../sass/_moduls.scss */
 .wordsScreen-popup {
   width: 654px;
   position: fixed;
@@ -1973,13 +1979,13 @@ textarea {
   border-radius: 31px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 307, ../sass/_moduls.scss */
+  /* line 310, ../sass/_moduls.scss */
   .wordsScreen-popup {
     width: 90%;
     padding-right: 15px;
   }
 }
-/* line 313, ../sass/_moduls.scss */
+/* line 316, ../sass/_moduls.scss */
 .wordsScreen-popup .upDownButtons {
   position: absolute;
   left: 98px;
@@ -1990,12 +1996,12 @@ textarea {
   transform: translateY(-50%);
 }
 @media only screen and (max-width: 767px) {
-  /* line 313, ../sass/_moduls.scss */
+  /* line 316, ../sass/_moduls.scss */
   .wordsScreen-popup .upDownButtons {
     left: 50px;
   }
 }
-/* line 317, ../sass/_moduls.scss */
+/* line 320, ../sass/_moduls.scss */
 .wordsScreen-popup .upDownButtons div {
   color: #ffffff;
   font-size: 24px;
@@ -2008,11 +2014,11 @@ textarea {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 321, ../sass/_moduls.scss */
+/* line 324, ../sass/_moduls.scss */
 .wordsScreen-popup .upDownButtons div.upButton {
   margin-bottom: 5px;
 }
-/* line 324, ../sass/_moduls.scss */
+/* line 327, ../sass/_moduls.scss */
 .wordsScreen-popup p {
   color: #ffffff;
   font-size: 20px;
@@ -2021,21 +2027,22 @@ textarea {
   margin-left: 168px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 324, ../sass/_moduls.scss */
+  /* line 327, ../sass/_moduls.scss */
   .wordsScreen-popup p {
     margin-left: 120px;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 324, ../sass/_moduls.scss */
+  /* line 327, ../sass/_moduls.scss */
   .wordsScreen-popup p {
     font-size: 18px;
     line-height: 22px;
   }
 }
 
-/* line 333, ../sass/_moduls.scss */
+/* line 336, ../sass/_moduls.scss */
 .approveMessage-popup {
+  display: none;
   width: 967px;
   position: relative;
   padding: 61px 0 44px;
@@ -2047,15 +2054,15 @@ textarea {
   border-radius: 28px;
 }
 @media all and (max-height: 768px) {
-  /* line 333, ../sass/_moduls.scss */
+  /* line 336, ../sass/_moduls.scss */
   .approveMessage-popup {
     height: auto;
-    margin-top: 0;
+    margin-top: 11px;
     border-width: 5px;
   }
 }
 @media only screen and (max-width: 991px) {
-  /* line 333, ../sass/_moduls.scss */
+  /* line 336, ../sass/_moduls.scss */
   .approveMessage-popup {
     width: auto;
     margin-right: 15px;
@@ -2063,20 +2070,20 @@ textarea {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 333, ../sass/_moduls.scss */
+  /* line 336, ../sass/_moduls.scss */
   .approveMessage-popup {
     height: auto;
-    margin-top: 0;
+    margin-top: 11px;
     border-width: 5px;
     padding: 30px 0 20px;
     background: transparent;
   }
 }
-/* line 342, ../sass/_moduls.scss */
+/* line 346, ../sass/_moduls.scss */
 .approveMessage-popup h3, .approveMessage-popup p {
   color: #ffffff;
 }
-/* line 344, ../sass/_moduls.scss */
+/* line 348, ../sass/_moduls.scss */
 .approveMessage-popup h3 {
   font-family: "CirceBold", sans-serif;
   font-size: 27.8px;
@@ -2086,7 +2093,7 @@ textarea {
   margin-bottom: 94px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 344, ../sass/_moduls.scss */
+  /* line 348, ../sass/_moduls.scss */
   .approveMessage-popup h3 {
     font-size: 24px;
     line-height: 30px;
@@ -2094,13 +2101,13 @@ textarea {
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 344, ../sass/_moduls.scss */
+  /* line 348, ../sass/_moduls.scss */
   .approveMessage-popup h3 {
     font-size: 20px;
     line-height: 24px;
   }
 }
-/* line 352, ../sass/_moduls.scss */
+/* line 356, ../sass/_moduls.scss */
 .approveMessage-popup p {
   font-size: 22px;
   line-height: 26px;
@@ -2109,7 +2116,7 @@ textarea {
   margin-bottom: 28px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 352, ../sass/_moduls.scss */
+  /* line 356, ../sass/_moduls.scss */
   .approveMessage-popup p {
     font-size: 18px;
     line-height: 22px;
@@ -2118,26 +2125,26 @@ textarea {
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 352, ../sass/_moduls.scss */
+  /* line 356, ../sass/_moduls.scss */
   .approveMessage-popup p {
     font-size: 16px;
     line-height: 20px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 359, ../sass/_moduls.scss */
+  /* line 363, ../sass/_moduls.scss */
   .approveMessage-popup p br {
     display: none;
   }
 }
-/* line 364, ../sass/_moduls.scss */
+/* line 368, ../sass/_moduls.scss */
 .approveMessage-popup ul {
   text-align: center;
   padding-top: 33px;
   margin: 0 1px;
   position: relative;
 }
-/* line 368, ../sass/_moduls.scss */
+/* line 372, ../sass/_moduls.scss */
 .approveMessage-popup ul:before {
   content: '';
   display: block;
@@ -2149,17 +2156,17 @@ textarea {
   background: #ffffff;
 }
 @media only screen and (max-width: 767px) {
-  /* line 368, ../sass/_moduls.scss */
+  /* line 372, ../sass/_moduls.scss */
   .approveMessage-popup ul:before {
     top: 0;
   }
 }
-/* line 376, ../sass/_moduls.scss */
+/* line 380, ../sass/_moduls.scss */
 .approveMessage-popup ul li {
   display: inline-block;
 }
 @media only screen and (max-width: 767px) {
-  /* line 376, ../sass/_moduls.scss */
+  /* line 380, ../sass/_moduls.scss */
   .approveMessage-popup ul li {
     text-align: center;
     display: block;
@@ -2167,7 +2174,7 @@ textarea {
     padding: 0 15px;
   }
 }
-/* line 383, ../sass/_moduls.scss */
+/* line 387, ../sass/_moduls.scss */
 .approveMessage-popup ul li a {
   color: #ffffff;
   font-size: 20px;
@@ -2186,13 +2193,13 @@ textarea {
   border-radius: 10px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 383, ../sass/_moduls.scss */
+  /* line 387, ../sass/_moduls.scss */
   .approveMessage-popup ul li a {
     margin: 0;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 383, ../sass/_moduls.scss */
+  /* line 387, ../sass/_moduls.scss */
   .approveMessage-popup ul li a {
     font-size: 16px;
     line-height: 52px;
@@ -2200,14 +2207,15 @@ textarea {
     height: 50px;
   }
 }
-/* line 396, ../sass/_moduls.scss */
+/* line 400, ../sass/_moduls.scss */
 .approveMessage-popup ul li a:hover {
   color: #f94d15;
   background: #ffffff;
 }
 
-/* line 405, ../sass/_moduls.scss */
+/* line 409, ../sass/_moduls.scss */
 .login-popup {
+  display: none;
   width: 967px;
   position: relative;
   padding: 53px 0;
@@ -2218,15 +2226,15 @@ textarea {
   border-radius: 28px;
 }
 @media all and (max-height: 768px) {
-  /* line 405, ../sass/_moduls.scss */
+  /* line 409, ../sass/_moduls.scss */
   .login-popup {
     height: auto;
-    margin-top: 0;
+    margin-top: 11px;
     border-width: 5px;
   }
 }
 @media only screen and (max-width: 991px) {
-  /* line 405, ../sass/_moduls.scss */
+  /* line 409, ../sass/_moduls.scss */
   .login-popup {
     width: auto;
     margin-right: 15px;
@@ -2234,14 +2242,14 @@ textarea {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 405, ../sass/_moduls.scss */
+  /* line 409, ../sass/_moduls.scss */
   .login-popup {
     height: auto;
-    margin-top: 0;
+    margin-top: 11px;
     border-width: 5px;
   }
 }
-/* line 414, ../sass/_moduls.scss */
+/* line 419, ../sass/_moduls.scss */
 .login-popup h3 {
   color: #ffffff;
   font-family: "CirceBold", sans-serif;
@@ -2252,38 +2260,38 @@ textarea {
   margin-bottom: 24px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 414, ../sass/_moduls.scss */
+  /* line 419, ../sass/_moduls.scss */
   .login-popup h3 {
     font-size: 22px;
     line-height: 26px;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 414, ../sass/_moduls.scss */
+  /* line 419, ../sass/_moduls.scss */
   .login-popup h3 {
     font-size: 18px;
     line-height: 22px;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 421, ../sass/_moduls.scss */
+  /* line 426, ../sass/_moduls.scss */
   .login-popup h3 br {
     display: none;
   }
 }
-/* line 426, ../sass/_moduls.scss */
+/* line 431, ../sass/_moduls.scss */
 .login-popup ul.socials {
   text-align: center;
   width: 371px;
   margin: 0 auto;
 }
 @media only screen and (max-width: 481px) {
-  /* line 426, ../sass/_moduls.scss */
+  /* line 431, ../sass/_moduls.scss */
   .login-popup ul.socials {
     width: auto;
   }
 }
-/* line 435, ../sass/_moduls.scss */
+/* line 440, ../sass/_moduls.scss */
 .login-popup ul.socials:hover li {
   opacity: 0.7;
   -moz-transform: scale(0.9);
@@ -2291,7 +2299,7 @@ textarea {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
 }
-/* line 440, ../sass/_moduls.scss */
+/* line 445, ../sass/_moduls.scss */
 .login-popup ul.socials li {
   display: inline-block;
   margin: 0 5px;
@@ -2301,7 +2309,7 @@ textarea {
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
 }
-/* line 444, ../sass/_moduls.scss */
+/* line 449, ../sass/_moduls.scss */
 .login-popup ul.socials li:hover {
   opacity: 1;
   -moz-transform: scale(1);
@@ -2309,7 +2317,7 @@ textarea {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-/* line 446, ../sass/_moduls.scss */
+/* line 451, ../sass/_moduls.scss */
 .login-popup ul.socials li a {
   color: #ffffff;
   font-size: 52px;
@@ -2324,7 +2332,7 @@ textarea {
   border-radius: 50%;
 }
 @media only screen and (max-width: 481px) {
-  /* line 446, ../sass/_moduls.scss */
+  /* line 451, ../sass/_moduls.scss */
   .login-popup ul.socials li a {
     font-size: 32px;
     line-height: 50px;
@@ -2333,43 +2341,44 @@ textarea {
     border-width: 3px;
   }
 }
-/* line 457, ../sass/_moduls.scss */
+/* line 462, ../sass/_moduls.scss */
 .login-popup ul.socials li a.fb {
   font-size: 61px;
   padding-top: 10px;
 }
 @media only screen and (max-width: 481px) {
-  /* line 457, ../sass/_moduls.scss */
+  /* line 462, ../sass/_moduls.scss */
   .login-popup ul.socials li a.fb {
     font-size: 32px;
     padding-top: 0;
   }
 }
-/* line 465, ../sass/_moduls.scss */
+/* line 470, ../sass/_moduls.scss */
 .login-popup ul.socials li a.tw {
   padding-left: 5px;
   padding-top: 2px;
 }
 @media only screen and (max-width: 481px) {
-  /* line 465, ../sass/_moduls.scss */
+  /* line 470, ../sass/_moduls.scss */
   .login-popup ul.socials li a.tw {
     padding-left: 0;
     padding-top: 0;
   }
 }
-/* line 471, ../sass/_moduls.scss */
+/* line 476, ../sass/_moduls.scss */
 .login-popup ul.socials li a.vk {
   padding-right: 4px;
 }
 @media only screen and (max-width: 481px) {
-  /* line 471, ../sass/_moduls.scss */
+  /* line 476, ../sass/_moduls.scss */
   .login-popup ul.socials li a.vk {
     padding-right: 2px;
   }
 }
 
-/* line 481, ../sass/_moduls.scss */
+/* line 486, ../sass/_moduls.scss */
 .sendMessage-popup {
+  display: none;
   width: 967px;
   position: relative;
   padding: 41px 1px 45px;
@@ -2381,7 +2390,7 @@ textarea {
   border-radius: 28px;
 }
 @media only screen and (max-width: 991px) {
-  /* line 481, ../sass/_moduls.scss */
+  /* line 486, ../sass/_moduls.scss */
   .sendMessage-popup {
     margin-right: 15px;
     margin-left: 15px;
@@ -2389,22 +2398,23 @@ textarea {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 481, ../sass/_moduls.scss */
+  /* line 486, ../sass/_moduls.scss */
   .sendMessage-popup {
     height: 480px;
     border-width: 5px;
     padding: 25px 1px 25px;
+    margin-top: 11px;
   }
 }
 @media all and (max-height: 768px) {
-  /* line 481, ../sass/_moduls.scss */
+  /* line 486, ../sass/_moduls.scss */
   .sendMessage-popup {
     height: auto;
-    margin-top: 0;
+    margin-top: 11px;
     border-width: 5px;
   }
 }
-/* line 490, ../sass/_moduls.scss */
+/* line 496, ../sass/_moduls.scss */
 .sendMessage-popup h3 {
   color: #ffffff;
   font-size: 24.8px;
@@ -2417,7 +2427,7 @@ textarea {
   top: 9px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 490, ../sass/_moduls.scss */
+  /* line 496, ../sass/_moduls.scss */
   .sendMessage-popup h3 {
     text-align: center;
     font-size: 20px;
@@ -2427,22 +2437,22 @@ textarea {
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 490, ../sass/_moduls.scss */
+  /* line 496, ../sass/_moduls.scss */
   .sendMessage-popup h3 {
     font-size: 14px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 500, ../sass/_moduls.scss */
+  /* line 506, ../sass/_moduls.scss */
   .sendMessage-popup h3 br {
     display: none;
   }
 }
-/* line 504, ../sass/_moduls.scss */
+/* line 510, ../sass/_moduls.scss */
 .sendMessage-popup input {
   display: none;
 }
-/* line 508, ../sass/_moduls.scss */
+/* line 514, ../sass/_moduls.scss */
 .sendMessage-popup label {
   color: #ffffff;
   font-family: "CirceBold", sans-serif;
@@ -2455,7 +2465,7 @@ textarea {
   cursor: pointer;
 }
 @media only screen and (max-width: 767px) {
-  /* line 508, ../sass/_moduls.scss */
+  /* line 514, ../sass/_moduls.scss */
   .sendMessage-popup label {
     text-align: left;
     display: inline-block;
@@ -2467,7 +2477,7 @@ textarea {
     padding-right: 14px;
   }
 }
-/* line 518, ../sass/_moduls.scss */
+/* line 524, ../sass/_moduls.scss */
 .sendMessage-popup label:before {
   content: '';
   display: block;
@@ -2481,7 +2491,7 @@ textarea {
   -webkit-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 523, ../sass/_moduls.scss */
+/* line 529, ../sass/_moduls.scss */
 .sendMessage-popup label:after {
   content: '';
   display: none;
@@ -2497,16 +2507,16 @@ textarea {
   background: #ffffff;
 }
 @media only screen and (max-width: 767px) {
-  /* line 523, ../sass/_moduls.scss */
+  /* line 529, ../sass/_moduls.scss */
   .sendMessage-popup label:after {
     display: block;
   }
 }
-/* line 532, ../sass/_moduls.scss */
+/* line 538, ../sass/_moduls.scss */
 .sendMessage-popup input:checked + label:before {
   background: url("../img/popup-check.png") center center no-repeat;
 }
-/* line 534, ../sass/_moduls.scss */
+/* line 540, ../sass/_moduls.scss */
 .sendMessage-popup textarea {
   color: #8b8b8b;
   font-family: "CirceLight", sans-serif;
@@ -2518,77 +2528,77 @@ textarea {
   border-radius: 16px;
   resize: none;
 }
-/* line 540, ../sass/_moduls.scss */
+/* line 546, ../sass/_moduls.scss */
 .sendMessage-popup textarea.error {
   border-color: red;
   -moz-animation: errorValidate 2s linear 1;
   -webkit-animation: errorValidate 2s linear 1;
   animation: errorValidate 2s linear 1;
 }
-/* line 546, ../sass/_moduls.scss */
+/* line 552, ../sass/_moduls.scss */
 .sendMessage-popup .block1, .sendMessage-popup .block2 {
   padding-left: 376px;
   padding-right: 88px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 546, ../sass/_moduls.scss */
+  /* line 552, ../sass/_moduls.scss */
   .sendMessage-popup .block1, .sendMessage-popup .block2 {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
-/* line 552, ../sass/_moduls.scss */
+/* line 558, ../sass/_moduls.scss */
 .sendMessage-popup .block1 {
   position: relative;
   padding-bottom: 9px;
   margin-bottom: 17px;
 }
-/* line 554, ../sass/_moduls.scss */
+/* line 560, ../sass/_moduls.scss */
 .sendMessage-popup .block1 textarea {
   font-size: 24.8px;
   height: auto;
   padding: 21px;
 }
-/* line 557, ../sass/_moduls.scss */
+/* line 563, ../sass/_moduls.scss */
 .sendMessage-popup .block1 textarea::-webkit-input-placeholder {
   text-transform: uppercase;
   opacity: 0.54;
 }
-/* line 558, ../sass/_moduls.scss */
+/* line 564, ../sass/_moduls.scss */
 .sendMessage-popup .block1 textarea::-moz-placeholder {
   text-transform: uppercase;
   opacity: 0.54;
 }
-/* line 559, ../sass/_moduls.scss */
+/* line 565, ../sass/_moduls.scss */
 .sendMessage-popup .block1 textarea:-moz-placeholder {
   text-transform: uppercase;
   opacity: 0.54;
 }
-/* line 560, ../sass/_moduls.scss */
+/* line 566, ../sass/_moduls.scss */
 .sendMessage-popup .block1 textarea:-ms-input-placeholder {
   text-transform: uppercase;
   opacity: 0.54;
 }
 @media only screen and (max-width: 991px) {
-  /* line 554, ../sass/_moduls.scss */
+  /* line 560, ../sass/_moduls.scss */
   .sendMessage-popup .block1 textarea {
     font-size: 20px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 554, ../sass/_moduls.scss */
+  /* line 560, ../sass/_moduls.scss */
   .sendMessage-popup .block1 textarea {
     font-size: 16px;
     padding: 15px 21px 0;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 554, ../sass/_moduls.scss */
+  /* line 560, ../sass/_moduls.scss */
   .sendMessage-popup .block1 textarea {
     font-size: 13px;
   }
 }
-/* line 571, ../sass/_moduls.scss */
+/* line 577, ../sass/_moduls.scss */
 .sendMessage-popup .block1:after {
   content: '';
   display: block;
@@ -2599,60 +2609,60 @@ textarea {
   bottom: 0;
   background: #ffffff;
 }
-/* line 578, ../sass/_moduls.scss */
+/* line 584, ../sass/_moduls.scss */
 .sendMessage-popup .block2 {
   position: relative;
 }
 @media only screen and (max-width: 767px) {
-  /* line 578, ../sass/_moduls.scss */
+  /* line 584, ../sass/_moduls.scss */
   .sendMessage-popup .block2 {
     text-align: center;
   }
 }
-/* line 583, ../sass/_moduls.scss */
+/* line 589, ../sass/_moduls.scss */
 .sendMessage-popup .block2 textarea {
   font-size: 19.39px;
   letter-spacing: 0.1px;
   padding: 27px 20px;
   margin-bottom: 23px;
 }
-/* line 586, ../sass/_moduls.scss */
+/* line 592, ../sass/_moduls.scss */
 .sendMessage-popup .block2 textarea::-webkit-input-placeholder {
   opacity: 0.54;
 }
-/* line 587, ../sass/_moduls.scss */
+/* line 593, ../sass/_moduls.scss */
 .sendMessage-popup .block2 textarea::-moz-placeholder {
   opacity: 0.54;
 }
-/* line 588, ../sass/_moduls.scss */
+/* line 594, ../sass/_moduls.scss */
 .sendMessage-popup .block2 textarea:-moz-placeholder {
   opacity: 0.54;
 }
-/* line 589, ../sass/_moduls.scss */
+/* line 595, ../sass/_moduls.scss */
 .sendMessage-popup .block2 textarea:-ms-input-placeholder {
   opacity: 0.54;
 }
 @media all and (max-height: 699px) {
-  /* line 583, ../sass/_moduls.scss */
+  /* line 589, ../sass/_moduls.scss */
   .sendMessage-popup .block2 textarea {
     height: 150px;
   }
 }
 @media all and (min-height: 700px) {
-  /* line 583, ../sass/_moduls.scss */
+  /* line 589, ../sass/_moduls.scss */
   .sendMessage-popup .block2 textarea {
     height: 376px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 583, ../sass/_moduls.scss */
+  /* line 589, ../sass/_moduls.scss */
   .sendMessage-popup .block2 textarea {
     font-size: 16px;
     height: 100px;
     padding: 10px 15px;
   }
 }
-/* line 599, ../sass/_moduls.scss */
+/* line 605, ../sass/_moduls.scss */
 .sendMessage-popup .block2 p {
   color: #ffffff;
   font-size: 14px;
@@ -2660,16 +2670,16 @@ textarea {
   letter-spacing: 0.05px;
   text-align: center;
 }
-/* line 601, ../sass/_moduls.scss */
+/* line 607, ../sass/_moduls.scss */
 .sendMessage-popup .block2 p a {
   color: #ffffff;
 }
-/* line 603, ../sass/_moduls.scss */
+/* line 609, ../sass/_moduls.scss */
 .sendMessage-popup .block2 p a:hover {
   text-decoration: none;
 }
 @media only screen and (max-width: 767px) {
-  /* line 599, ../sass/_moduls.scss */
+  /* line 605, ../sass/_moduls.scss */
   .sendMessage-popup .block2 p {
     text-align: left;
     font-size: 12px;
@@ -2677,7 +2687,7 @@ textarea {
     vertical-align: top;
   }
 }
-/* line 612, ../sass/_moduls.scss */
+/* line 618, ../sass/_moduls.scss */
 .sendMessage-popup button {
   color: #ffffff;
   font-size: 20px;
@@ -2696,28 +2706,30 @@ textarea {
   border-radius: 10px;
 }
 @media only screen and (max-width: 991px) {
-  /* line 612, ../sass/_moduls.scss */
+  /* line 618, ../sass/_moduls.scss */
   .sendMessage-popup button {
     width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 612, ../sass/_moduls.scss */
+  /* line 618, ../sass/_moduls.scss */
   .sendMessage-popup button {
     font-size: 16px;
     line-height: 52px;
     height: 50px;
   }
 }
-/* line 623, ../sass/_moduls.scss */
+/* line 629, ../sass/_moduls.scss */
 .sendMessage-popup button:hover {
   color: #f94d15;
   background: #ffffff;
 }
 
-/* line 631, ../sass/_moduls.scss */
+/* line 637, ../sass/_moduls.scss */
 .rules-popup {
+  display: none;
   min-width: 800px;
+  width: 967px;
   position: relative;
   padding: 43px 15px 85px;
   margin-top: 110px;
@@ -2727,35 +2739,37 @@ textarea {
   border-radius: 28px;
 }
 @media only screen and (max-width: 991px) {
-  /* line 631, ../sass/_moduls.scss */
+  /* line 637, ../sass/_moduls.scss */
   .rules-popup {
     min-width: auto;
+    width: 90%;
     margin-left: 15px;
     margin-right: 15px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 631, ../sass/_moduls.scss */
+  /* line 637, ../sass/_moduls.scss */
   .rules-popup {
     border-width: 5px;
     padding-bottom: 30px;
+    margin-top: 11px;
   }
 }
 @media all and (max-height: 768px) {
-  /* line 631, ../sass/_moduls.scss */
+  /* line 637, ../sass/_moduls.scss */
   .rules-popup {
     height: auto;
-    margin-top: 0;
+    margin-top: 11px;
     border-width: 5px;
   }
 }
 @media all and (min-height: 769px) {
-  /* line 631, ../sass/_moduls.scss */
+  /* line 637, ../sass/_moduls.scss */
   .rules-popup {
     height: 700px;
   }
 }
-/* line 641, ../sass/_moduls.scss */
+/* line 648, ../sass/_moduls.scss */
 .rules-popup h3 {
   color: #ffffff;
   font-size: 27.8px;
@@ -2766,19 +2780,19 @@ textarea {
   margin-bottom: 73px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 641, ../sass/_moduls.scss */
+  /* line 648, ../sass/_moduls.scss */
   .rules-popup h3 {
     font-size: 24px;
     margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 481px) {
-  /* line 641, ../sass/_moduls.scss */
+  /* line 648, ../sass/_moduls.scss */
   .rules-popup h3 {
     font-size: 20px;
   }
 }
-/* line 649, ../sass/_moduls.scss */
+/* line 656, ../sass/_moduls.scss */
 .rules-popup > div {
   height: 321px;
   overflow-y: auto;
@@ -2786,33 +2800,34 @@ textarea {
   padding: 0 40px 0 0;
 }
 @media only screen and (max-width: 481px) {
-  /* line 649, ../sass/_moduls.scss */
+  /* line 656, ../sass/_moduls.scss */
   .rules-popup > div {
     margin: 0 5px 0 20px;
+    padding-right: 20px;
   }
 }
 @media all and (max-height: 768px) {
-  /* line 649, ../sass/_moduls.scss */
+  /* line 656, ../sass/_moduls.scss */
   .rules-popup > div {
     height: 272px;
   }
 }
 @media all and (min-height: 769px) {
-  /* line 649, ../sass/_moduls.scss */
+  /* line 656, ../sass/_moduls.scss */
   .rules-popup > div {
     height: 440px;
   }
 }
-/* line 657, ../sass/_moduls.scss */
+/* line 664, ../sass/_moduls.scss */
 .rules-popup > div::-webkit-scrollbar {
   width: 4px;
   background: #ffffff;
 }
-/* line 661, ../sass/_moduls.scss */
+/* line 668, ../sass/_moduls.scss */
 .rules-popup > div::-webkit-scrollbar-thumb {
   background: #f94d15;
 }
-/* line 664, ../sass/_moduls.scss */
+/* line 671, ../sass/_moduls.scss */
 .rules-popup > div p {
   color: #ffffff;
   font-family: "CirceLight", sans-serif;
@@ -2821,18 +2836,18 @@ textarea {
   line-height: 21px;
 }
 @media only screen and (max-width: 481px) {
-  /* line 664, ../sass/_moduls.scss */
+  /* line 671, ../sass/_moduls.scss */
   .rules-popup > div p {
     font-size: 14px;
   }
 }
 
-/* line 673, ../sass/_moduls.scss */
+/* line 680, ../sass/_moduls.scss */
 #phrase-modal .md-content {
   max-height: 342px;
   width: 529px;
 }
-/* line 675, ../sass/_moduls.scss */
+/* line 682, ../sass/_moduls.scss */
 #phrase-modal .md-content h3 {
   display: none !important;
   color: #ffffff;
@@ -2851,7 +2866,7 @@ textarea {
   -webkit-border-radius: 16px;
   border-radius: 16px;
 }
-/* line 681, ../sass/_moduls.scss */
+/* line 688, ../sass/_moduls.scss */
 #phrase-modal .md-content > div {
   text-align: left;
   position: relative;
@@ -2862,21 +2877,22 @@ textarea {
   border-radius: 16px;
 }
 @media only screen and (max-width: 481px) {
-  /* line 681, ../sass/_moduls.scss */
+  /* line 688, ../sass/_moduls.scss */
   #phrase-modal .md-content > div {
     padding: 25px 40px 10px;
   }
 }
-/* line 688, ../sass/_moduls.scss */
+/* line 695, ../sass/_moduls.scss */
 #phrase-modal .md-content > div p {
   color: #ffffff;
   font-size: 21px;
   font-family: "CirceLight", sans-serif;
   letter-spacing: -0.25px;
   line-height: 26px;
+  text-align: center;
   margin-bottom: 22px;
 }
-/* line 693, ../sass/_moduls.scss */
+/* line 700, ../sass/_moduls.scss */
 #phrase-modal .md-content > div .md-close {
   color: #ffffff;
   font-size: 33.06px;
@@ -2900,13 +2916,13 @@ textarea {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 697, ../sass/_moduls.scss */
+/* line 704, ../sass/_moduls.scss */
 #phrase-modal .md-content > div .md-close:hover {
   color: #f94d15;
   background: #ffffff;
 }
 @media only screen and (max-width: 767px) {
-  /* line 673, ../sass/_moduls.scss */
+  /* line 680, ../sass/_moduls.scss */
   #phrase-modal .md-content {
     width: 90%;
   }
@@ -3023,14 +3039,20 @@ textarea {
 /* line 6, ../sass/_style.scss */
 body {
   font-family: "CirceRegular", sans-serif;
-  background: #578daf url("../img/app-background-main.jpg") center center no-repeat;
+  background: #578daf url("../img/app-background-main.jpg") center top no-repeat;
   background-size: 100%;
   background-attachment: fixed;
 }
-@media all and (max-height: 667px) {
+@media all and (max-height: 768px) {
   /* line 6, ../sass/_style.scss */
   body {
-    background-size: auto, 667px;
+    background-size: auto, 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 6, ../sass/_style.scss */
+  body {
+    background-size: auto, 100%;
   }
 }
 
@@ -3195,6 +3217,7 @@ body {
   }
 }
 /* line 70, ../sass/_style.scss */
+/*
 .app .wr-header .header-partners:before {
   content: '';
   display: block;
@@ -3209,6 +3232,7 @@ body {
   transform: translateY(-50%);
   background: #4181a9;
 }
+*/
 @media only screen and (max-width: 481px) {
   /* line 70, ../sass/_style.scss */
   .app .wr-header .header-partners:before {
@@ -3336,7 +3360,8 @@ body {
   }
 }
 /* line 152, ../sass/_style.scss */
-.app .wr-footer .footer .footer-logo a:after {
+
+.app .wr-footer .footer .footer-logo a:first-child:after {
   content: '';
   display: block;
   width: 1px;
@@ -3351,6 +3376,7 @@ body {
   background: #ffffff;
   opacity: 0.38;
 }
+
 /* line 159, ../sass/_style.scss */
 .app .wr-footer .footer .footer-logo a p {
   color: #ffffff;
