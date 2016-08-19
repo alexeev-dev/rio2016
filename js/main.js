@@ -1,26 +1,26 @@
 $(document).ready(function() {
 	var hintIsShowed, phrasesOffset;
 
-	phrasesOffset = $('.phrases').offset().top - 100;
+	if ($('.phrases').length) {
+		phrasesOffset = $('.phrases').offset().top - 100;
+	}
 	hintIsShowed = false;
 
-	$('#js-validate-1').feelform({
-		notificationType: 'class'
-	});
+	$('.wordsScreen-popup').hide()
 
 	function showHintWindow() {
 		var hintWindow;
 
-		hintWindow = $('.mainScreen-popup');
+		hintWindow = $('.wordsScreen-popup');
+
+		if ($(window).width() < 768) {
+			return false;
+		}
 
 		hintWindow.css({
-			'position': 'fixed',
 			'display': 'block',
 			'opacity': '0',
-			'left': '50%',
-			'top': '100px',
 			'z-index': '10',
-			'margin-left': -hintWindow.width() / 2,
 			'transition': 'opacity ease-out 1s'
 		});
 
@@ -60,7 +60,7 @@ $(document).ready(function() {
 	$('.js-rules').on('click', function() {
 		$('.js-rules-popup').bPopup();
 	});
-	
+
 	$('.js-login').on('click', function() {
 		$('.js-login-popup').bPopup();
 	});
