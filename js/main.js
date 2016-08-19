@@ -72,6 +72,13 @@ $(document).ready(function() {
 	$('.js-approveMessage').on('click', function() {
 		$('.js-approveMessage-popup').bPopup();
 	});
+
+	$('.js-winners').on('click',function() {
+		$('.winnersName-popup').bPopup({
+			opacity: 0.92,
+			modalColor: '#5b7e94'
+		});
+	});
 });
 
 $(window).load(function() {

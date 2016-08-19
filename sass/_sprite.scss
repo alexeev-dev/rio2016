@@ -5,7 +5,7 @@ $mysprite-layout:smart;
 @import "icons/*.png";
 @include all-icons-sprites;
 
-$icons: ('addWords','goBack-arrow');
+$icons: ('addWords','goBack-arrow','play-button');
 
 @each $icons in $icons {
 	.icons-#{$icons} {

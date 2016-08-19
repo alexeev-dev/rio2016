@@ -119,6 +119,12 @@ body {
 		&-main {
 			padding: 41px 0 58px;
 			background: #ffffff url('../img/app-background-firstScreen-main.png') center 62px no-repeat; border-bottom: solid 1px #5b7e94;
+
+			&.closingBg {
+				overflow: hidden;
+				background: #ffffff url('../img/closingScreen-bg.png') center 62px no-repeat;
+				background-size: contain;
+			}
 		}
 
 		&-prizes {
